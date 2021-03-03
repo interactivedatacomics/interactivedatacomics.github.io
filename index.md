@@ -1,3 +1,3 @@
 # Interactive Data Comics
 
-intro here.. 
+intro and demo here.. 
