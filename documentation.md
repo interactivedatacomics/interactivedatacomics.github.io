@@ -135,7 +135,7 @@ single panel that is zoomable
    "operation": "zoom", 
    "trigger": "zoom",
    "element": "panel_14",
-   "linked": ["panel_15"
+   "linked": ["panel_15"]
 }
 ```
 ### layout
