@@ -7,7 +7,7 @@
 Highlighting the content (e.g., panels or element) when click/over a pointed element and changes style of all elements with given ID |
 
 #### Code example
-```
+```json
 [operations]{
    "trigger": "mouseover",
    "element": "panel_6",
@@ -20,7 +20,7 @@ Highlighting the content (e.g., panels or element) when click/over a pointed ele
 ### Load layout
 loads a new layout and remove anything else
 #### Code example
-```
+```json
 [operations]{ 
    trigger: "click",
    operation: loadLayout,
@@ -34,7 +34,7 @@ loads a new layout and remove anything else
  ### Filter Layout
  show only panels with given ID
  #### Code example
-```
+```json
  [operations]{ 
     trigger: "click"    
     condition: ["if", totalC02, > 10]
@@ -47,7 +47,7 @@ loads a new layout and remove anything else
 ```
 ### Load layout
 loads a new layout and remove anything else
-```
+```json
 [operations]{ 
    trigger: "click",
    operation: loadLayout,
@@ -59,7 +59,7 @@ loads a new layout and remove anything else
 ```
  ### Append
  appends set of panels /layout after given panel
-```
+```json
  [operations]{
    "trigger": "click",
    "element": "panel_6",
@@ -70,7 +70,7 @@ loads a new layout and remove anything else
 ```
 ### Replace
 Replace a panel with new panels
-```
+```json
 [operations]{
    "trigger": "click",
    "element": "panel_4",
@@ -87,7 +87,7 @@ Replace a panel with new panels
 
 ### Slider
 Turns bounding box into slider. Specify variable, min, max, tickmarks,... 
-```
+```json
 [panel]{ 
    id: slider_movementSpeed', //id of the svg
    variable:'movementSpeed',
@@ -98,7 +98,7 @@ Turns bounding box into slider. Specify variable, min, max, tickmarks,...
 
 ### Isotype
 Append isotype/ match variable value, load image from URI
-```
+```json
 {
    operation: 'isotype', 
    variable:'totalMovement',
@@ -109,24 +109,24 @@ Append isotype/ match variable value, load image from URI
 ```
 ### Input
 xxx
-```
+```json
 code
 ```
 ### lens
 link two panels where one panel is ovreview and one panel detail
 
-```
+```json
 code
 ```
 ### multilayer
 allows which layers to be visible
 
-```
+```json
 code
 ```
 ### zoom 
 single panel that is zoomable
-```
+```json
 {
    "operation": 'zoom', 
    "trigger": "zoom",
@@ -136,7 +136,7 @@ single panel that is zoomable
 ```
 ### layout
 xxx
-```
+```json
 layouts: [
 {name: mediumLayout,
  panels: [[10,11,12], [13,14,15]]
@@ -144,7 +144,7 @@ layouts: [
 ```
 ### Variables
 xxx
-```
+```json
 variables:[
   {name: 'movementSpeed', *value: 0 },
   {name: 'movementVelocity', *value: 0 },
@@ -154,7 +154,7 @@ variables:[
 
 ### Classes
 xxx
-```
+```json
 classes: [
 {
   name: 'countries',
@@ -163,7 +163,7 @@ classes: [
 ```
 ### Panels
 xxx
-```
+```json
 panels:[
   {name: panel0,url:panels/panel0.svg}
 ]
