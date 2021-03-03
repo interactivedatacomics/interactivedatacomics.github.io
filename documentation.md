@@ -141,10 +141,12 @@ single panel that is zoomable
 ### layout
 xxx
 ```json
-layouts: [
-{name: mediumLayout,
- panels: [[10,11,12], [13,14,15]]
-}]
+"layouts": [
+   {
+      "name": "mediumLayout",
+      "panels": [[10,11,12], [13,14,15]]
+   }
+]
 ```
 ### Variables
 xxx
