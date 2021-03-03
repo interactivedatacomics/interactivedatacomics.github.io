@@ -8,26 +8,26 @@ Highlighting the content (e.g., panels or element) when click/over a pointed ele
 
 #### Code example
 ```json
-[operations]{
+{
    "trigger": "mouseover",
    "element": "panel_6",
    "operation": "highlight",
-   "scale*": 1.3
-   "background-color*": #666
-   "url*": ""
+   "scale": 1.3
+   "background-color": #666
+   "url": ""
 }
 ```
 ### Load layout
 loads a new layout and remove anything else
 #### Code example
 ```json
-[operations]{ 
-   trigger: "click",
-   operation: loadLayout,
-   element: button2,
-   layout: mediumLayout
-   group: group1
-   after: null | group-name
+{ 
+   "trigger": "click",
+   "operation": "loadLayout",
+   "element": "button2",
+   "layout": "mediumLayout",
+   "group": "group1",
+   "after": "group-name"
  }
 ```
  
@@ -35,32 +35,34 @@ loads a new layout and remove anything else
  show only panels with given ID
  #### Code example
 ```json
- [operations]{ 
-    trigger: "click"    
-    condition: ["if", totalC02, > 10]
-    operation: "filter"
+{ 
+    "trigger": "click",    
+    "condition": ["if", "totalC02", > 10],
+    "operation": "filter"
 }
-[operations]{   
-    condition: ["if", totalC02, > 10]
-    operation: "append"
+```
+```json
+{   
+    "condition": ["if", "totalC02", > 10],
+    "operation": "append"
 }
 ```
 ### Load layout
 loads a new layout and remove anything else
 ```json
 [operations]{ 
-   trigger: "click",
-   operation: loadLayout,
-   element: button2,
-   layout: mediumLayout
-   group: group1
-   after: null | group-name
+   "trigger: "click",
+   "operation": "loadLayout",
+   "element": "button2",
+   "layout": "mediumLayout",
+   "group": "group1",
+   "after": "group-name"
  }
 ```
  ### Append
  appends set of panels /layout after given panel
 ```json
- [operations]{
+{
    "trigger": "click",
    "element": "panel_6",
    "operation": "append",
@@ -89,10 +91,10 @@ Replace a panel with new panels
 Turns bounding box into slider. Specify variable, min, max, tickmarks,... 
 ```json
 [panel]{ 
-   id: slider_movementSpeed', //id of the svg
-   variable:'movementSpeed',
-   *min: 0,
-   *max: 100
+   "id": "slider_movementSpeed", //id of the svg
+   "variable":"movementSpeed",
+   "min": 0,   // default 0
+   "max": 100  // detault 100
 }
 ```
 
@@ -100,11 +102,14 @@ Turns bounding box into slider. Specify variable, min, max, tickmarks,...
 Append isotype/ match variable value, load image from URI
 ```json
 {
-   operation: 'isotype', 
-   variable:'totalMovement',
-   to: 'isotypePlaceHolder',
-   icon: 'images/fog.png',
-   attr: {'widthIcon': 30, 'widthContainer': 200}
+   "operation": "isotype", 
+   "variable":"totalMovement",
+   "to": "isotypePlaceHolder",
+   "icon": "images/fog.png",
+   "attr": {
+      "widthIcon": 30, 
+      "widthContainer": 200
+   }
 }
 ```
 ### Input
@@ -130,42 +135,55 @@ single panel that is zoomable
 {
    "operation": 'zoom', 
    "trigger": "zoom",
-   'element': "panel_14",
-   'linked*': ['panel_15']
+   "element": "panel_14",
+   "linked": ["panel_15"]  // optional
 }
 ```
 ### layout
 xxx
 ```json
-layouts: [
-{name: mediumLayout,
- panels: [[10,11,12], [13,14,15]]
-}]
+"layouts": [
+   {
+      "name": "mediumLayout",
+      "panels": [[10,11,12], [13,14,15]]
+   }
+]
 ```
 ### Variables
 xxx
 ```json
-variables:[
-  {name: 'movementSpeed', *value: 0 },
-  {name: 'movementVelocity', *value: 0 },
-  {name: 'totalMovement', *value: ['(', 'movementSpeed', '+', 'movementVelocity', ')','*10']}
+"variables":[
+  {
+      "name": "movementSpeed', 
+      "value": 0 
+  },
+  {
+      "name": "movementVelocity", 
+      "value": 0 
+  },
+  {
+      "name": "totalMovement", 
+      "value": ['(', 'movementSpeed', '+', 'movementVelocity', ')','*10']
+  }
 ]
 ```
 
 ### Classes
 xxx
 ```json
-classes: [
+"classes": [
 {
-  name: 'countries',
-  elements:['france', 'germany', 'uk']
+  "name": "countries",
+  "elements":["france", "germany", "uk"]
 }]
 ```
 ### Panels
 xxx
 ```json
-panels:[
-  {name: panel0,url:panels/panel0.svg}
+"panels":[
+  {
+      "name": "panel0",
+      "url":"mypanels/panel0.svg"}
 ]
 ```
 
