@@ -51,7 +51,7 @@ loads a new layout and remove anything else
 loads a new layout and remove anything else
 ```json
 [operations]{ 
-   "trigger: "click",
+   "trigger": "click",
    "operation": "loadLayout",
    "element": "button2",
    "layout": "mediumLayout",
