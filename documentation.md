@@ -50,7 +50,7 @@ loads a new layout and remove anything else
 ### Load layout
 loads a new layout and remove anything else
 ```json
-[operations]{ 
+{ 
    "trigger": "click",
    "operation": "loadLayout",
    "element": "button2",
@@ -73,7 +73,7 @@ loads a new layout and remove anything else
 ### Replace
 Replace a panel with new panels
 ```json
-[operations]{
+{
    "trigger": "click",
    "element": "panel_4",
    "operation": "replace",
@@ -90,11 +90,11 @@ Replace a panel with new panels
 ### Slider
 Turns bounding box into slider. Specify variable, min, max, tickmarks,... 
 ```json
-[panel]{ 
-   "id": "slider_movementSpeed", //id of the svg
+{ 
+   "id": "slider_movementSpeed", 
    "variable":"movementSpeed",
-   "min": 0,   // default 0
-   "max": 100  // detault 100
+   "min": 0,   
+   "max": 100  
 }
 ```
 
@@ -133,10 +133,10 @@ code
 single panel that is zoomable
 ```json
 {
-   "operation": 'zoom', 
+   "operation": "zoom", 
    "trigger": "zoom",
    "element": "panel_14",
-   "linked": ["panel_15"]  // optional
+   "linked": ["panel_15"]
 }
 ```
 ### layout
@@ -154,7 +154,7 @@ xxx
 ```json
 "variables":[
   {
-      "name": "movementSpeed', 
+      "name": "movementSpeed", 
       "value": 0 
   },
   {
