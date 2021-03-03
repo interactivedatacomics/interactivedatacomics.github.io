@@ -163,7 +163,7 @@ xxx
   },
   {
       "name": "totalMovement", 
-      "value": ['(', 'movementSpeed', '+', 'movementVelocity', ')','*10']
+      "value": ["(", "movementSpeed", "+", "movementVelocity", ")","*10"]
   }
 ]
 ```
