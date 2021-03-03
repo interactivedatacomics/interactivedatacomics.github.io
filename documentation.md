@@ -9,7 +9,7 @@ Highlighting the content (e.g., panels or element) when click/over a pointed ele
 #### Code example
 ```json
 {
-   "trigger": "mouseover",
+   "trigger": "mouseover",       // test comment
    "element": "panel_6",
    "operation": "highlight",
    "scale": 1.3,
