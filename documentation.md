@@ -10,6 +10,7 @@ The **basics** has Panels, Layout, Variables and Classes, which set up materials
 The ``"id"`` should be a positive integer, this number will be used to indicate this panel in the operations.
 Make sure the image is ``".svg"`` or ``".phg"``, and the ``"url"`` should be a direct url to the image, you can upload your image folder in your own GitHub and copy the image url.
 
+#### Code example
 ```json
 "panels":[
   {
@@ -113,13 +114,13 @@ This operation can load a new layout and remove anything else ``"after"`` a spec
 ```
  
  ### Condition
- Setting a condition for any of 
- #### Code example
+ Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
+
 ```json
 { 
     "trigger": "click",    
     "condition": ["if", "totalC02", > 10],
-    "operation": "filter"
+    "operation": "loadlayout"
 }
 ```
 ```json
