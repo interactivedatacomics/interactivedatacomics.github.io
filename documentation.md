@@ -131,18 +131,17 @@ Highlighting can be used as a visual reference when the authors wants the audien
 
 The highlight operation can change the style of the element(s) or class(es) with given ID. How an element is highlighted can be defined through attrbutes `scale` (scales an element up (`scale` > 1) or down ( `scale` < 1), `border` or `color`. 
 
-The following example highlights all elements (across all panels) with the ID `france` on mouseover one of these elements. The highlight causes these elemnts to become red (`"color": "#f00"`), scaled up 30% (`"scale": 1.3,`).
+The following example highlights all elements (across all panels) with the ID `france` on mouseover one of these elements. The highlight causes these elemnts to become red (`"fill": "red"`) and scaled up by 50% (`"transform": "scale(1.5)"`). 
 
 ```json
-{
-   "trigger": "mouseover",   
-   "element": "france",
-   "operation": "highlight",
-   "scale": 1.3,
-   "color": "#f00",
-   "url": ""
-}
+{		
+     "trigger": "mouseover", 
+     "element": "france",
+     "operation": "highlight", 
+     "after": {"style": {"fill": "red", "transform": "scale(1.5)"}, attr:[]},
+},
 ```
+
 ## Append
 Appends set of panels or layout after given panel, this operation can be used for different narrative purpose, e.g., adding a branch to the storyline from a certain point; provising more details by drilling down from this panel; revealing the answer for a question rised in the panel; hinding a punchline and etc. Note this operation will not romove or replace any panles. If you want remove any panle and load new panels, use "Load layout".
 ```json
