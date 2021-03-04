@@ -1,10 +1,16 @@
 # Documentation 
-Comics are presented as a series of panenls that placed in certain layout that paves a visual narrative. For print comic creators, stories are often told across fixed, pre-determined page counts. While on the screen, the space a comic occupies is suddenly no longer fixed. The data, visualizations, panels, layout, order and storyline will be more dynamic. This tool allows you to control these elements with simple JSON spesicications, which deos not require an creator to have any pre-experience of programing. This documentation includes the descriptions and code examples for each configeration and opration.
+
+This page details the differnet constructs and operations in our specification. It will cover: 
+
+* [Panels and Layouts](#panels_and_layout)
+* [Data](#data)
+* [Operations](#operations)
+
+## Panels and Layout
+
+Comics are presented as a series of panenls that are placed in certain layout that paves a visual narrative. For print comic creators, stories are often told across fixed, pre-determined page counts. While on the screen, the space a comic occupies is suddenly no longer fixed. The data, visualizations, panels, layout, order and storyline will be more dynamic. This tool allows you to control these elements with simple JSON spesicications, which deos not require an creator to have any pre-experience of programing. This documentation includes the descriptions and code examples for each configeration and opration.
 
 The **basics** has Panels, Layout, Variables and Classes, which set up materials that prepared for interactive [**operations**] (#operations).
-
-## Basics
-
 
 ### Panels
 The ``"id"`` should be a positive integer, this number will be used to indicate this panel in the operations.
@@ -29,6 +35,19 @@ Different layouts or different version of contents can be set in ``"layouts": [ 
       "panels": [[10,11,12], [13,14,15]]
    }
 ]
+```
+
+## Data
+
+### Classes
+If you want manage elements by groups, design the groups in ``"classes"``, assign each group a name for calling in operation. For example, highlighting all elements in the comic relating France.
+
+```json
+"classes": [
+{
+  "name": "countries",
+  "elements":["france", "germany", "uk"]
+}]
 ```
 
 ### Variables 
@@ -69,20 +88,8 @@ Different layouts or different version of contents can be set in ``"layouts": [ 
 ]
 ```
 
-### Classes
-If you want manage elements by groups, design the groups in ``"classes"``, assign each group a name for calling in operation. For example, highlighting all elements in the comic relating France.
-
-```json
-"classes": [
-{
-  "name": "countries",
-  "elements":["france", "germany", "uk"]
-}]
-```
-
 
 ## Operations
-
 
 ### Highlight
 
