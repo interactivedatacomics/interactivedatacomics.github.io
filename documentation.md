@@ -51,7 +51,7 @@ A layout is modeled as a nested array, e.g., `[[1,2,[3,[4,5]]], [6,7]]` with the
 <img width="400px" src="figures/layout-1.png">
 
 * The first array contains all panels. It is always there. 
-* The second level, e.g., `[[1,2,[3,[4,5]]]]` (red) and `[6,7]` (blue), groups panels into rows
+* The second level, e.g., `[1,2,[3,[4,5]]]` (red) and `[6,7]` (blue), groups panels into rows. Each array is a new row.
 * the third level, e.g., `[3,[4,5]]` (darker red) in our example, puts two panels, the first above the other within the same row.
 * The fifth level, e.g., `[4,5]` (darkest red) will place the two panels again side-by-side. 
 
