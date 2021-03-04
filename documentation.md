@@ -1,18 +1,19 @@
 # Documentation 
 
-This page details the differnet constructs and operations in our specification. It will cover: 
+This page details the differnet constructs and operations in our specification. For a [tutorial, chere elsewhere](getstarted.html)
 
-* [Panels and Layouts](#panels_and_layout)
+This documentation covers: 
+
+* [Panels and Layouts](#panels-and-layout)
 * [Data](#data)
 * [Operations](#operations)
 
 ## Panels and Layout
 
-Comics are presented as a series of panenls that are placed in certain layout that paves a visual narrative. For print comic creators, stories are often told across fixed, pre-determined page counts. While on the screen, the space a comic occupies is suddenly no longer fixed. The data, visualizations, panels, layout, order and storyline will be more dynamic. This tool allows you to control these elements with simple JSON spesicications, which deos not require an creator to have any pre-experience of programing. This documentation includes the descriptions and code examples for each configeration and opration.
-
-The **basics** has Panels, Layout, Variables and Classes, which set up materials that prepared for interactive [**operations**] (#operations).
 
 ### Panels
+Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. 
+
 The ``"id"`` should be a positive integer, this number will be used to indicate this panel in the operations.
 Make sure the image is ``".svg"`` or ``".phg"``, and the ``"url"`` should be a direct url to the image, you can upload your image folder in your own GitHub and copy the image url.
 
@@ -24,6 +25,11 @@ Make sure the image is ``".svg"`` or ``".phg"``, and the ``"url"`` should be a d
       "url":"mypanels/panel1.svg"}
 ]
 ```
+
+that are placed in certain layout that paves a visual narrative. For print comic creators, stories are often told across fixed, pre-determined page counts. While on the screen, the space a comic occupies is suddenly no longer fixed. 
+
+The **basics** has Panels, Layout, Variables and Classes, which set up materials that prepared for interactive [**operations**] (#operations).
+
 
 ### layout
 Different layouts or different version of contents can be set in ``"layouts": [ ]``, give each layout a name then it could be called directly in the **Load layout** operation. Here are three examples of how to use the an array to build up different layouts. (*tip:* if you have several panels that are placed together and will be fixed forever (no interaction will dissassemble this panel group), you can export and manege these panels as 'one' panel (one single image).)
