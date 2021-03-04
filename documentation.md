@@ -7,9 +7,9 @@ This documentation covers:
 * [Panels and Layouts](#panels-and-layout)
 * [Data](#data)
 * [Operations](#operations)
+* [UI Elements](#ui-elements)
 
 # Panels and Layout
-
 
 ## Panels
 Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has a positive `id` and which will be used througout the spec to refer to this panel. The 'content' of ech panel is loaded from a `url` pointing to a URL where the image is hosted. You can host your SVGs or PNGs on any server in the world as long as the image or svg is publicly retievable throug a URL.
@@ -139,7 +139,7 @@ The following example highlights all elements (across all panels) with the ID `f
      "element": "france",
      "operation": "highlight", 
      "after": {"style": {"fill": "red", "transform": "scale(1.5)"}, attr:[]},
-},
+}
 ```
 
 ## Append
@@ -165,34 +165,20 @@ The following example appends a panel `11` after panel `7` by a click on panel `
 ```
 
 ### Load layout
-This operation can load a new layout and remove anything else ``"after"`` a specific panel by clicking the ``"element"``. It works similar to an navigating founction in a website. For example, the creator can lead the audience to different versions (e.g., length style or content) of the story by using a global navigation manue on the top of the comic.
+
+This operation loads a layout from the `layout` array and removes anything else  panel specified by `after`. The operation is invoked by a `trigger` onto `element` (a panel or an element ID). 
+
+This operation can be used similar to a menu on a website. For example, the designer can lead the audience to different versions (e.g., length, style or content) of the comic story by using a global navigation menu on the top of the comic.
+
+The following example loads a new set of panels when clicking onto panel 5. 
 
 ```json
-{ 
-   "trigger": "click",
+"trigger": "click",
    "operation": "loadLayout",
-   "element": "button2",
-   "layout": "mediumLayout",
-   "group": "group1",
-   "after": "group-name"
- }
-```
- 
- ### Condition
- Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
-
-```json
-{ 
-    "trigger": "click",    
-    "condition": ["if", "totalC02", "> 10"],
-    "operation": "loadlayout"
-}
-```
-```json
-{   
-    "condition": ["if", "totalC02", "> 10"],
-    "operation": "append"
-}
+   "element": 5,
+   "layout": [[0,1], [2,3]],
+   "after": 7,
+   "group": "group1"
 ```
 
 
@@ -211,7 +197,25 @@ Replace a panel with ``"newpanels"`` after doing ``"click"`` or ``"mouseover"`` 
   }
 ```
 
-## UI
+## Condition
+ Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
+
+```json
+{ 
+    "trigger": "click",    
+    "condition": ["if", "totalC02", "> 10"],
+    "operation": "loadlayout"
+}
+```
+```json
+{   
+    "condition": ["if", "totalC02", "> 10"],
+    "operation": "append"
+}
+```
+
+
+# UI Elements
 
 ### Slider
 Turns placeholder named by the same ``"id"`` into a slider. Specify ``"variable"`` (see above in **basics** section), min, max. The length of the slider will be as same as the placehover element.
