@@ -161,7 +161,7 @@ Replace a panel with ``"newpanels"`` after doing ``"click"`` or ``"mouseover"`` 
 ## UI
 
 ### Slider
-Turns bounding box into slider. Specify variable, min, max, tickmarks,... 
+Turns placeholder named by the same ``"id"`` into a slider. Specify ``"variable"`` (see above in **basics** section), min, max. The length of the slider will be as same as the placehover element.
 ```json
 { 
    "id": "slider_movementSpeed", 
@@ -172,17 +172,17 @@ Turns bounding box into slider. Specify variable, min, max, tickmarks,...
 ```
 
 ### Isotype
-Append isotype/ match variable value, load image from URI
+Data in comics can be visualizaed by appending isotype symbles to match ``"variable"`` value, The isotype images are loaded from url in ``"icon"``. The size of each icon can be adjusted in ``"widthIcon"``.
 ```json
 {
-   "operation": "isotype", 
-   "variable":"totalMovement",
-   "to": "isotypePlaceHolder",
-   "icon": "images/fog.png",
+   "operation": "isotype",
+   "variable": "treeIcon",
+   "to": "TreesPlaceHolder",
    "attr": {
-      "widthIcon": 30, 
-      "widthContainer": 200
-   }
+    "widthIcon": 4.5
+   },
+   "icon": "images/CO2Footprint/treeIcon.svg"
+  }
 ```
 ### Input
 xxx
@@ -193,13 +193,25 @@ code
 link two panels where one panel is ovreview and one panel detail
 
 ```json
-code
+{
+   "operation": 'lens', 
+   "trigger": "mouseover",
+   'element': "panel_14",
+   'linked*': ['panel_15'], 
+   'viewport-size': 20%
+}
 ```
 ### multilayer
 allows which layers to be visible
 
 ```json
-code
+{
+   "operation": 'multilayer', 
+   "trigger": "click",
+   'element': "panel_14",
+   'elements':[{
+       'id': 1, 'linked':[2,3]}]
+}
 ```
 ### zoom 
 single panel that is zoomable
