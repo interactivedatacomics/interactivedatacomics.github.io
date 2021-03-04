@@ -46,15 +46,15 @@ This exmple will load six panels, three in each row.
 
 ### Types of layouts
 
-A layout is modeled as a nested array, e.g., `[[1,2,[3,4]], [5,6]]` with the first two levels being mandatory.
+A layout is modeled as a nested array, e.g., `[[1,2,[3,[4,5]]], [6,7]]` with the first two levels being mandatory. This layout spec will create the following layout:
+
+<img width="400px" src="figures/layout-1.png">
 
 * The first array contains all panels. It is always there. 
-* The second level, e.g., `[[1,2,[3,4]]` and `[5,6]`, groups panels into rows
-* the third level, e.g., `[3,4]` in our example, puts two panels, the first above the other within the same row.
+* The second level, e.g., `[[1,2,[3,[4,5]]]]` (red) and `[6,7]` (blue), groups panels into rows
+* the third level, e.g., `[3,[4,5]]` (darker red) in our example, puts two panels, the first above the other within the same row.
+* The fifth level, e.g., `[4,5]` (darkest red) will place the two panels again side-by-side. 
 
-For example, the layout `[[1,2,[3,4]], [5,6]]` will create the following layout:
-
-@ZEZHONG: PICTURE HERE
 
 
 ## Data
