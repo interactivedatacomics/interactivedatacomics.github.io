@@ -1,10 +1,73 @@
 # Documentation 
+Comics are presented as a series of panenls that placed in certain layout that paves a visual narrative. For print comic creators, stories are often told across fixed, pre-determined page counts. While on the screen, the space a comic occupies is suddenly no longer fixed. The data, visualizations, panels, layout, order and storyline will be more dynamic. This tool allows you to control these elements with simple JSON spesicications, which deos not require an creator to have any pre-experience of programing. This documentation includes the descriptions and code examples for each configeration and opration.
+
+The **basics** has Panels, Layout, Variables and Classes, which set up materials that prepared for interactive **operations**.
+
+## Basics
+
+
+### Panels
+The "id" should be a positive integer, this number will be used to indicate this panel in the operations.
+Make sure the image is ".svg" or ".phg", and the "url" should be a direct url to the image, you can upload your image folder in (where).
+
+```json
+"panels":[
+  {
+      "id": 1,
+      "url":"mypanels/panel0.svg"}
+]
+```
+
+
+
+### layout
+Different layouts or different version of contents can be set in "layouts": [ ], give each layout a name then it could be called directly in the **Load layout** operation. Here are three examples of how to use the an array to build up different layouts.
+
+```json
+"layouts": [
+   {
+      "name": "mediumLayout",
+      "panels": [[10,11,12], [13,14,15]]
+   }
+]
+```
+
+### Variables 
+xxx
+```json
+"variables":[
+  {
+      "name": "movementSpeed", 
+      "value": 0 
+  },
+  {
+      "name": "movementVelocity", 
+      "value": 0 
+  },
+  {
+      "name": "totalMovement", 
+      "value": ["(", "movementSpeed", "+", "movementVelocity", ")","*10"]
+  }
+]
+```
+
+### Classes
+xxx
+```json
+"classes": [
+{
+  "name": "countries",
+  "elements":["france", "germany", "uk"]
+}]
+```
+
 
 ## Operations
 
+
 ### Highlight
 
-Highlighting the content (e.g., panels or element) when click/over a pointed element and changes style of all elements with given ID. This could be used as a visual reference when you want audience to look back at a certain panel. It can also be used as a interaction feedback or feedforward, indicating clickable elements. Highlighting is worked by changing attribution of an element, its scale, bolder and background color.
+Highlighting the content (e.g., panels or element) when click/over a pointed element and changes style of all elements with given ID. Highlighting is worked by changing attribution of an element, its scale, bolder and background color. This could be used as a visual reference when the authors want audience to look back/forward at a certain panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after clicked. 
 
 #### Code example
 ```json
@@ -31,8 +94,8 @@ This operation can load a new layout and remove anything else by cklicking an po
  }
 ```
  
- ### Filter Layout
- Filter layout will show only panels with given ID, this operation allows the audience to filter the panels of their interests. For exa
+ ### Condition
+ Setting a condition for any of 
  #### Code example
 ```json
 { 
@@ -138,52 +201,4 @@ single panel that is zoomable
    "linked": ["panel_15"]
 }
 ```
-### layout
-xxx
-```json
-"layouts": [
-   {
-      "name": "mediumLayout",
-      "panels": [[10,11,12], [13,14,15]]
-   }
-]
-```
-### Variables
-xxx
-```json
-"variables":[
-  {
-      "name": "movementSpeed", 
-      "value": 0 
-  },
-  {
-      "name": "movementVelocity", 
-      "value": 0 
-  },
-  {
-      "name": "totalMovement", 
-      "value": ["(", "movementSpeed", "+", "movementVelocity", ")","*10"]
-  }
-]
-```
 
-### Classes
-xxx
-```json
-"classes": [
-{
-  "name": "countries",
-  "elements":["france", "germany", "uk"]
-}]
-```
-### Panels
-xxx
-```json
-"panels":[
-  {
-      "name": "panel0",
-      "url":"mypanels/panel0.svg"}
-]
-```
-
-  
