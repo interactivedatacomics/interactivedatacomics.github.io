@@ -5,10 +5,25 @@ This page details the differnet constructs and operations in our specification. 
 This documentation covers: 
 
 * [Panels and Layouts](#panels-and-layout)
+  * [Panels](#panels)   
+  * [Comic Layout](#comic-layout)   
+  * [Types of layouts](#types-of-layouts)
 * [Data](#data)
+  * [Classes](#classes)
+  * [Variables](#variables)
 * [Operations](#operations)
+  * [Highlight](#highlight)
+  * [Append](#append)
+  * [Load layout](#load-layout)
+  * [Replace](#replace)
+  * [Lens](#lens)
+  * [Multilayer](#multilayer)
+  * [Pan & Zoom](#pan--zoom)
 * [Conditions](#conditions)
 * [UI Elements](#ui-elements)
+  * [Slider](#slider)
+  * [Number Input](#number-input) 
+  * [Isotype](#isotype) 
 
 # Panels and Layout
 
@@ -187,7 +202,7 @@ The following example loads a new set of panels when clicking onto panel 5.
 
 ### Replace 
 
-<p style="color:#FF0000;">CHECK</p>
+<p style="background-color:tomato;">CHECK</p>
 
 This operation will replace a panel with `newpanels` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"panel_12"`` indicates the panel with the ``"id"`` of '12'.
 ```json
@@ -203,27 +218,7 @@ This operation will replace a panel with `newpanels` after doing ``"click"`` or 
   }
 ```
 
-<p style="color:#FF0000";>REMOVE OPERATION</p>
-
-# Conditions
-
-Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
-
-<p style="color:#FF0000;">what is this example doing?</p>
-
-```json
-{ 
-    "trigger": "click",    
-    "condition": ["if", "totalC02", "> 10"],
-    "operation": "loadlayout"
-}
-```
-```json
-{   
-    "condition": ["if", "totalC02", "> 10"],
-    "operation": "append"
-}
-```
+<p style="color:#FF0000;">REMOVE OPERATION</p>
 
 ### Lens
 This operation creates a 'lens' (or viewport) within one panel (`element`), while a 2nd panel (`linked`) shows the content of the lens in larger detail. A user can move the lens through drag and drop. `viewport-size` indicates the size of the viewport relative to the panel in which the viewport sits.
@@ -264,6 +259,26 @@ Creates a simple pan and zoom behavior for a dedicated panel so the user can do 
    "trigger": "zoom",
    "element": 14,
    "linked": [15]
+}
+```
+
+# Conditions
+
+Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
+
+<p style="background-color:tomato;">what is this example doing?</p>
+
+```json
+{ 
+    "trigger": "click",    
+    "condition": ["if", "totalC02", "> 10"],
+    "operation": "loadlayout"
+}
+```
+```json
+{   
+    "condition": ["if", "totalC02", "> 10"],
+    "operation": "append"
 }
 ```
 
