@@ -143,14 +143,24 @@ The following example highlights all elements (across all panels) with the ID `f
 ```
 
 ## Append
-Appends set of panels or layout after given panel, this operation can be used for different narrative purpose, e.g., adding a branch to the storyline from a certain point; provising more details by drilling down from this panel; revealing the answer for a question rised in the panel; hinding a punchline and etc. Note this operation will not romove or replace any panles. If you want remove any panle and load new panels, use "Load layout".
+This operation appends (inserts) one or more panels or a layout (`newpanels`) after given panel (`after`). The append operation is triggered through a `trigger` on an `element` (panel or element ID).
+
+`newpanels` can contain 
+* a singel panel: e.g, `[3]`, 
+* a layout specified in-place, e.g., `[3,[4,5]]`, or
+* a reference to layout specied in the `layouts` array: e.g., `myLayout`. 
+
+This operation can be used for different narrative purposes, e.g., adding a branch to the storyline from a certain point; providing more details by drilling down from this panel; revealing the answer for a question rised in the panel; hinding a punchline and etc. Note this operation will not romove or replace any panles. If you want remove any panle and load new panels, use "Load layout".
+
+The following example appends a panel `11` after panel `7` by a click on panel `6`.
+
 ```json
 {
    "trigger": "click",
-   "element": "panel_6",
+   "element": 6,
    "operation": "append",
-   "after": "panel_7",
-   "newpanels": ["panel_11"]
+   "after": 7,
+   "newpanels": [11]
 }
 ```
 
