@@ -7,6 +7,7 @@ This documentation covers:
 * [Panels and Layouts](#panels-and-layout)
 * [Data](#data)
 * [Operations](#operations)
+* [Conditions](#conditions)
 * [UI Elements](#ui-elements)
 
 # Panels and Layout
@@ -184,7 +185,7 @@ The following example loads a new set of panels when clicking onto panel 5.
 
 ### Replace 
 
-<p style="color:#FF0000";>CHECK</p>
+<p style="color:#FF0000;">CHECK</p>
 
 This operation will replace a panel with `newpanels` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"panel_12"`` indicates the panel with the ``"id"`` of '12'.
 ```json
@@ -206,7 +207,7 @@ This operation will replace a panel with `newpanels` after doing ``"click"`` or 
 
 Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
 
-<p style="color:#FF0000";>what is this example doing? </p>
+<p style="color:#FF0000;">what is this example doing?</p>
 
 ```json
 { 
@@ -222,22 +223,94 @@ Setting a condition for operations, when the opration is triggered, different op
 }
 ```
 
+### Lens
+This operation creates a 'lens' (or viewport) within one panel (`element`), while a 2nd panel (`linked`) shows the content of the lens in larger detail. A user can move the lens through drag and drop. `viewport-size` indicates the size of the viewport relative to the panel in which the viewport sits.
 
-# UI Elements
+<p style="background-color:tomato;">which panel is which here? why is linked an array?</p>
 
-### Slider
-Turns placeholder named by the same ``"id"`` into a slider. Specify ``"variable"`` (see above in **basics** section), min, max. The length of the slider will be as same as the placehover element.
 ```json
-{ 
-   "id": "slider_movementSpeed", 
-   "variable":"movementSpeed",
-   "min": 0,   
-   "max": 100  
+{
+   "operation": "lens", 
+   "trigger": "mouseover",
+   "element": 14,
+   "linked": [15], 
+   "viewport-size": 20%
 }
 ```
 
+### Multilayer
+
+<p style="background-color:tomato;">clarify</p>
+
+```json
+{
+   "operation": 'multilayer', 
+   "trigger": "click",
+   'element': "panel_14",
+   'elements':[{
+       'id': 1, 'linked':[2,3]}]
+}
+```
+### Pan & Zoom 
+Creates a simple pan and zoom behavior for a dedicated panel so the user can do ....? 
+
+<p style="background-color:tomato;">is this both: pan and zoom? what's the user interaction? how is this different from lens?</p>
+
+```json
+{
+   "operation": "zoom", 
+   "trigger": "zoom",
+   "element": 14,
+   "linked": [15]
+}
+```
+
+
+# UI Elements
+
+UI elements can be 'injected' into SVG panels (not possible with PNG), replacing an element with a specific ID. Values of UI elements can be mapped to [variables](#variables). 
+
+UI elements are specified *inside* a panel spec.
+
+
+### Slider
+
+A slider can be created for an element with a specifc `id` and bound to a `variable`. The length of the slider will be as same as the placehover element. `min` and `max` are optional attribute indicating minimum and maximum value of the slider and its associated variable. Default values of min and max are `0` and `100 ` respectively.
+
+The below example creates two sliders inside the panel spec for panel `0`. Each slider is bound to a variable.
+
+```json
+"panels": [
+{
+   "id": 0,
+   "url": "/CO2Footprint/inputPanel.svg",
+   "sliders": [
+    {
+     "id": "slider_movementSpeed",
+     "variable": "movementSpeed",
+     "min": 100,
+     "max": 200
+    },
+    {
+     "id": "slider_movementVelocity",
+     "variable": "movementVelocity"
+    }
+   ]
+} 
+]
+```
+
+### number Input
+xxx
+
+```json
+code
+```
+
 ### Isotype
-Data in comics can be visualizaed by appending isotype symbles to match ``"variable"`` value, The isotype images are loaded from url in ``"icon"``. The size of each icon can be adjusted in ``"widthIcon"``.
+
+This UI element creates one ore more [ISOTYPE](https://en.wikipedia.org/wiki/Isotype_(picture_language)) like pictograms inside an element (`TreesPlaceHolder`) and binds the number of icons to the value of the `variable`.  The size of each icon can be adjusted in `widthIcon`. The icon is loaded from the `svg` specified by `url`.
+
 ```json
 {
    "operation": "isotype",
@@ -249,43 +322,5 @@ Data in comics can be visualizaed by appending isotype symbles to match ``"varia
    "icon": "images/CO2Footprint/treeIcon.svg"
   }
 ```
-### Input
-xxx
-```json
-code
-```
-### lens
-link two panels where one panel is ovreview and one panel detail
 
-```json
-{
-   "operation": 'lens', 
-   "trigger": "mouseover",
-   'element': "panel_14",
-   'linked*': ['panel_15'], 
-   'viewport-size': 20%
-}
-```
-### multilayer
-allows which layers to be visible
-
-```json
-{
-   "operation": 'multilayer', 
-   "trigger": "click",
-   'element': "panel_14",
-   'elements':[{
-       'id': 1, 'linked':[2,3]}]
-}
-```
-### zoom 
-single panel that is zoomable
-```json
-{
-   "operation": "zoom", 
-   "trigger": "zoom",
-   "element": "panel_14",
-   "linked": ["panel_15"]
-}
-```
 
