@@ -55,6 +55,7 @@ A layout is modeled as a nested array, e.g., `[[1,2,[3,[4,5]]], [6,7]]` with the
 * the third level, e.g., `[3,[4,5]]` (darker red) in our example, puts two panels, the first above the other within the same row.
 * The fifth level, e.g., `[4,5]` (darkest red) will place the two panels again side-by-side. 
 
+**Note:** The with of panels depends on the SVG or PNG files. All the engine does is appending these panels and placing them in the layout. When you create your design, you should design a layout and panel sizes that work! 
 
 
 # Data
