@@ -241,9 +241,9 @@ This operation creates a 'lens' (or viewport) within one panel (`element`), whil
 
 ```json
 {
-   "operation": 'multilayer', 
+   "operation": "multilayer", 
    "trigger": "click",
-   'element': "panel_14",
+   'element': 14,
    'elements':[{
        'id': 1, 'linked':[2,3]}]
 }
