@@ -12,10 +12,8 @@ This documentation covers:
 
 
 ### Panels
-Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. 
-
-The ``"id"`` should be a positive integer, this number will be used to indicate this panel in the operations.
-Make sure the image is ``".svg"`` or ``".phg"``, and the ``"url"`` should be a direct url to the image, you can upload your image folder in your own GitHub and copy the image url.
+Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has an ``id"`` should be a positive integer, this number will be used to indicate this panel in the operations.
+Make sure the image is ``".svg"`` or ``".png"``, and the ``"url"`` should be a direct url to the image, you can upload your image folder in your own GitHub and copy the image url.
 
 #### Code example
 ```json
