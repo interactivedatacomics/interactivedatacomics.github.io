@@ -7,21 +7,19 @@ The **basics** has Panels, Layout, Variables and Classes, which set up materials
 
 
 ### Panels
-The "id" should be a positive integer, this number will be used to indicate this panel in the operations.
-Make sure the image is ".svg" or ".phg", and the "url" should be a direct url to the image, you can upload your image folder in (where).
+The ``"id"`` should be a positive integer, this number will be used to indicate this panel in the operations.
+Make sure the image is ``".svg"`` or ``".phg"``, and the ``"url"`` should be a direct url to the image, you can upload your image folder in your own GitHub and copy the image url.
 
 ```json
 "panels":[
   {
       "id": 1,
-      "url":"mypanels/panel0.svg"}
+      "url":"mypanels/panel1.svg"}
 ]
 ```
 
-
-
 ### layout
-Different layouts or different version of contents can be set in "layouts": [ ], give each layout a name then it could be called directly in the **Load layout** operation. Here are three examples of how to use the an array to build up different layouts.
+Different layouts or different version of contents can be set in ``"layouts": [ ]``, give each layout a name then it could be called directly in the **Load layout** operation. Here are three examples of how to use the an array to build up different layouts. (*tip:* if you have several panels that are placed together and will be fixed forever, you can export and manege them as 'one' panel.)
 
 ```json
 "layouts": [
@@ -33,20 +31,39 @@ Different layouts or different version of contents can be set in "layouts": [ ],
 ```
 
 ### Variables 
-xxx
+``"variables" `` stores all data of the comic, those data might be presented as a number by replacing a place holder that has the same id to the variable ``"name"``. ``"value"`` is the default value you give, and you can define your formula in ``"what"``. The variables setted here can be visualizad by the "isotype" operation.
+
 ```json
 "variables":[
   {
-      "name": "movementSpeed", 
-      "value": 0 
+   "name": "movementSpeed",
+   "value": 0
   },
   {
-      "name": "movementVelocity", 
-      "value": 0 
+   "name": "movementVelocity",
+   "value": 0
   },
   {
-      "name": "totalMovement", 
-      "value": ["(", "movementSpeed", "+", "movementVelocity", ")","*10"]
+   "name": "totalMovement",
+   "value": 0,
+   "what": [
+    "(",
+    "movementSpeed",
+    "+",
+    "movementVelocity",
+    ")"
+   ]
+  },
+  {
+   "name": "totalkm",
+   "value": 0,
+   "what": [
+    "movementSpeed",
+    "*2000",
+    "+",
+    "movementVelocity",
+    "*8000"
+   ]
   }
 ]
 ```
@@ -67,7 +84,7 @@ xxx
 
 ### Highlight
 
-Highlighting the content (e.g., panels or element) when click/over a pointed element and changes style of all elements with given ID. Highlighting is worked by changing attribution of an element, its scale, bolder and background color. This could be used as a visual reference when the authors want audience to look back/forward at a certain panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after clicked. 
+Highlighting the content (e.g., panels or element) when click/over a pointed element and changes style of all elements with given ID. Highlighting is worked by changing attribution of an element, its ``"scale"``, ``"bolder"`` and ``"background color"``. This could be used as a visual reference when the authors want audience to look back/forward at a certain panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after clicked. 
 
 #### Code example
 ```json
@@ -81,7 +98,7 @@ Highlighting the content (e.g., panels or element) when click/over a pointed ele
 }
 ```
 ### Load layout
-This operation can load a new layout and remove anything else by cklicking an pointed element. It works like an navigating founction in a website. For example, the creator can lead the audience to different versions (e.g., length style or content) of the story by using a global navigation manue above the comic.
+This operation can load a new layout and remove anything else ``"after"`` a specific panel by clicking an pointed ``"element"``. It works like an navigating founction in a website. For example, the creator can lead the audience to different versions (e.g., length style or content) of the story by using a global navigation manue on the top of the comic.
 #### Code example
 ```json
 { 
