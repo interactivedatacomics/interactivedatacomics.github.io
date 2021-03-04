@@ -1,7 +1,7 @@
 # Documentation 
 Comics are presented as a series of panenls that placed in certain layout that paves a visual narrative. For print comic creators, stories are often told across fixed, pre-determined page counts. While on the screen, the space a comic occupies is suddenly no longer fixed. The data, visualizations, panels, layout, order and storyline will be more dynamic. This tool allows you to control these elements with simple JSON spesicications, which deos not require an creator to have any pre-experience of programing. This documentation includes the descriptions and code examples for each configeration and opration.
 
-The **basics** has Panels, Layout, Variables and Classes, which set up materials that prepared for interactive **operations**.
+The **basics** has Panels, Layout, Variables and Classes, which set up materials that prepared for interactive [**operations**] (#operations).
 
 ## Basics
 
@@ -19,7 +19,7 @@ Make sure the image is ``".svg"`` or ``".phg"``, and the ``"url"`` should be a d
 ```
 
 ### layout
-Different layouts or different version of contents can be set in ``"layouts": [ ]``, give each layout a name then it could be called directly in the **Load layout** operation. Here are three examples of how to use the an array to build up different layouts. (*tip:* if you have several panels that are placed together and will be fixed forever, you can export and manege them as 'one' panel.)
+Different layouts or different version of contents can be set in ``"layouts": [ ]``, give each layout a name then it could be called directly in the **Load layout** operation. Here are three examples of how to use the an array to build up different layouts. (*tip:* if you have several panels that are placed together and will be fixed forever (no interaction will dissassemble this panel group), you can export and manege these panels as 'one' panel (one single image).)
 
 ```json
 "layouts": [
@@ -69,7 +69,8 @@ Different layouts or different version of contents can be set in ``"layouts": [ 
 ```
 
 ### Classes
-xxx
+If you want manage elements by groups, design the groups in ``"classes"``, assign each group a name for calling in operation. For example, highlighting all elements in the comic relating France.
+
 ```json
 "classes": [
 {
