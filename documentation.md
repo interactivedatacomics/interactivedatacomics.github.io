@@ -35,6 +35,7 @@ The comic layout is specified inside the  `layouts` array. You can specify alter
 Each layout needs a unique `name`. (*tip:* if you have several panels that are placed together and will be fixed forever (no interaction will dissassemble this panel group), you can export and manege these panels as 'one' panel (one single image).)
 
 ```json
+{
 "currentLayout": "myLayout",
 "layouts": [
    {
@@ -42,6 +43,7 @@ Each layout needs a unique `name`. (*tip:* if you have several panels that are p
       "panels": [[1,2,3], [4,5,6]]
    }
 ]
+}
 ```
 This exmple will load six panels, three in each row. 
 
