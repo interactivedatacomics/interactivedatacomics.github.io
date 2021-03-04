@@ -182,8 +182,11 @@ The following example loads a new set of panels when clicking onto panel 5.
 ```
 
 
-### Replace
-Replace a panel with ``"newpanels"`` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"panel_12"`` indicates the panel with the ``"id"`` of '12'.
+### Replace 
+
+<p style="color:#FF0000";>CHECK</p>
+
+This operation will replace a panel with `newpanels` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"panel_12"`` indicates the panel with the ``"id"`` of '12'.
 ```json
 {
    "trigger": "click",
@@ -197,8 +200,13 @@ Replace a panel with ``"newpanels"`` after doing ``"click"`` or ``"mouseover"`` 
   }
 ```
 
-## Condition
- Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
+<p style="color:#FF0000";>REMOVE OPERATION</p>
+
+# Conditions
+
+Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
+
+<p style="color:#FF0000";>what is this example doing? </p>
 
 ```json
 { 
