@@ -99,9 +99,21 @@ Highlighting the content (e.g., panels or element) when ``"click"`` or ``"mouseo
    "url": ""
 }
 ```
+ ### Append
+Appends set of panels or layout after given panel, this operation can be used for different narrative purpose, e.g., adding a branch to the storyline from a certain point; provising more details by drilling down from this panel; revealing the answer for a question rised in the panel; hinding a punchline and etc. Note this operation will not romove or replace any panles. If you want remove any panle and load new panels, use "Load layout".
+```json
+{
+   "trigger": "click",
+   "element": "panel_6",
+   "operation": "append",
+   "after": "panel_7",
+   "newpanels": ["panel_11"]
+}
+```
+
 ### Load layout
 This operation can load a new layout and remove anything else ``"after"`` a specific panel by clicking the ``"element"``. It works similar to an navigating founction in a website. For example, the creator can lead the audience to different versions (e.g., length style or content) of the story by using a global navigation manue on the top of the comic.
-#### Code example
+
 ```json
 { 
    "trigger": "click",
@@ -119,30 +131,20 @@ This operation can load a new layout and remove anything else ``"after"`` a spec
 ```json
 { 
     "trigger": "click",    
-    "condition": ["if", "totalC02", > 10],
+    "condition": ["if", "totalC02", "> 10"],
     "operation": "loadlayout"
 }
 ```
 ```json
 {   
-    "condition": ["if", "totalC02", > 10],
+    "condition": ["if", "totalC02", "> 10"],
     "operation": "append"
 }
 ```
 
- ### Append
- appends set of panels /layout after given panel
-```json
-{
-   "trigger": "click",
-   "element": "panel_6",
-   "operation": "append",
-   "after": "panel_7",
-   "newpanels": ["panel_11"]
-}
-```
+
 ### Replace
-Replace a panel with new panels
+Replace a panel with ``"newpanels"`` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"panel_12"`` indicates the panel with the ``"id"`` of '12'.
 ```json
 {
    "trigger": "click",
@@ -152,10 +154,10 @@ Replace a panel with new panels
    "newpanels": [
     "panel_12",
     "panel_15"
-   ],
-   "flexwrap": false
+   ]
   }
 ```
+
 ## UI
 
 ### Slider
