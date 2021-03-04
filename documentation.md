@@ -85,7 +85,7 @@ If you want manage elements by groups, design the groups in ``"classes"``, assig
 
 ### Highlight
 
-Highlighting the content (e.g., panels or element) when click/over a pointed element and changes style of all elements with given ID. Highlighting is worked by changing attribution of an element, its ``"scale"``, ``"bolder"`` and ``"background color"``. This could be used as a visual reference when the authors want audience to look back/forward at a certain panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after clicked. 
+Highlighting the content (e.g., panels or element) when ``"click"`` or ``"mouseover"`` on a pointed ``"element"`` and changes style of element(s) or class(es) with given ID. Highlighting founctions by changing attribution of an element, its ``"scale"``, ``"bolder"`` and ``"background color"``. This could be used as a visual reference when the authors want audience to look back/forward at a certain panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after being clicked. 
 
 #### Code example
 ```json
@@ -99,7 +99,7 @@ Highlighting the content (e.g., panels or element) when click/over a pointed ele
 }
 ```
 ### Load layout
-This operation can load a new layout and remove anything else ``"after"`` a specific panel by clicking an pointed ``"element"``. It works like an navigating founction in a website. For example, the creator can lead the audience to different versions (e.g., length style or content) of the story by using a global navigation manue on the top of the comic.
+This operation can load a new layout and remove anything else ``"after"`` a specific panel by clicking the ``"element"``. It works similar to an navigating founction in a website. For example, the creator can lead the audience to different versions (e.g., length style or content) of the story by using a global navigation manue on the top of the comic.
 #### Code example
 ```json
 { 
@@ -128,18 +128,7 @@ This operation can load a new layout and remove anything else ``"after"`` a spec
     "operation": "append"
 }
 ```
-### Load layout
-loads a new layout and remove anything else
-```json
-{ 
-   "trigger": "click",
-   "operation": "loadLayout",
-   "element": "button2",
-   "layout": "mediumLayout",
-   "group": "group1",
-   "after": "group-name"
- }
-```
+
  ### Append
  appends set of panels /layout after given panel
 ```json
