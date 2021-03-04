@@ -8,10 +8,10 @@ This documentation covers:
 * [Data](#data)
 * [Operations](#operations)
 
-## Panels and Layout
+# Panels and Layout
 
 
-### Panels
+## Panels
 Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has a positive `id` and which will be used througout the spec to refer to this panel. The 'content' of ech panel is loaded from a `url` pointing to a URL where the image is hosted. You can host your SVGs or PNGs on any server in the world as long as the image or svg is publicly retievable throug a URL.
 
 #### Code example
@@ -28,7 +28,7 @@ Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Pan
 ]
 ```
 
-### Comic Layout
+## Comic Layout
 The comic layout is specified inside the  `layouts` array. You can specify alternative layouts which a user can load on demand using the **Load layout** operation. One layout needs to be set as the `currentLayout`.
 
 Each layout needs a unique `name`. (*tip:* if you have several panels that are placed together and will be fixed forever (no interaction will dissassemble this panel group), you can export and manege these panels as 'one' panel (one single image).)
@@ -44,7 +44,7 @@ Each layout needs a unique `name`. (*tip:* if you have several panels that are p
 ```
 This exmple will load six panels, three in each row. 
 
-### Types of layouts
+## Types of layouts
 
 A layout is modeled as a nested array, e.g., `[[1,2,[3,[4,5]]], [6,7]]` with the first two levels being mandatory. This layout spec will create the following layout:
 
@@ -57,11 +57,11 @@ A layout is modeled as a nested array, e.g., `[[1,2,[3,[4,5]]], [6,7]]` with the
 
 
 
-## Data
+# Data
 
 Our spec has some contructs to refer to data, helas, we're talking about data comics.
 
-### Classes
+## Classes
 Classes group visual elements within your elements into groups. Classes can be used to, e.g., highlight elements or otherwise refer to groups of elements. 
 
 Classes are only possible in `svg` panels and requires the elements you are refering to to have unique IDs, `id="myBar"` in the `svg` file. IDs can be the same across panels, e.g., if you have several panels with a bar chart, the first bar can always be called, e.g., `bar1`.
@@ -75,7 +75,7 @@ The following example groups three elements `france`, `germany`, `uk` under the 
 }
 ```
 
-### Variables 
+## Variables 
 Variables store numerical values. Variable values can be shown inside text through a place holder that has the same id to the variable, or used to render a number of ISOTYPE like symbols. Variables can be obatained from data, or through user input, e.g., using a slider (see below). 
 
 The optional `value` field specifies the default value if the variable is not set. 
@@ -119,9 +119,11 @@ The following example specifies variables with a default value. Two variables ar
 ```
 
 
-## Operations
+# Operations
 
-### Highlight
+Operations are the core of interactive data comics. Operations specify what should happen how.
+
+## Highlight
 
 Highlighting the content (e.g., panels or element) when ``"click"`` or ``"mouseover"`` on a pointed ``"element"`` and changes style of element(s) or class(es) with given ID. Highlighting founctions by changing attribution of an element, its ``"scale"``, ``"bolder"`` and ``"background color"``. This could be used as a visual reference when the authors want audience to look back/forward at a certain panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after being clicked. 
 
@@ -136,7 +138,7 @@ Highlighting the content (e.g., panels or element) when ``"click"`` or ``"mouseo
    "url": ""
 }
 ```
- ### Append
+## Append
 Appends set of panels or layout after given panel, this operation can be used for different narrative purpose, e.g., adding a branch to the storyline from a certain point; provising more details by drilling down from this panel; revealing the answer for a question rised in the panel; hinding a punchline and etc. Note this operation will not romove or replace any panles. If you want remove any panle and load new panels, use "Load layout".
 ```json
 {
