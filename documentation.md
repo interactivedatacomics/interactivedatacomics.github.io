@@ -119,23 +119,27 @@ The following example specifies variables with a default value. Two variables ar
 ]
 ```
 
-
 # Operations
 
 Operations are the core of interactive data comics. Operations specify what should happen how.
 
 ## Highlight
 
-Highlighting the content (e.g., panels or element) when ``"click"`` or ``"mouseover"`` on a pointed ``"element"`` and changes style of element(s) or class(es) with given ID. Highlighting founctions by changing attribution of an element, its ``"scale"``, ``"bolder"`` and ``"background color"``. This could be used as a visual reference when the authors want audience to look back/forward at a certain panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after being clicked. 
+The highlight operation can highlight content (e.g., panels or elements) upon a `trigger`; `click` or `mouseover` of a specified `element`. The highligth operations then highligths all elements with the same ID as the `element`. 
 
-#### Code example
+Highlighting can be used as a visual reference when the authors wants the audience to look back/forward at a certain panel or show that an element is the same across panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after being clicked. 
+
+The highlight operation can change the style of the element(s) or class(es) with given ID. How an element is highlighted can be defined through attrbutes `scale` (scales an element up (`scale` > 1) or down ( `scale` < 1), `border` or `color`. 
+
+The following example highlights all elements (across all panels) with the ID `france` on mouseover one of these elements. The highlight causes these elemnts to become red (`"color": "#f00"`), scaled up 30% (`"scale": 1.3,`).
+
 ```json
 {
    "trigger": "mouseover",   
-   "element": "panel_6",
+   "element": "france",
    "operation": "highlight",
    "scale": 1.3,
-   "background-color": "#666",
+   "color": "#f00",
    "url": ""
 }
 ```
