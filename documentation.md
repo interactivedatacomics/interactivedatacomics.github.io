@@ -49,8 +49,12 @@ This exmple will load six panels, three in each row.
 A layout is modeled as a nested array, e.g., `[[1,2,[3,4]], [5,6]]` with the first two levels being mandatory.
 
 * The first array contains all panels. It is always there. 
-* The second level, e.g., `[[1,2,[3,4]]` and `[5,6]`, sets rows
+* The second level, e.g., `[[1,2,[3,4]]` and `[5,6]`, groups panels into rows
 * the third level, e.g., `[3,4]` in our example, puts two panels, the first above the other within the same row.
+
+For example, the layout `[[1,2,[3,4]], [5,6]]` will create the following layout:
+
+@ZEZHONG: PICTURE HERE
 
 
 ## Data
