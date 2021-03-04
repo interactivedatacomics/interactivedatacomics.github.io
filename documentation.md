@@ -68,11 +68,16 @@ The following example groups three elements `france`, `germany`, `uk` under the 
 "classes":{
   "name": "countries",
   "elements":["france", "germany", "uk"]
-}]
+}
 ```
 
 ### Variables 
-``"variables" `` stores all data of the comic, those data might be presented as a number by replacing a place holder that has the same id to the variable ``"name"``. ``"value"`` is the default value you give, and you can define your formula in ``"what"``. The variables setted here can be visualizad by the "isotype" operation.
+Variables store numerical values. Variable values can be shown inside text through a place holder that has the same id to the variable, or used to render a number of ISOTYPE like symbols. Variables can be obatained from data, or through user input, e.g., using a slider (see below). 
+
+The optional `value` field specifies the default value if the variable is not set. 
+You can create calculated variables by functions, expressed though `what`. 
+
+The following example specifies variables with a default value. Two variables are based on functions. 
 
 ```json
 "variables":[
