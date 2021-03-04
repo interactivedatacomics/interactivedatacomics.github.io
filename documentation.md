@@ -12,43 +12,60 @@ This documentation covers:
 
 
 ### Panels
-Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has an ``id"`` should be a positive integer, this number will be used to indicate this panel in the operations.
-Make sure the image is ``".svg"`` or ``".png"``, and the ``"url"`` should be a direct url to the image, you can upload your image folder in your own GitHub and copy the image url.
+Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has a positive `id` and which will be used througout the spec to refer to this panel. The 'content' of ech panel is loaded from a `url` pointing to a URL where the image is hosted. You can host your SVGs or PNGs on any server in the world as long as the image or svg is publicly retievable throug a URL.
 
 #### Code example
 ```json
 "panels":[
   {
       "id": 1,
-      "url":"mypanels/panel1.svg"}
-]
-```
-
-that are placed in certain layout that paves a visual narrative. For print comic creators, stories are often told across fixed, pre-determined page counts. While on the screen, the space a comic occupies is suddenly no longer fixed. 
-
-The **basics** has Panels, Layout, Variables and Classes, which set up materials that prepared for interactive [**operations**] (#operations).
-
-
-### layout
-Different layouts or different version of contents can be set in ``"layouts": [ ]``, give each layout a name then it could be called directly in the **Load layout** operation. Here are three examples of how to use the an array to build up different layouts. (*tip:* if you have several panels that are placed together and will be fixed forever (no interaction will dissassemble this panel group), you can export and manege these panels as 'one' panel (one single image).)
-
-```json
-"layouts": [
-   {
-      "name": "mediumLayout",
-      "panels": [[10,11,12], [13,14,15]]
+      "url":"mypanels/panel1.svg"
+  },
+  {
+      "id": 2,
+      "url":"mypanels/panel2.svg"
    }
 ]
 ```
 
-## Data
+### Comic Layout
+The comic layout is specified inside the  `layouts` array. You can specify alternative layouts which a user can load on demand using the **Load layout** operation. One layout needs to be set as the `currentLayout`.
 
-### Classes
-If you want manage elements by groups, design the groups in ``"classes"``, assign each group a name for calling in operation. For example, highlighting all elements in the comic relating France.
+Each layout needs a unique `name`. (*tip:* if you have several panels that are placed together and will be fixed forever (no interaction will dissassemble this panel group), you can export and manege these panels as 'one' panel (one single image).)
 
 ```json
-"classes": [
-{
+"currentLayout": "myLayout",
+"layouts": [
+   {
+      "name": "myLayout",
+      "panels": [[1,2,3], [4,5,6]]
+   }
+]
+```
+This exmple will load six panels, three in each row. 
+
+### Types of layouts
+
+A layout is modeled as a nested array, e.g., `[[1,2,[3,4]], [5,6]]` with the first two levels being mandatory.
+
+* The first array contains all panels. It is always there. 
+* The second level, e.g., `[[1,2,[3,4]]` and `[5,6]`, sets rows
+* the third level, e.g., `[3,4]` in our example, puts two panels, the first above the other within the same row.
+
+
+## Data
+
+Our spec has some contructs to refer to data, helas, we're talking about data comics.
+
+### Classes
+Classes group visual elements within your elements into groups. Classes can be used to, e.g., highlight elements or otherwise refer to groups of elements. 
+
+Classes are only possible in `svg` panels and requires the elements you are refering to to have unique IDs, `id="myBar"` in the `svg` file. IDs can be the same across panels, e.g., if you have several panels with a bar chart, the first bar can always be called, e.g., `bar1`.
+
+The following example groups three elements `france`, `germany`, `uk` under the class `countries`. Note that these classes work like classes in CSS, but any class attributes in your `svg` are ignored. 
+
+```json
+"classes":{
   "name": "countries",
   "elements":["france", "germany", "uk"]
 }]
