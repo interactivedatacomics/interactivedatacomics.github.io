@@ -50,6 +50,8 @@ After exporting the panel (next step), the `panel.svg` should have the IDs showi
 <rect id="c" x="231" y="275" width="46" height="70" fill="#C4C4C4"/>
 ```
 
+We also want out 'compare all' button show some more panels. We give all three instances in our panels the id `compare`. 
+
 ## 1.3 Exporting Panels
 
 We can now export each panel into its own file, either '.png' or '.svg'. In Figma, we do this by:
@@ -202,5 +204,9 @@ The second operation (`"operation": "append"`) shows a new panel below the other
   }
 ]
 ```
+
+Last, we want a click onto the button *compare* to replace the current large panel with the time series to be replaced by three smaller panels showing all three time series at the same time. 
+
+<p style="background-color:red;">INCLUDE CORRECT OPERATION HERE</p>.
 
 Read the [documentation](documentation.html) to learn about the other operations.
