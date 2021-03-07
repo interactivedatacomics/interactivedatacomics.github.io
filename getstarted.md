@@ -28,26 +28,27 @@ Creating panels as '.svg' allows for more interactivity than `.png` files becaus
 
 In our case, we have drawn the following three panels in Figma, an open vector graphics tool. We must draw any panels that we want to show at any point in our comic. In our example, we start by showing 2 panels and show one more panel on demand. 
 
-When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma. The below image, we show all 8 panels that a user can eventually see in this example.
+When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma. The below image, we show all 8 panels that a user can eventually see in this example since we created them in the same file.
 
 ![](getstarted/panels/allpanels.png)
 
-## 1
-.2 Name elements in SVG panels
+## 1.2 Name elements in SVG panels
 
-To make elements *inside* our panels interactive, we give those elements IDs which will appear as `id` in the SVG file like so: 
-
-`<circle id="myCircle" cx="50" cy="50" r="40"/>`
-
-IDs should be unique inside each panel. 
+To make elements *inside* our panels interactive, we give those elements IDs which will appear as `id` in the SVG file like so. In the example below, we name elements in our first panbel `price.svg`. IDs should be unique inside each panel. 
 
 To create IDs in Figma, simply change the name of an object in the item list on the left. Alternatively, you can open the exported SVG file using any text editor and add the ID attribute as in the example above. 
 
-In our example, we label the three bars in each chart/panel with the IDa `A`, `B`, and `C`. We should label the same element in our comic **always** with the same ID as this allows to, e.g., highlight all occurances of this element later. 
+In our example, we label the three bars in each chart/panel with the IDa `a`, `b`, and `c`. We should label the same element in our comic **always** with the same ID as this allows to, e.g., highlight all occurances of this element later. 
 
-<p style="background-color:red;">UPDATE</p>
+After exporting the panel (next step), the `panel.svg` should have the IDs showing in the file: 
 
-## 1.2 Exporting Panels
+```svg
+<rect id="a" x="121" y="145" width="46" height="200" fill="#C4C4C4"/>
+<rect id="b" x="176" y="215" width="46" height="130" fill="#C4C4C4"/>
+<rect id="c" x="231" y="275" width="46" height="70" fill="#C4C4C4"/>
+```
+
+## 1.3 Exporting Panels
 
 We now export each panel into its own file, either '.png' or '.svg'. In Figma, we do this by:
 * selecting all elements in a panel, including the panel frame,
@@ -66,7 +67,7 @@ We repeat this for each panel. In our case, we end up with X panels, which we ca
 * `sales-b-small.svg`
 * `sales-c-small.svg`
 
-## 1.3 Store Panels
+## 1.4 Store Panels
 
 Next, we need to store the panel on a public space in the web. If you do not have your own server, greate a public and free [GitHub](https://github.com) repository. Then, upload all your panels, which should look like so: 
 
@@ -82,7 +83,6 @@ In the new page that opens, copy the URL from your browser window. That is your 
 * [https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg)
 * [https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a.svg.svg](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a.svg)
 * and to forth. 
-
 
 
 Voila, we can now move the scripting language. 
