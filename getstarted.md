@@ -17,11 +17,29 @@ Panels are the core of your (interactive)(data) comic and you will spend a signi
 
 ### 1.1 Drawing Panels
 
-Panels are created using any drawing tool you like. Generally, we distinguish between the follwing two *formats*. 
-* **Vector graphics:** which can export to the scalable vector graphic ('.svg') format. Commonly used tools include Adobe Illustrator, [Figma](https://www.figma.com) (which is free to use), Sketch, etc. 
-* **Pixel graphics:** export into common '.png' files. The most prominent example tool is Adobe Photoshop, etc.
+Panels are created using any drawing tool you like. Generally, we distinguish between the follwing two *formats*:
 
-You can also draw panels by hand, scan them, and save them as '.png' files. 
+* **Vector graphics:** which can export to the scalable vector graphic (`.svg`) format. Commonly used tools include Adobe Illustrator, [Figma](https://www.figma.com) (which is free to use), Sketch, etc. 
+* **Pixel graphics:** export into common `.png` files. The most prominent example tool is Adobe Photoshop, etc.
+
+You can also draw panels by hand, scan them, and save them as `.png` files. 
+
+Creating panels as '.svg' allows for more interactivity than `.png` files because we can describe elements inside the panels and reuse them for interactivity.
+
+In our case, we have drawn the following three panels in Figma, an open vector graphics tool. We must draw any panels that we want to show at any point in our comic. In our example, we start by showing 3 panels and show one more panel on demand. 
+
+When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma like so: 
+
+<img style="background-color:red;">PICTURE</img>
+
+
+### 1.2 Name elements in SVG pabels
+
+To make elements *inside* our panels interactive, we give those elements IDs which will appear as `id` in the SVG file like so: 
+
+`<circle id="myCircle" cx="50" cy="50" r="40"/>`
+
+To create IDs in Figma, simply change the name of an object in the item list on the left. Alternatively, you can open the exported SVG file using any text editor and add the ID attribute as in the example above. 
 
 ### 1.2 Exporting Panels
 Export each panel into its own file, either '.png' or '.svg'.
@@ -30,6 +48,7 @@ In our case, we have 3 panels, which we name as follows:
 * 'panel-1.svg'
 * 'panel-2.svg'
 * 'panel-3.svg'
+* 'panel-4.svg'
 
 
 ### 1.3 Store Panels
