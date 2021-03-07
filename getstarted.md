@@ -71,7 +71,7 @@ Next, we need to store the panel on a public space in the web. If you do not hav
 
 To get the public URL for each pabel, click on each file and click the `Raw` button in the menu bar just above the panel image: 
 
-![](figures/tut-raw.png)
+![](getstarted/tut-raw.png)
 
 In the new page that opens, copy the URL from your browser window. That is your panel's URL. In our case, we obtained the following URLs. You can use these URLs in for the rest of the tutorial, you do not have to upload these panels again. 
 
