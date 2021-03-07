@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="420" height="345" src="https://youtu.be/ZWvE26mocx4">
+</iframe>
+
+</body>
+</html>
+
 # Interactive Data Comics
 
 [Data comics](https://datacomics.github.io) are a way of effectively communicating with data through data visualizations. They are inspired by the visual language of comics. This project adds interactivity of data comics to support exploration, explanation, and engagement. Interactions include: highligting elemnts, adding and removing panels, interactive sliders and other UI elemnts. 
