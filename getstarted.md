@@ -92,7 +92,21 @@ In a nutshell, JSON consiste of key-value pairs in the form of `"key": value`. T
 * a number, written as `123`, `1`, `1.0`, `0.545`, `.545`.
 * a text (string), written inside `"`: `"some text here"`.
 * an array (a list of objects), written inside `[` and `]`, separated by commas: `[1,2,3]`, `["hello","my","friend!"]`.
-* an object (another set of key-value pairs), written inside  `{` and `}`, separated by commas:: ```{"name":"Bert", "age": 28, "hobbies":["reading", "drawing", "walking"]}```
+* an object (another set of key-value pairs), written inside  `{` and `}`, separated by commas: 
+ 
+```json
+{
+  "name": "Bert", 
+  "age": 28, 
+  "hobbies":[
+    "reading", 
+    "drawing", 
+    "walking"
+  ]
+}
+```
+
+Note that intendation is not important but greatly improves readability.
 
 From here on, you can simply copy-paste our examples and modify them on your own. 
 
