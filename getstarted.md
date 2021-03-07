@@ -30,7 +30,7 @@ In our case, we have drawn the following three panels in Figma, an open vector g
 
 When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma like so: 
 
-<img style="background-color:red;">PICTURE</img>
+<p style="background-color:red;">PICTURE</p>
 
 
 ### 1.2 Name elements in SVG pabels
@@ -39,16 +39,18 @@ To make elements *inside* our panels interactive, we give those elements IDs whi
 
 `<circle id="myCircle" cx="50" cy="50" r="40"/>`
 
+IDs should be unique inside each panel. 
+
 To create IDs in Figma, simply change the name of an object in the item list on the left. Alternatively, you can open the exported SVG file using any text editor and add the ID attribute as in the example above. 
 
 ### 1.2 Exporting Panels
 Export each panel into its own file, either '.png' or '.svg'.
 
 In our case, we have 3 panels, which we name as follows: 
-* 'panel-1.svg'
-* 'panel-2.svg'
-* 'panel-3.svg'
-* 'panel-4.svg'
+* `panel-1.svg`
+* `panel-2.svg`
+* `panel-3.svg`
+* `panel-4.svg`
 
 
 ### 1.3 Store Panels
