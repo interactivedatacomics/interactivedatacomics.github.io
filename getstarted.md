@@ -155,7 +155,11 @@ Our engine will retrieve the pictures from these URLs.
 Second, we need to specify how panels are laid out. The layout design should have happend in the [design phase](#11-drawing-panels).
 The panel width for each panel is specified in side each panel SVG or PNG file. All we need to do is tell the order and when to start a new row. 
 
-Layouts are specified as nested arrays or pa. The following example produces the layout in the figure below. To learn more about layouts, check our [documentation](documentation.html#comic-layout).
+Layouts are specified as *nested* arrays using squared brakets `[]`. We create a layout with 2 rows; 3 panels in the first row `[1,2,3]` and 2 panels in the second row `[4, 5]`. We place both arrays into an array.
+
+`[[1,2,3], [4,5]]` 
+
+The following example produces the layout in the figure below. To learn more about layouts, check our [documentation](documentation.html#comic-layout).
 
 ```json
 "layouts": [
@@ -164,9 +168,11 @@ Layouts are specified as nested arrays or pa. The following example produces the
       "panels": [[1,2,3], [4,5,6]]
    }
 ]
+```
 
+ 
 
-
+<p style="background-color:red;">PICTURE</p>
 
 # Specify Data
 
