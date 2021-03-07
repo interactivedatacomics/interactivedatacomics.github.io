@@ -82,7 +82,59 @@ In the new page that opens, copy the URL from your browser window. That is your 
 
 Voila, we can now move the scripting language. 
 
-# Specify Layout
+# 2 Specify Layout
+
+## 2.1 JSON
+
+The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON). You do not have to be familiar with JSON as our specification is quite simple. 
+
+In a nutshell, JSON consiste of key-value pairs in the form of `"key": value`. The *key*-part is always surrounded by `"`. The *value*-part can be one of four types: 
+* a number, written as `123`, `1`, `1.0`, `0.545`, `.545`.
+* a text (string), written inside `"`: `"some text here"`.
+* an array (a list of objects), written inside `[` and `]`, separated by commas: `[1,2,3]`, `["hello","my","friend!"]`.
+* an object (another set of key-value pairs), written inside  `{` and `}`, separated by commas:: ```{"name":"Bert", "age": 28, "hobbies":["reading", "drawing", "walking"]}```
+
+From here on, you can simply copy-paste our examples and modify them on your own. 
+
+
+## 2.1 Load Panels 
+
+First, we load our panels. This happens by specifying the URL and a panel ID for each panel, inside the `panels` array. 
+
+```json
+"panels":[
+  {
+      "id": 1,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-1.svg"
+  },
+  {
+      "id": 2,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-2.svg"
+   }, 
+   {
+      "id": 3,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-3.svg"
+   },
+   {
+      "id": 4,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-4.svg"
+   }
+]
+```
+
+
+First, we need to specify how panels are laid out. The panel width for each panel is specified in side each panel SVG or PNG file. All we need to do is tell the order and when to start a new row. 
+
+Layouts are specified as nested arrays or pa. The following example produces the layout in the figure below. To learn more about layouts, check our [documentation](documentation.html#comic-layout).
+
+```json
+"layouts": [
+   {
+      "name": "myLayout",
+      "panels": [[1,2,3], [4,5,6]]
+   }
+]
+
 
 
 
