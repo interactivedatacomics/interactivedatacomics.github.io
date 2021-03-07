@@ -56,17 +56,31 @@ We now export each panel into its own file, either '.png' or '.svg'. In Figma, w
 * Change PNG to SVG
 * Click the `Export XXX ` button. 
 
-We repeat this for each panel. In our case, we end up with X panels, which we can name as we like: 
+We repeat this for each panel. In our case, we end up with X panels, which we can give any name we like, e.g.,:
 * `panel-1.svg`
 * `panel-2.svg`
 * `panel-3.svg`
 * `panel-4.svg`
 
 
-
 ### 1.3 Store Panels
 
+Next, we need to store the panel on a public space in the web. If you do not have your own server, greate a public and free [GitHub](https://github.com) repository. Then, upload all your panels, which should look like so: 
 
+<p style="background-color:red;">PICURE</p>
+
+To get the public URL for each pabel, click on each file and click the `Raw` button in the menu bar just above the panel image: 
+
+![](figures/tut-raw.png)
+
+In the new page that opens, copy the URL from your browser window. That is your panel's URL. In our case, we obtained the following URLs. You can use these URLs in for the rest of the tutorial, you do not have to upload these panels again. 
+
+* `https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-1.svg`
+* `https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-2.svg`
+* `https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-3.svg`
+* `https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-4.svg`
+
+Voila, we can now move the scripting language. 
 
 # Specify Layout
 
