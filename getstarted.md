@@ -70,7 +70,7 @@ We repeat this for each panel. In our case, we end up with X panels, which we ca
 
 Next, we need to store the panel on a public space in the web. If you do not have your own server, greate a public and free [GitHub](https://github.com) repository. Then, upload all your panels, which should look like so: 
 
-![](getstarted/files.png)
+![](getstarted/panels/files.png)
 
 To get the public URL for each pabel, click on each file and click the `Raw` button in the menu bar just above the panel image: 
 
