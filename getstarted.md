@@ -1,6 +1,6 @@
 # Get Started
 
-Using a simple example, this page gives a step-by-step overview how you can create an interactive data comic using propriatary drawing tools and our [specification](documentation.html). 
+Using a simple example, this page gives a step-by-step overview how you can create an interactive data comic using propriatary drawing tools and our [specification](documentation.html). In this example, we will create a simple comic that starts with 2 panels, highlights elements, and adds more panels on demand. The final comic can be found here: <p style="background-color:red;">INCLUDE URL</p>.
 
 The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels.   
 
@@ -26,14 +26,14 @@ You can also draw panels by hand, scan them, and save them as `.png` files.
 
 Creating panels as '.svg' allows for more interactivity than `.png` files because we can describe elements inside the panels and reuse them for interactivity.
 
-In our case, we have drawn the following three panels in Figma, an open vector graphics tool. We must draw any panels that we want to show at any point in our comic. In our example, we start by showing 3 panels and show one more panel on demand. 
+In our case, we have drawn the following three panels in Figma, an open vector graphics tool. We must draw any panels that we want to show at any point in our comic. In our example, we start by showing 2 panels and show one more panel on demand. 
 
-When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma like so: 
+When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma. The below image, we show all 8 panels that a user can eventually see in this example.
 
-<p style="background-color:red;">PICTURE</p>
+![](getstarted/panels/allpanels.png)
 
-
-## 1.2 Name elements in SVG panels
+## 1
+.2 Name elements in SVG panels
 
 To make elements *inside* our panels interactive, we give those elements IDs which will appear as `id` in the SVG file like so: 
 
