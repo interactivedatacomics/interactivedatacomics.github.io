@@ -11,17 +11,19 @@ The steps we  are as follows:
 * [Specify operations](#specify-operations)
 
 
-# Creating Panels
+# 1 Creating Panels
 
+Panels are the core of your (interactive)(data) comic and you will spend a significant amount of time scripting and drawing your comic
 
-## Drawing Panels
+### 1.1 Drawing Panels
+
 Panels are created using any drawing tool you like. Generally, we distinguish between the follwing two *formats*. 
 * **Vector graphics:** which can export to the scalable vector graphic ('.svg') format. Commonly used tools include Adobe Illustrator, [Figma](https://www.figma.com) (which is free to use), Sketch, etc. 
 * **Pixel graphics:** export into common '.png' files. The most prominent example tool is Adobe Photoshop, etc.
 
 You can also draw panels by hand, scan them, and save them as '.png' files. 
 
-## Exporting Panels
+### 1.2 Exporting Panels
 Export each panel into its own file, either '.png' or '.svg'.
 
 In our case, we have 3 panels, which we name as follows: 
@@ -30,7 +32,7 @@ In our case, we have 3 panels, which we name as follows:
 * 'panel-3.svg'
 
 
-## Store Panels
+### 1.3 Store Panels
 
 
 
