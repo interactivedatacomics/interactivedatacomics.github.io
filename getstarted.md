@@ -123,9 +123,9 @@ An object (hence the name *object notation*) is another set of key-value pairs, 
 As you see, objects can contain objects, which in turn can contain other objects and so on. Note that intendation is not important but greatly improves readability.
 
 
-## 2.1 Load Panels 
+## 2.1 Specify Panels 
 
-First, we load our panels. This happens by specifying the URL and a panel ID for each panel, inside the `panels` array. 
+First, we load our panels. This happens by specifying the URL and a panel ID for each panel, inside the `panels` array. Effectively, each panel is an object with two attriebutes (key-value pairs): `id` and `url`.
 
 ```json
 "panels":[
@@ -148,8 +148,12 @@ First, we load our panels. This happens by specifying the URL and a panel ID for
 ]
 ```
 
+Our engine will retrieve the pictures from these URLs.
 
-First, we need to specify how panels are laid out. The panel width for each panel is specified in side each panel SVG or PNG file. All we need to do is tell the order and when to start a new row. 
+## 2.2 Specify Panels 
+
+Second, we need to specify how panels are laid out. The layout design should have happend in the [design phase](#11-drawing-panels).
+The panel width for each panel is specified in side each panel SVG or PNG file. All we need to do is tell the order and when to start a new row. 
 
 Layouts are specified as nested arrays or pa. The following example produces the layout in the figure below. To learn more about layouts, check our [documentation](documentation.html#comic-layout).
 
