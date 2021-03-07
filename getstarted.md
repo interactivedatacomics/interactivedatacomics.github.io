@@ -4,7 +4,7 @@ Using a simple example, this page gives a step-by-step overview how you can crea
 
 <p style="background-color:red;">INCLUDE URL</p>.
 
-You can download the [JSON specification for this example here](getstarted/tutoria.json).
+You can download the [JSON specification for this example here](getstarted/tutorial.json).
 
 The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels.   
 
