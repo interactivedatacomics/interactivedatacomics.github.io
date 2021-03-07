@@ -95,7 +95,7 @@ Voila, we can now move the scripting language.
 
 The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON). You do not have to be familiar with JSON as our specification is quite simple. From here on, you can simply copy-paste our examples and modify them on your own. 
 
-If you have never heard of JSON before, check this brief [introduction](json-intro.html)
+If you have never heard of JSON before, check this brief [introduction](json-intro.html).
 
 All of the following code of this tutorial should be surrounded by a pair of curly brakets "`{}`".
 
