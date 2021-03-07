@@ -1,4 +1,4 @@
-# Get Started with Interactive Data Comcis
+# Get Started
 
 Using a simple example, this page gives a step-by-step overview how you can create an interactive data comic using propriatary drawing tools and our [specification](documentation.html). In this example, we will create a simple comic that starts with 2 panels, highlights elements, and adds more panels on demand. The final comic can be found here: 
 
