@@ -7,8 +7,7 @@ The specification is written in [Java Script Object Notation (JSON)](https://en.
 The steps we  are as follows: 
 * [1 Creating Panels](#creating-panels)
 * [2 Specify layout](#specify-layout)
-* [3 Specify data](#specify-data)
-* [4 Specify operations](#specify-operations)
+* [3 Specify operations](#specify-operations)
 
 
 # 1 Creating Panels
