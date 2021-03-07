@@ -54,8 +54,6 @@ We now export each panel into its own file, either '.png' or '.svg'. In Figma, w
 * grouping these elements ( right-click > Group Selection),
 * Select the small `+` sign besides `Export` in the menu on the right
 * Change PNG to SVG
-* Click on the 3 dots `...` 
-* Make sure 'Include "id" Attribute' is selected
 * Click the `Export XXX ` button. 
 
 We repeat this for each panel. In our case, we end up with X panels, which we can give any name we like, e.g.,:
@@ -77,10 +75,10 @@ To get the public URL for each pabel, click on each file and click the `Raw` but
 
 In the new page that opens, copy the URL from your browser window. That is your panel's URL. In our case, we obtained the following URLs. You can use these URLs in for the rest of the tutorial, you do not have to upload these panels again. 
 
-* `https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-1.svg`
-* `https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-2.svg`
-* `https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-3.svg`
-* `https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-4.svg`
+* [`https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.svg`]()https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.svg)
+* [`https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.1.svg`](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.1.svg)
+* [`https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.2.svg`](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.2.svg)
+* and so forth.
 
 Voila, we can now move the scripting language. 
 
@@ -133,19 +131,27 @@ First, we load our panels. This happens by specifying the URL and a panel ID for
 "panels":[
   {
       "id": 1,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-1.svg"
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.svg"
   },
   {
       "id": 2,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-2.svg"
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.1.svg"
    }, 
    {
       "id": 3,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-3.svg"
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.2.svg"
    },
    {
       "id": 4,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/master/getstarted/panel-4.svg"
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.3.svg"
+   },
+   {
+      "id": 5,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.4.svg"
+   },
+   {
+      "id": 6,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.5.svg"
    }
 ]
 ```
@@ -157,11 +163,15 @@ Our engine will retrieve the pictures from these URLs.
 Second, we need to specify how panels are laid out. The layout design should have happend in the [design phase](#11-drawing-panels).
 The panel width for each panel is specified in side each panel SVG or PNG file. All we need to do is tell the order and when to start a new row. 
 
-Layouts are specified as *nested* arrays using squared brakets `[]`. We create a layout with 2 rows; 3 panels in the first row `[1,2,3]` and 2 panels in the second row `[4, 5]`. We place both arrays into an array.
+Layouts are specified as *nested* arrays using squared brakets `[]`. We create a layout with 2 rows; 3 panels in the first row `[1,2,3]` and 2 panels in the second row `[4, 5]`. We place both arrays into an array to indicate rows (our specifcation supports a [wide range of layout options](documentation.html#comic-layout)).
 
 `[[1,2,3], [4,5]]` 
 
-The following example produces the layout in the figure below. To learn more about layouts, check our [documentation](documentation.html#comic-layout).
+This will create the following layout:
+
+<p style="background-color:red;">PICTURE</p>
+
+Once we have "written" the layout, we give the layout a `name` and add it to a `layouts` array (give the layout any name you like, here we call it `myLayout`):
 
 ```json
 "layouts": [
@@ -172,12 +182,16 @@ The following example produces the layout in the figure below. To learn more abo
 ]
 ```
 
- 
+The `layouts` array allows you to add multiple layouts and [switch between the layouts  interactively](documentation.html#load-layout). Lastly, we need indicate the layout we want to start with: 
 
-<p style="background-color:red;">PICTURE</p>
+```json
+"currentLayout":"myLayout"
+```
 
-# Specify Data
-
-
-
+At this point, 
 # Specify Operations
+
+
+
+
+
