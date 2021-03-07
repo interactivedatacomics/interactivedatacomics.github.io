@@ -1,0 +1,43 @@
+{
+"currentLayout": "init", 
+"layout": [
+   {
+      "name": "init",
+      "panels": [[1,2]]
+   }
+],
+"panels":[
+  {
+      "id": 1,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/price.svg"
+  },
+  {
+      "id": 2,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg"
+  },
+  {
+      "id": 3,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a.svg"
+  },
+  {
+      "id": 4,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-b.svg"
+  },
+  {
+      "id": 5,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-c.svg"
+  },
+  {
+      "id": 6,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a-small.svg"
+  },
+  {
+      "id": 7,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-b-small.svg"
+  },
+  {
+      "id": 8,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-c-small.svg"
+  }
+]
+}
