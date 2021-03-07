@@ -57,11 +57,14 @@ We now export each panel into its own file, either '.png' or '.svg'. In Figma, w
 * Click the `Export XXX ` button. 
 
 We repeat this for each panel. In our case, we end up with X panels, which we can give any name we like, e.g.,:
-* `panel-1.svg`
-* `panel-2.svg`
-* `panel-3.svg`
-* `panel-4.svg`
-
+* `price.svg`
+* `units.svg`
+* `sales-a.svg`
+* `sales-b.svg`
+* `sales-c.svg`
+* `sales-a-small.svg`
+* `sales-b-small.svg`
+* `sales-c-small.svg`
 
 ## 1.3 Store Panels
 
@@ -75,10 +78,12 @@ To get the public URL for each pabel, click on each file and click the `Raw` but
 
 In the new page that opens, copy the URL from your browser window. That is your panel's URL. In our case, we obtained the following URLs. You can use these URLs in for the rest of the tutorial, you do not have to upload these panels again. 
 
-* [`https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.svg`]()https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.svg)
-* [`https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.1.svg`](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.1.svg)
-* [`https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.2.svg`](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.2.svg)
-* and so forth.
+* [https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/price.svg](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/price.svg)
+* [https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg)
+* [https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a.svg.svg](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a.svg)
+* and to forth. 
+
+
 
 Voila, we can now move the scripting language. 
 
@@ -88,7 +93,7 @@ Voila, we can now move the scripting language.
 
 The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON). You do not have to be familiar with JSON as our specification is quite simple. From here on, you can simply copy-paste our examples and modify them on your own. 
 
-In a nutshell, JSON consiste of key-value pairs in the form of `"key": value`. The *key*-part is always surrounded by `"`. The *value*-part can be one of four types: 
+In a nutshell, JSON consists of key-value pairs in the form of `"key": value`. The *key*-part is always surrounded by `"`. The *value*-part can be one of four types: 
 
 ### Numbes 
 Numbers are written as `123`, `1`, `1.0`, `0.545`, `.545`.
@@ -131,28 +136,36 @@ First, we load our panels. This happens by specifying the URL and a panel ID for
 "panels":[
   {
       "id": 1,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.svg"
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/price.svg"
   },
   {
       "id": 2,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.1.svg"
-   }, 
-   {
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg"
+  },
+  {
       "id": 3,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.2.svg"
-   },
-   {
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a.svg"
+  },
+  {
       "id": 4,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.3.svg"
-   },
-   {
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-b.svg"
+  },
+  {
       "id": 5,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.4.svg"
-   },
-   {
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-c.svg"
+  },
+  {
       "id": 6,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/1.5.svg"
-   }
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a-small.svg"
+  },
+  {
+      "id": 7,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-b-small.svg"
+  },
+  {
+      "id": 8,
+      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-c-small.svg"
+  }
 ]
 ```
 
@@ -163,21 +176,17 @@ Our engine will retrieve the pictures from these URLs.
 Second, we need to specify how panels are laid out. The layout design should have happend in the [design phase](#11-drawing-panels).
 The panel width for each panel is specified in side each panel SVG or PNG file. All we need to do is tell the order and when to start a new row. 
 
-Layouts are specified as *nested* arrays using squared brakets `[]`. We create a layout with 2 rows; 3 panels in the first row `[1,2,3]` and 2 panels in the second row `[4, 5]`. We place both arrays into an array to indicate rows (our specifcation supports a [wide range of layout options](documentation.html#comic-layout)).
+Layouts are specified as *nested* arrays using squared brakets `[]`. We create a layout with 1 row that contains our first two panels `1` and `2`. We place both numbers into an array `[1,2]` to indicate that they should appear on the *same* row (our specifcation supports a [wide range of layout options](documentation.html#comic-layout)).
 
-`[[1,2,3], [4,5]]` 
+`[1,2]`
 
-This will create the following layout:
-
-<p style="background-color:red;">PICTURE</p>
-
-Once we have "written" the layout, we give the layout a `name` and add it to a `layouts` array (give the layout any name you like, here we call it `myLayout`):
+Now, we give the layout a `name` and add it to a `layouts` array (give the layout any name you like, here we call it `myLayout`). We move our pabel specification from above (`[1,2]`) into the array of the `"panels"` attribute. The outer array allows us to add more rows later.
 
 ```json
-"layouts": [
+"layout": [
    {
-      "name": "myLayout",
-      "panels": [[1,2,3], [4,5,6]]
+      "name": "init",
+      "panels": [[1,2]]
    }
 ]
 ```
@@ -185,13 +194,38 @@ Once we have "written" the layout, we give the layout a `name` and add it to a `
 The `layouts` array allows you to add multiple layouts and [switch between the layouts  interactively](documentation.html#load-layout). Lastly, we need indicate the layout we want to start with: 
 
 ```json
-"currentLayout":"myLayout"
+"currentLayout": "init"
 ```
 
-At this point, 
-# Specify Operations
+At this point, we can run our code, which you can [see here]().
 
+# 3 Specify Operations
 
+Now, we can specify operations to make our comic interactive. Any operation is a JSON object in the `operations` array: 
 
+```json
+"operations":[]
+```
 
+In the following, we specify to operations; 
+The first operation highlights (`"operation": "highlight"`) all occurances of element `A` when the user hovers (`"trigger": "mouseover"`) any element with the id `a` (`"element": "a"`). The highlighted elements will become red (`"after": {"style": {"fill": "red"}}"`).
 
+The second operation (`"operation": "append"`) shows a new panel below the other panels (`"after": 2`) when the user clicks (`"trigger": "click"`) on any elemnt with the id `a` (`"element": "a"`). The new panel is shown in a new row  (`"newpanels": [[3]]`). 
+ 
+```json
+"operations":[
+  {   
+     "trigger": "mouseover", 
+     "element": "a",
+     "operation": "highlight", 
+     "after": {"style": {"fill": "red"}}
+  },
+  {
+     "trigger": "click",
+     "element": "a",
+     "operation": "append",
+     "after": 2,
+     "newpanels": [3]
+  }
+]
+```
