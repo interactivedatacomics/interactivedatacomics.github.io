@@ -86,13 +86,24 @@ Voila, we can now move the scripting language.
 
 ## 2.1 JSON
 
-The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON). You do not have to be familiar with JSON as our specification is quite simple. 
+The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON). You do not have to be familiar with JSON as our specification is quite simple. From here on, you can simply copy-paste our examples and modify them on your own. 
 
 In a nutshell, JSON consiste of key-value pairs in the form of `"key": value`. The *key*-part is always surrounded by `"`. The *value*-part can be one of four types: 
-* a number, written as `123`, `1`, `1.0`, `0.545`, `.545`.
-* a text (string), written inside `"`: `"some text here"`.
-* an array (a list of objects), written inside `[` and `]`, separated by commas: `[1,2,3]`, `["hello","my","friend!"]`.
-* an object (another set of key-value pairs), written inside  `{` and `}`, separated by commas: 
+
+### Numbes 
+Numbers are written as `123`, `1`, `1.0`, `0.545`, `.545`.
+
+### Text
+
+Text (*strings*) are written inside `"`: `"some text here"`.
+
+### Arrays 
+
+An array is a list of objects, written inside `[` and `]`, separated by commas: `[1,2,3]`, `["hello","my","friend!"]`.
+
+### Objects
+
+An object (hence the name *object notation*) is another set of key-value pairs, written inside  `{` and `}`, separated by commas: 
  
 ```json
 {
@@ -108,7 +119,6 @@ In a nutshell, JSON consiste of key-value pairs in the form of `"key": value`. T
 
 Note that intendation is not important but greatly improves readability.
 
-From here on, you can simply copy-paste our examples and modify them on your own. 
 
 
 ## 2.1 Load Panels 
