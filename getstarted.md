@@ -4,14 +4,14 @@ Using a simple example, this page gives a step-by-step overview how you can crea
 
 <p style="background-color:red;">INCLUDE URL</p>.
 
-You can download the [JSON specification for this example here](getstarted/tutorial.json).
+You can download the [JSON specification for this example here](getstarted/tutorial.json). Read the [documentation](documentation.html) to learn about the other operations.
 
 The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels.   
 
 The steps we  are as follows: 
-* [1 Creating Panels](#creating-panels)
-* [2 Specify layout](#specify-layout)
-* [3 Specify operations](#specify-operations)
+* [1 Creating Panels](#creating-panels): drawing panels and layout, naming elements in panels and export individual panels.
+* [2 Specify layout](#specify-layout): specify how panels will be laid out in the interactve version.
+* [3 Specify operations](#specify-operations): specify what interactive features you would like the comic to have.
 
 
 # 1 Creating Panels
@@ -232,3 +232,5 @@ The second operation (`"operation": "append"`) shows a new panel below the other
   }
 ]
 ```
+
+Read the [documentation](documentation.html) to learn about the other operations.
