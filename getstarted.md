@@ -2,6 +2,8 @@
 
 Using a simple example, this page gives a step-by-step overview how you can create an interactive data comic using propriatary drawing tools and our [specification](documentation.html). In this example, we will create a simple comic that starts with 2 panels, highlights elements, and adds more panels on demand. The final comic can be found here: <p style="background-color:red;">INCLUDE URL</p>.
 
+You can download the [JSON specification for this example here](getstarted/tutoria.json).
+
 The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels.   
 
 The steps we  are as follows: 
