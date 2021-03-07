@@ -113,12 +113,14 @@ An object (hence the name *object notation*) is another set of key-value pairs, 
     "reading", 
     "drawing", 
     "walking"
-  ]
+  ], 
+  "lives in": {
+     "name": "Edinburgh", 
+     "country": "UK"
+  }
 }
 ```
-
-Note that intendation is not important but greatly improves readability.
-
+As you see, objects can contain objects, which in turn can contain other objects and so on. Note that intendation is not important but greatly improves readability.
 
 
 ## 2.1 Load Panels 
