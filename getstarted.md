@@ -54,6 +54,8 @@ We now export each panel into its own file, either '.png' or '.svg'. In Figma, w
 * grouping these elements ( right-click > Group Selection),
 * Select the small `+` sign besides `Export` in the menu on the right
 * Change PNG to SVG
+* Click on the 3 dots `...` 
+* Make sure 'Include "id" Attribute' is selected
 * Click the `Export XXX ` button. 
 
 We repeat this for each panel. In our case, we end up with X panels, which we can give any name we like, e.g.,:
