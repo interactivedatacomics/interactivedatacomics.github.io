@@ -15,7 +15,7 @@ The steps we  are as follows:
 
 Panels are the core of your (interactive)(data) comic and you will spend a significant amount of time scripting and drawing your comic
 
-### 1.1 Drawing Panels
+## 1.1 Drawing Panels
 
 Panels are created using any drawing tool you like. Generally, we distinguish between the follwing two *formats*:
 
@@ -33,7 +33,7 @@ When we draw the panels, we should draw them with a specific layout in mind. For
 <p style="background-color:red;">PICTURE</p>
 
 
-### 1.2 Name elements in SVG panels
+## 1.2 Name elements in SVG panels
 
 To make elements *inside* our panels interactive, we give those elements IDs which will appear as `id` in the SVG file like so: 
 
@@ -47,7 +47,7 @@ In our example, we label the three bars in each chart/panel with the IDa `A`, `B
 
 <p style="background-color:red;">UPDATE</p>
 
-### 1.2 Exporting Panels
+## 1.2 Exporting Panels
 
 We now export each panel into its own file, either '.png' or '.svg'. In Figma, we do this by:
 * selecting all elements in a panel, including the panel frame,
@@ -63,7 +63,7 @@ We repeat this for each panel. In our case, we end up with X panels, which we ca
 * `panel-4.svg`
 
 
-### 1.3 Store Panels
+## 1.3 Store Panels
 
 Next, we need to store the panel on a public space in the web. If you do not have your own server, greate a public and free [GitHub](https://github.com) repository. Then, upload all your panels, which should look like so: 
 
