@@ -1,6 +1,6 @@
 # Examples
 
-<img scr="comics/alliances/alliances.png" width="400px"></img>
+<img src="comics/alliances/alliances.png" width="400px"></img>
 ## Alliances
 
 * [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/comics/alliances/alliances-1.json)
@@ -15,7 +15,7 @@ CO2 IMAGE/VIDEO
 * [Live Editor](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/index.html)
 
 
-<img scr="getstarted/getstarted.png" width="400px"></img>
+<img src="getstarted/getstarted.png" width="400px"></img>
 ## Simple Bar Chart Example
 
 * [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/tutorial.json)
