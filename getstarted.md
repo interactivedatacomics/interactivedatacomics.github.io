@@ -107,40 +107,40 @@ All of the following code of this tutorial should be surrounded by a pair of cur
 First, we load our panels. This happens by specifying the URL and a panel ID for each panel, inside a `panels` array. Effectively, each panel is an object with two attributes (key-value pairs): `id` and `url`.
 
 ```json
-"panels":[
+"panels": [
   {
-      "id": 1,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/price.svg"
+   "id": "p_price",
+   "url": "https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/price.svg"
   },
   {
-      "id": 2,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg"
+   "id": "p_units",
+   "url": "https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg"
   },
   {
-      "id": 3,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a.svg"
+   "id": "p_sales-a",
+   "url": "https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a.svg"
   },
   {
-      "id": 4,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-b.svg"
+   "id": "p_sales-b",
+   "url": "https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-b.svg"
   },
   {
-      "id": 5,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-c.svg"
+   "id": "p_sales-c",
+   "url": "https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-c.svg"
   },
   {
-      "id": 6,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a-small.svg"
+   "id": "p_sales-a-small",
+   "url": "https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-a-small.svg"
   },
   {
-      "id": 7,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-b-small.svg"
+   "id": "p_sales-b-small",
+   "url": "https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-b-small.svg"
   },
   {
-      "id": 8,
-      "url":"https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-c-small.svg"
+   "id": "p_sales-c-small",
+   "url": "https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/sales-c-small.svg"
   }
-]
+ ]
 ```
 
 Our engine will retrieve the pictures from these URLs.
@@ -156,10 +156,10 @@ Now, we give the layout a `name` and add it to a `layouts` array (give the layou
 
 ```json
 "layouts": [
-   {
-      "name": "init",
-      "panels": [[1,2]]
-   }
+  {
+   "name": "init",
+   "panels": [["p_price","p_units"]]
+  }
 ]
 ```
 
@@ -188,24 +188,39 @@ In the following, we specify two types of operations.
 The first operation highlights (`"operation": "highlight"`) all occurances of element `A` when the user hovers (`"trigger": "mouseover"`) any element with the id `a` (`"element": "a"`). The highlighted elements will be drawn with a red content and red border (`"after": {"style": {"fill": "red", "border": "red"}}"`). We create (e.g., copy-paste) the same operation three times, once for each of the alements `a`, `b`, and `c`.
  
 ```json
-"operations":[
-  {   
-     "trigger": "mouseover", 
-     "element": "a",
-     "operation": "highlight", 
-     "after": {"style": {"fill": "red", "border": "red"}}
+"operations": [
+  {
+   "trigger": "mouseover",
+   "element": "a",
+   "operation": "highlight",
+   "after": {
+    "style": {
+     "fill": "red",
+     "stroke": "red"
+    }
+   }
   },
-  {   
-     "trigger": "mouseover", 
-     "element": "b",
-     "operation": "highlight", 
-     "after": {"style": {"fill": "blue", "border": "blue"}}
+  {
+   "trigger": "mouseover",
+   "element": "b",
+   "operation": "highlight",
+   "after": {
+    "style": {
+     "fill": "blue",
+     "stroke": "blue"
+    }
+   }
   },
-  {   
-     "trigger": "mouseover", 
-     "element": "c",
-     "operation": "highlight", 
-     "after": {"style": {"fill": "orange", "border": "orange"}}
+  {
+   "trigger": "mouseover",
+   "element": "c",
+   "operation": "highlight",
+   "after": {
+    "style": {
+     "fill": "orange",
+     "stroke": "orange"
+    }
+   }
   }
 ]
 ```
@@ -227,41 +242,29 @@ The statement `"group": "group1"`, which we attach to each `loadLayout` operatio
 Copy the following code into the `operation` array. Make sure each operation is separated by a comma `,` before the opening brackt `{` of that operation. 
 
 ```json
-  {
+ {
    "trigger": "click",
    "element": "a",
    "operation": "loadLayout",
-   "after": "panel_2",
+   "after": "p_units",
    "group": "group1",
-   "layout": [
-    [
-     3
-    ]
-   ]
+   "layout": [["p_sales-a"]]
   },
   {
    "trigger": "click",
    "element": "b",
    "operation": "loadLayout",
-   "after": "panel_2",
+   "after": "p_units",
    "group": "group1",
-   "layout": [
-    [
-     4
-    ]
-   ]
+   "layout": [["p_sales-b"]]
   },
   {
    "trigger": "click",
    "element": "c",
    "operation": "loadLayout",
-   "after": "panel_2",
+   "after": "p_units",
    "group": "group1",
-   "layout": [
-    [
-     5
-    ]
-   ]
+   "layout": [["p_sales-c"]]
   }
 ```
 
@@ -274,9 +277,9 @@ Note that in this example, we replace the current panel in layout group `group1`
    "element": "compare",
    "operation": "loadLayout",
    "group": "group1",
-   "after": "panel_2",
-   "layout": [[6,7,8]]
-  }
+   "after": "p_units",
+   "layout": [["p_sales-a-small","p_sales-b-small","p_sales-c-small"]]
+}
 ```
 
 Again, check the [final interactive comic in our editor](https://hugoromat.github.io/interactiveComics/library/dist/getStarted.html). You can download the [JSON specification for this example here](getstarted/tutorial.json). Read the [documentation](documentation.html) to learn about the other operations.
