@@ -150,7 +150,7 @@ Layouts are specified as *nested* arrays using squared brakets `[]`. For our exa
 Now, we give the layout a `name` and add it to a `layouts` array (give the layout any name you like, here we call it `myLayout`). We move our pabel specification from above (`[1,2]`) into the array of the `"panels"` attribute. The outer array allows us to add more rows later but here, we start with only one row.
 
 ```json
-"layout": [
+"layouts": [
    {
       "name": "init",
       "panels": [[1,2]]
