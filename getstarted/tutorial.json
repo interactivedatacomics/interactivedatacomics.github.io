@@ -87,7 +87,7 @@
    "trigger": "click",
    "element": "b",
    "operation": "loadLayout",
-   "after": 2",
+   "after": 2,
    "group": "group1",
    "layout": [[4]]
   },
