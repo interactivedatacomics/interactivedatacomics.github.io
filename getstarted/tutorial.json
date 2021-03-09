@@ -1,14 +1,10 @@
 {
+ "gutter": 20,
  "currentLayout": "init",
- "layout": [
+ "layouts": [
   {
    "name": "init",
-   "panels": [
-    [
-     1,
-     2
-    ]
-   ]
+   "panels": [[1,2]]
   }
  ],
  "panels": [
@@ -75,7 +71,7 @@
    "after": {
     "style": {
      "fill": "orange",
-     "stroke": "blue"
+     "stroke": "orange"
     }
    }
   },
@@ -83,51 +79,33 @@
    "trigger": "click",
    "element": "a",
    "operation": "loadLayout",
-   "after": "panel_2",
+   "after": 2,
    "group": "group1",
-   "layout": [
-    [
-     3
-    ]
-   ]
+   "layout": [[3]]
   },
   {
    "trigger": "click",
    "element": "b",
    "operation": "loadLayout",
-   "after": "panel_2",
+   "after": 2",
    "group": "group1",
-   "layout": [
-    [
-     4
-    ]
-   ]
+   "layout": [[4]]
   },
   {
    "trigger": "click",
    "element": "c",
    "operation": "loadLayout",
-   "after": "panel_2",
+   "after": 2,
    "group": "group1",
-   "layout": [
-    [
-     5
-    ]
-   ]
+   "layout": [[5]]
   },
   {
    "trigger": "click",
    "element": "compare",
    "operation": "loadLayout",
    "group": "group1",
-   "after": "panel_2",
-   "layout": [
-    [
-     6,
-     7,
-     8
-    ]
-   ]
+   "after": 2",
+   "layout": [[6,7,8]]
   }
  ]
 }
