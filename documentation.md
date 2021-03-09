@@ -321,7 +321,24 @@ The below example creates two sliders inside the panel spec for panel `0`. Each 
 xxx
 
 ```json
-code
+"panels": [
+{
+   "id": 0,
+   "url": "/CO2Footprint/inputPanel.svg",
+   "input": [
+    {
+     "id": "slider_movementSpeed",
+     "variable": "movementSpeed",
+     "min": 100,
+     "max": 200
+    },
+    {
+     "id": "slider_movementVelocity",
+     "variable": "movementVelocity"
+    }
+   ]
+} 
+]
 ```
 
 ### Isotype
