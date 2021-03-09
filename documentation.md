@@ -271,13 +271,13 @@ Setting a condition for operations, when the opration is triggered, different op
 ```json
 { 
     "trigger": "click",    
-    "condition": ["if", "totalC02", "> 10"],
+    "condition": ["totalC02", "> 10"],
     "operation": "loadlayout"
 }
 ```
 ```json
 {   
-    "condition": ["if", "totalC02", "> 10"],
+    "condition": ["totalC02", "> 10"],
     "operation": "append"
 }
 ```
