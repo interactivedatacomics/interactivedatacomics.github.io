@@ -16,8 +16,8 @@ This documentation covers:
   * [Append](#append)
   * [Load layout](#load-layout)
   * [Replace](#replace)
-  * [Lens](#lens)
-  * [Multilayer](#multilayer)
+<!--  * [Lens](#lens) -->
+<!--  * [Multilayer](#multilayer) -->
   * [Pan & Zoom](#pan--zoom)
 * [Conditions](#conditions)
 * [UI Elements](#ui-elements)
@@ -202,7 +202,6 @@ The following example loads a new set of panels when clicking onto panel 5.
 
 ### Replace 
 
-<p style="background-color:tomato;">CHECK</p>
 
 This operation will replace a panel with `newpanels` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"panel_12"`` indicates the panel with the ``"id"`` of '12'.
 ```json
@@ -218,8 +217,7 @@ This operation will replace a panel with `newpanels` after doing ``"click"`` or 
   }
 ```
 
-<p style="color:#FF0000;">REMOVE OPERATION</p>
-
+<!--
 ### Lens
 This operation creates a 'lens' (or viewport) within one panel (`element`), while a 2nd panel (`linked`) shows the content of the lens in larger detail. A user can move the lens through drag and drop. `viewport-size` indicates the size of the viewport relative to the panel in which the viewport sits.
 
@@ -248,25 +246,23 @@ This operation creates a 'lens' (or viewport) within one panel (`element`), whil
        'id': 1, 'linked':[2,3]}]
 }
 ```
-### Pan & Zoom 
-Creates a simple pan and zoom behavior for a dedicated panel so the user can do ....? 
+-->
 
-<p style="background-color:tomato;">is this both: pan and zoom? what's the user interaction? how is this different from lens?</p>
+### Pan & Zoom 
+Creates a simple pan and zoom behavior for a dedicated panel. Can also propagate that zoom to another panel (`linked`). 
 
 ```json
 {
    "operation": 'zoom', 
-		 "trigger": "zoom",
-		 'element': "panel_2",
-		 'linked': ['groupToDrag']
+   "trigger": "zoom",
+   "element": "panel_2",
+   "linked": ["groupToDrag"]
 }
 ```
 
 # Conditions
 
 Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
-
-<p style="background-color:tomato;">what is this example doing?</p>
 
 ```json
 { 
@@ -317,8 +313,7 @@ The below example creates two sliders inside the panel spec for panel `0`. Each 
 ]
 ```
 
-### number Input
-xxx
+### Number Input
 
 ```json
 "panels": [
