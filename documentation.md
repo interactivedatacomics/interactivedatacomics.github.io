@@ -28,13 +28,13 @@ This documentation covers:
 # Panels and Layout
 
 ## Panels
-Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has an `id` which cn be either a number (e.g., `3`) or text (e.g., `"panelWithBarChart"`). This id will be used througout the specification to refer to this panel. The 'content' of each panel is loaded from a `url` pointing to a URL where the image is hosted. You can host your SVGs or PNGs on any server in the world as long as the image or svg is publicly retievable throug a URL.
+Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has an `id` which must be some text e.g., `"panelWithBarChart"` or `"p1"`. This id will be used througout the specification to refer to this panel. The 'content' of each panel is loaded from a `url` pointing to a URL where the image is hosted. You can host your SVGs or PNGs on any server in the world as long as the image or svg is publicly retievable throug a URL.
 
 #### Code example
 ```json
 "panels":[
   {
-      "id": 1,
+      "id": "p1",
       "url":"mypanels/panel1.svg"
   },
   {
@@ -55,7 +55,7 @@ Each layout needs a unique `name`. (*tip:* if you have several panels that are p
 "layouts": [
    {
       "name": "myLayout",
-      "panels": [[1,2,3], [4,5,6]]
+      "panels": [["p1","p2","p3"], ["p4","p5","p6"]]
    }
 ]
 }
@@ -64,14 +64,14 @@ This exmple will load six panels, three in each row.
 
 ## Types of layouts
 
-A layout is modeled as a nested array, e.g., `[[1,2,[3,[4,5]]], [6,7]]` with the first two levels being mandatory. This layout spec will create the following layout:
+A layout is modeled as a nested array, e.g., `[["p1","p2",["p3",["p4","p5"]]], ["p6","p7"]]` with the first two levels being mandatory. This layout spec will create the following layout:
 
 <img width="400px" src="figures/layout-1.png">
 
 * The first array contains all panels. It is always there. 
-* The second level, e.g., `[1,2,[3,[4,5]]]` (red) and `[6,7]` (blue), groups panels into rows. Each array is a new row.
-* the third level, e.g., `[3,[4,5]]` (darker red) in our example, puts two panels, the first above the other within the same row.
-* The fifth level, e.g., `[4,5]` (darkest red) will place the two panels again side-by-side. 
+* The second level, e.g., `["p1","p2",["p3",["p4","p5"]]]` (red) and `["p6","p7"]` (blue), groups panels into rows. Each array is a new row.
+* the third level, e.g., `["p3",["p4","p5"]]` (darker red) in our example, puts two panels, the first above the other within the same row.
+* The fifth level, e.g., `["p4","p5"]` (darkest red) will place the two panels again side-by-side. "
 
 **Note:** The with of panels depends on the SVG or PNG files. All the engine does is appending these panels and placing them in the layout. When you create your design, you should design a layout and panel sizes that work! 
 
@@ -164,21 +164,21 @@ The following example highlights all elements (across all panels) with the ID `f
 This operation appends (inserts) one or more panels or a layout (`newpanels`) after given panel (`after`). The append operation is triggered through a `trigger` on an `element` (panel or element ID).
 
 `newpanels` can contain 
-* a singel panel: e.g, `[3]`, 
-* a layout specified in-place, e.g., `[3,[4,5]]`, or
+* a singel panel: e.g, `["p3"]`, 
+* a layout specified in-place, e.g., `["p3",["p4","p5"]]`, or
 * a reference to layout specied in the `layouts` array: e.g., `myLayout`. 
 
 This operation can be used for different narrative purposes, e.g., adding a branch to the storyline from a certain point; providing more details by drilling down from this panel; revealing the answer for a question rised in the panel; hinding a punchline and etc. Note this operation will not romove or replace any panles. If you want remove any panle and load new panels, use "Load layout".
 
-The following example appends a panel `11` after panel `7` by a click on panel `6`.
+The following example appends a panel `"p11"` after panel `"p7"` by a click on panel `"p6"`.
 
 ```json
 {
    "trigger": "click",
-   "element": 6,
+   "element": "p6",
    "operation": "append",
-   "after": 7,
-   "newpanels": [11]
+   "after": "p7",
+   "newpanels": ["p11"]
 }
 ```
 
@@ -188,14 +188,14 @@ This operation loads a layout from the `layout` array and removes anything else 
 
 This operation can be used similar to a menu on a website. For example, the designer can lead the audience to different versions (e.g., length, style or content) of the comic story by using a global navigation menu on the top of the comic.
 
-The following example loads a new set of panels when clicking onto panel 5. 
+The following example loads a new set of panels when clicking onto panel `"p5"`. 
 
 ```json
 "trigger": "click",
    "operation": "loadLayout",
-   "element": 5,
-   "layout": [[0,1], [2,3]],
-   "after": 7,
+   "element": "p5",
+   "layout": [["p1","p2"], ["p3","p4"]],
+   "after": "p7",
    "group": "group1"
 ```
 
@@ -203,16 +203,16 @@ The following example loads a new set of panels when clicking onto panel 5.
 ### Replace 
 
 
-This operation will replace a panel with `newpanels` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"panel_12"`` indicates the panel with the ``"id"`` of '12'.
+This operation will replace a panel with `newpanels` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"p12"`` indicates the panel with the ``"id"`` of 'p12'.
 ```json
 {
    "trigger": "click",
-   "element": "panel_4",
+   "element": "p4",
    "operation": "replace",
-   "replace": "panel_4",
+   "replace": "p4",
    "newpanels": [
-    "panel_12",
-    "panel_15"
+    "p12",
+    "p15"
    ]
   }
 ```
@@ -227,8 +227,8 @@ This operation creates a 'lens' (or viewport) within one panel (`element`), whil
 {
    "operation": "lens", 
    "trigger": "mouseover",
-   "element": "14",
-   "linked": [15], 
+   "element": "p14",
+   "linked": ["p15"], 
    "viewport-size": "20%
 }
 ```
@@ -255,7 +255,7 @@ Creates a simple pan and zoom behavior for a dedicated panel. Can also propagate
 {
    "operation": "zoom", 
    "trigger": "zoom",
-   "element": 2,
+   "element": "p2",
    "linked": ["groupToDrag"]
 }
 ```
@@ -295,7 +295,7 @@ The below example creates two sliders inside the panel spec for panel `0`. Each 
 ```json
 "panels": [
 {
-   "id": 0,
+   "id": "p1",
    "url": "/CO2Footprint/inputPanel.svg",
    "sliders": [
     {
@@ -318,7 +318,7 @@ The below example creates two sliders inside the panel spec for panel `0`. Each 
 ```json
 "panels": [
 {
-   "id": 0,
+   "id": "p1",
    "url": "/CO2Footprint/inputPanel.svg",
    "input": [
     {
