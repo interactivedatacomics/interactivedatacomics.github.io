@@ -1,69 +1,65 @@
 # Get Started
 
-Using a simple example, this page gives a step-by-step overview how you can create an interactive data comic using propriatary drawing tools and our [specification](documentation.html). In this example, we will create a simple comic that starts with 2 panels, highlights elements, and adds more panels on demand. 
+Using a simple example, this page gives a step-by-step overview how you can create an interactive data comic using propriatary drawing tools and our [scripting language](documentation.html). In this example, we will create a simple comic that 
+* starts with 2 panels, 
+* highlights elements, and 
+* adds more panels on click. 
 
-Check the [final interactive comic in our editor](https://hugoromat.github.io/interactiveComics/library/dist/getStarted.html). 
+Check the [final interactive comic in our editor](https://hugoromat.github.io/interactiveComics/library/dist/getStarted.html). You can download the [JSON specification for this example here](getstarted/tutorial.json). After this tutorial, read the [documentation](documentation.html) to learn about the other operations.
 
-You can download the [JSON specification for this example here](getstarted/tutorial.json). Read the [documentation](documentation.html) to learn about the other operations.
+The scrpting langaug is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels.   
 
-The specification is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels.   
-
-The steps to create an interactive data comic are as follows: 
+The steps to create an interactive data comic are as follows, explained in detail in this tutorial: 
 * [1 Creating Panels](#creating-panels): drawing panels and layout, naming elements in panels and export individual panels. **This step will take most of your time** and does not involve our specification.
+* [Export panels and host them online](#13-exporting-panels)
 * [2 Specify layout](#specify-layout): specify how panels will be laid out in the interactve version.
 * [3 Specify operations](#specify-operations): specify what interactive features you would like the comic to have.
 
 
 # 1 Creating Panels
 
-Panels are the core element of any (interactive)(data) comic and you will spend a significant amount of time scripting and drawing your comic. 
+Panels are the core element of any (interactive)(data) comic and you will spend a significant amount of time drawing your comic. 
 
 ## 1.1 Drawing Panels
 
-Panels are created using any drawing tool you like and are completely creted by you and your creativity. Panels can contain text, images, drawings, and visualizations.  
+Panels are created using any drawing tool you like and are completely created by you and your creativity. Panels can contain text, images, drawings, and visualizations.  
 
-Generally, we distinguish between the follwing two *formats*:
+Generally, we distinguish between the follwing two *panel formats*:
 
 * **Vector graphics:** which can export to the scalable vector graphic (`.svg`) format. Commonly used tools include Adobe Illustrator, [Figma](https://www.figma.com) (which is free to use), Sketch, etc. **We strongly recommend that you create your panels as a vector graphic**.
 * **Pixel graphics:** export into common `.png` files. The most prominent example tool is Adobe Photoshop, etc. You can also draw panels by hand, scan them, and save them as `.png` files. 
 
 
-**Note:** Creating panels as '.svg' allows for more interactivity than `.png` files because we can describe elements inside the panels and reuse them for interactivity.
+**Note:** Creating panels as '.svg' allows for more interactivity than `.png` files because we can describe elements inside the panels and reuse them for interactivity. Alternatively, you can can, e.g., hand-draw your panels, then import them into Adobe to add more specific elements (see below).
 
-In our case, we have drawn the following 8 panels in Figma, an open vector graphics tool. We must draw any panels that we want to show at any point in our comic. In the final comic, start by showing only the first 2 panels and show one more panel on demand. 
+For our example comic we have drawn the following 8 panels in Figma as vector graphics. We must draw each panels that we want to show at any point in our comic. In the final comic, we start by showing only the first 2 panels and show one more panel on demand. 
 
-When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma. The below image, we show all 8 panels that a user can eventually see in this example since we created them in the same file.
+When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma. In the below image, we show all 8 panels that a user can eventually see in this example since we created them in the same file. 
 
 ![](getstarted/panels/allpanels.png)
 
 ## 1.2 Name elements in SVG panels
 
-To make elements (parts of visualizations, text, buttons, etc.) *inside* our panels interactive, we give those elements IDs which will appear as `id` in the SVG file. To create IDs in Figma, simply change the name of an object in the item list on the left. Alternatively, you can open the exported SVG file using any text editor and add the ID attribute as in the example above. 
+To make elements (parts of visualizations, text, buttons, etc.) *inside* our panels interactive, we give those elements IDs. IDs will appear as `id` in the SVG file. To create IDs in Figma, simply change the name of an object in the item list on the left. Alternatively, you can open the exported SVG file using any text editor and add the ID attribute as in the example above. 
 
-In our example, we label the three bars in each chart/panel with the IDa `a`, `b`, and `c`. We should label the same element in our comic **always** with the same ID as this allows to, e.g., highlight all occurances of this element later. 
+In our example, we label the three bars in each chart/panel as well as as the lines in the line charts with the IDs `a`, `b`, and `c` respectvely since they all correspond to the same data elements labeled A, B, and C. We should label the same element in our comic **always** with the same ID as this allows to, e.g., highlight all occurances of this element later. 
 
-After exporting the panel (next step), the `panel.svg` should have the IDs showing in the file: 
-
-```svg
-<rect id="a" x="121" y="145" width="46" height="200" fill="#C4C4C4"/>
-<rect id="b" x="176" y="215" width="46" height="130" fill="#C4C4C4"/>
-<rect id="c" x="231" y="275" width="46" height="70" fill="#C4C4C4"/>
-```
-
-We also want out 'compare all' button show some more panels. We give all three instances in our panels the id `compare`. 
+We also want our 'compare all' button show some more panels when clicked. To that end, we give all three instances of this button the same ID `compare `. 
 
 ## 1.3 Exporting Panels
 
-We can now export each panel into its own file, either '.png' or '.svg'. In Figma, we do this by:
-* selecting all elements in a panel, including the panel frame,
-* grouping these elements ( right-click > Group Selection or `command+G` on Mac),
+We can now export each panel into its own file, either `.png` or `.svg`. In Figma, we do this by:
+
+* for each panel individually:
+* select all elements in that panel, including the panel frame or background,
+* group these elements ('right-click > Group Selection' or `command+G` on Mac),
 * Select the small "`+`" sign besides `Export` in the menu on the right
-* Change PNG to SVG
-* Click the "`...`" button to the right of the "SVG" field and 
-* Make sure the "Include "id" Attribute" option is checked. 
+* Change `PNG` to `SVG`
+* Click the "`...`" button to the right of the "SVG" field 
+* Make sure the *"Include 'id' Attribute"* option is checked. 
 * Click the `Export ...` button. 
 
-We repeat this for **each** panel. In our case, we end up with eight SVG files, which we name like so:
+We repeat this for **each** panel. In our case, we end up with eight SVG files, which we will name like so (the following order is the order in which these panels appear in the figure above):
 * `price.svg`
 * `units.svg`
 * `sales-a.svg`
@@ -73,7 +69,7 @@ We repeat this for **each** panel. In our case, we end up with eight SVG files, 
 * `sales-b-small.svg`
 * `sales-c-small.svg`
 
-## 1.4 Store Panels Online
+## 1.4 Make Panels Available Online
 
 Next, we need to store all panels on a public webspace for our software to find them. If you do not have your own server, greate a public and free [GitHub](https://github.com) repository. Then, upload all your panels, which should look like so: 
 
@@ -180,12 +176,11 @@ Now, we can specify operations to make our comic interactive. Any operation is a
 ```json
 "operations":[]
 ```
+In the following, we specify two types of operations.
 
-In the following, we specify two operations.
+## Highlight elements on mouse-over
 
-The first operation highlights (`"operation": "highlight"`) all occurances of element `A` when the user hovers (`"trigger": "mouseover"`) any element with the id `a` (`"element": "a"`). The highlighted elements will become red (`"after": {"style": {"fill": "red"}}"`).
-
-The second operation (`"operation": "append"`) shows a new panel below the other panels (`"after": 2`) when the user clicks (`"trigger": "click"`) on any elemnt with the id `a` (`"element": "a"`). The new panel is shown in a new row  (`"newpanels": [[3]]`). 
+The first operation highlights (`"operation": "highlight"`) all occurances of element `A` when the user hovers (`"trigger": "mouseover"`) any element with the id `a` (`"element": "a"`). The highlighted elements will be drawn with a red content and red border (`"after": {"style": {"fill": "red", "border": "red"}}"`). We create (e.g., copy-paste) the same operation three times, once for each of the alements `a`, `b`, and `c`.
  
 ```json
 "operations":[
@@ -193,20 +188,88 @@ The second operation (`"operation": "append"`) shows a new panel below the other
      "trigger": "mouseover", 
      "element": "a",
      "operation": "highlight", 
-     "after": {"style": {"fill": "red"}}
+     "after": {"style": {"fill": "red", "border": "red"}}
   },
-  {
-     "trigger": "click",
-     "element": "a",
-     "operation": "append",
-     "after": 2,
-     "newpanels": [3]
+  {   
+     "trigger": "mouseover", 
+     "element": "b",
+     "operation": "highlight", 
+     "after": {"style": {"fill": "blue", "border": "blue"}}
+  },
+  {   
+     "trigger": "mouseover", 
+     "element": "c",
+     "operation": "highlight", 
+     "after": {"style": {"fill": "orange", "border": "orange"}}
   }
 ]
 ```
 
-Last, we want a click onto the button *compare* to replace the current large panel with the time series to be replaced by three smaller panels showing all three time series at the same time. 
+Running the code, you can now hover over each of the three bars and will see the corresponding bars in the other panel showing up in the same color.
 
-<p style="background-color:red;">INCLUDE CORRECT OPERATION HERE</p>.
+## Show new panels on click
 
-Read the [documentation](documentation.html) to learn about the other operations.
+The second operation loads new panels (`"operation": "loadLayout"`) below after panel 2 (`"after": 2`) when the user clicks (`"trigger": "click"`) on any element 
+with the id `a` (`"element": "a"`). The new panel is shown in a new row  (`"newpanels": [[3]]`). The first pair of `[]` in `[[3]]` is the array containing all new panels, while the inner pair of brackets says that the inside mentioned panels are shown on a new row. If you indicate only `[3]`, the new panel will be shown on the same row as panels 1 and 2. Try it out!
+
+As above, we create the same operation 3 times, once for each of the elements A, B, and C in the bar charts. This time, we need to load a different panel for each element: 
+* panel `3` for elemnt `a`,
+* panel `4` for elemnt `b`,
+* panel `5` for elemnt `c`.
+
+The statement `"group": "group1"`, which we attach to each `loadLayout` operation indicates that only one of the operations in `group1` can be shown. In other words, if panel `3` is shown and the user clicks element `b`, panel `3` will be replaced with panel `4`. If you remove `"group": "group1"`, panel `4` would be inserted just after panel `2` but before panel `3`.
+
+```json
+  {
+   "trigger": "click",
+   "element": "a",
+   "operation": "loadLayout",
+   "after": "panel_2",
+   "group": "group1",
+   "layout": [
+    [
+     3
+    ]
+   ]
+  },
+  {
+   "trigger": "click",
+   "element": "b",
+   "operation": "loadLayout",
+   "after": "panel_2",
+   "group": "group1",
+   "layout": [
+    [
+     4
+    ]
+   ]
+  },
+  {
+   "trigger": "click",
+   "element": "c",
+   "operation": "loadLayout",
+   "after": "panel_2",
+   "group": "group1",
+   "layout": [
+    [
+     5
+    ]
+   ]
+  }
+```
+
+Last, we want a click onto the button *compare* to replace the current detailed set of panels (`3`,`4` or `5`) with the a series of smaller panels showing all three time series at the same time. The following code creates another operation `loadLayout` that is triggered when the user clicks (`"trigger": "click"`) the 'Compare All' button (`"element": "compare"`, remember, we gave the 'Compare All' button the id `compare`. Without that ID, the code will not work).
+
+Note that in this example, we replace the current panel in layout group `group1` by three panels on a new row: `[[6,7,8]]`.  
+```json
+{
+   "trigger": "click",
+   "element": "compare",
+   "operation": "loadLayout",
+   "group": "group1",
+   "after": "panel_2",
+   "layout": [[6,7,8]]
+  }
+```
+
+Again, check the [final interactive comic in our editor](https://hugoromat.github.io/interactiveComics/library/dist/getStarted.html). You can download the [JSON specification for this example here](getstarted/tutorial.json). Read the [documentation](documentation.html) to learn about the other operations.
