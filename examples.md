@@ -12,6 +12,12 @@
 * [JSON Script](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/images/CO2Footprint/CO2.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/index.html)
 
+## Drag-Zoom Example
+<img src="getstarted/map.png" width="450px"/>
+
+* [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/map.json)
+* [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/map.html)
+
 
 ## Simple Bar Chart Example
 <img src="getstarted/getstarted.png" width="450px"/>
