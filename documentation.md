@@ -255,10 +255,10 @@ Creates a simple pan and zoom behavior for a dedicated panel so the user can do 
 
 ```json
 {
-   "operation": "zoom", 
-   "trigger": "zoom",
-   "element": 14,
-   "linked": [15]
+   "operation": 'zoom', 
+		 "trigger": "zoom",
+		 'element': "panel_2",
+		 'linked': ['groupToDrag']
 }
 ```
 
