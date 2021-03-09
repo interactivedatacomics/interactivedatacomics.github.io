@@ -7,7 +7,7 @@
 
 
 ## Personal C02 Emissions
-<img src="figures/CO2nailfigure" width="450px"/>
+<img src="figures/CO2nailfigure.png" width="450px"/>
 
 * [JSON Script](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/images/CO2Footprint/CO2.json)
 * [Live Editor](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/index.html)
