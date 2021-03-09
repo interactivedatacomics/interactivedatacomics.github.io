@@ -28,7 +28,7 @@ This documentation covers:
 # Panels and Layout
 
 ## Panels
-Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has a positive `id` and which will be used througout the spec to refer to this panel. The 'content' of ech panel is loaded from a `url` pointing to a URL where the image is hosted. You can host your SVGs or PNGs on any server in the world as long as the image or svg is publicly retievable throug a URL.
+Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Panels are loaded within their specific array `panels`. Each panel has an `id` which cn be either a number (e.g., `3`) or text (e.g., `"panelWithBarChart"`). This id will be used througout the specification to refer to this panel. The 'content' of each panel is loaded from a `url` pointing to a URL where the image is hosted. You can host your SVGs or PNGs on any server in the world as long as the image or svg is publicly retievable throug a URL.
 
 #### Code example
 ```json
@@ -38,7 +38,7 @@ Comics are presented as a series of panenls. Panels can be `.svg` or `.png`. Pan
       "url":"mypanels/panel1.svg"
   },
   {
-      "id": 2,
+      "id": "panelWithBarChart",
       "url":"mypanels/panel2.svg"
    }
 ]
@@ -227,9 +227,9 @@ This operation creates a 'lens' (or viewport) within one panel (`element`), whil
 {
    "operation": "lens", 
    "trigger": "mouseover",
-   "element": 14,
+   "element": "14",
    "linked": [15], 
-   "viewport-size": 20%
+   "viewport-size": "20%
 }
 ```
 
@@ -241,7 +241,7 @@ This operation creates a 'lens' (or viewport) within one panel (`element`), whil
 {
    "operation": "multilayer", 
    "trigger": "click",
-   'element': 14,
+   'element': "14",
    'elements':[{
        'id': 1, 'linked':[2,3]}]
 }
@@ -253,9 +253,9 @@ Creates a simple pan and zoom behavior for a dedicated panel. Can also propagate
 
 ```json
 {
-   "operation": 'zoom', 
+   "operation": "zoom", 
    "trigger": "zoom",
-   "element": "panel_2",
+   "element": 2,
    "linked": ["groupToDrag"]
 }
 ```
