@@ -7,7 +7,7 @@ Using a simple example, this page gives a step-by-step overview how you can crea
 
 Check the [final interactive comic in our editor](https://hugoromat.github.io/interactiveComics/library/dist/getStarted.html). You can download the [JSON specification for this example here](getstarted/tutorial.json). After this tutorial, read the [documentation](documentation.html) to learn about the other operations.
 
-The scrpting langaug is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels.   
+The scrpting langaug is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels. **We strongly recomment to check your JSON script using a common JSON validator, such as [JSONlint](https://jsonlint.com) to avoid syntax errors**.
 
 The steps to create an interactive data comic are as follows, explained in detail in this tutorial: 
 * [1 Creating Panels](#creating-panels): drawing panels and layout, naming elements in panels and export individual panels. **This step will take most of your time** and does not involve our specification.
