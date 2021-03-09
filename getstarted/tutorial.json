@@ -104,7 +104,7 @@
    "element": "compare",
    "operation": "loadLayout",
    "group": "group1",
-   "after": 2",
+   "after": 2,
    "layout": [[6,7,8]]
   }
  ]
