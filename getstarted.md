@@ -217,7 +217,9 @@ As above, we create the same operation 3 times, once for each of the elements A,
 * panel `4` for elemnt `b`,
 * panel `5` for elemnt `c`.
 
-The statement `"group": "group1"`, which we attach to each `loadLayout` operation indicates that only one of the operations in `group1` can be shown. In other words, if panel `3` is shown and the user clicks element `b`, panel `3` will be replaced with panel `4`. If you remove `"group": "group1"`, panel `4` would be inserted just after panel `2` but before panel `3`.
+The statement `"group": "group1"`, which we attach to each `loadLayout` operation indicates that only one of the operations in `group1` can be shown. In other words, if panel `3` is shown and the user clicks element `b`, panel `3` will be replaced with panel `4`. If you remove `"group": "group1"`, panel `4` would be inserted just after panel `2` but before panel `3`. 
+
+Copy the following code into the `operation` array. Make sure each operation is separated by a comma `,` before the opening brackt `{` of that operation. 
 
 ```json
   {
