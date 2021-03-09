@@ -328,9 +328,7 @@ xxx
    "input": [
     {
      "id": "slider_movementSpeed",
-     "variable": "movementSpeed",
-     "min": 100,
-     "max": 200
+     "variable": "movementSpeed"
     },
     {
      "id": "slider_movementVelocity",
