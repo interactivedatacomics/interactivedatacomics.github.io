@@ -13,7 +13,7 @@
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/index.html)
 
 ## Drag-Zoom Example
-<img src="getstarted/map.png" width="450px"/>
+<img src="getstarted/imageMap.PNG" width="450px"/>
 
 * [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/map.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/map.html)
