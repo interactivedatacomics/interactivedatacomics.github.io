@@ -150,7 +150,7 @@ Our engine will retrieve the pictures from these URLs.
 Second, we need to specify how panels are laid out. The layout design should have happend in the [design phase](#11-drawing-panels).
 The panel width for each panel is specified in side each panel SVG or PNG file so that you do not have to care about this in the specification. All we need to do do is to specify the order and when to start a new row. 
 
-Layouts are specified as *nested* arrays using squared brakets `[]`. For our example, we create a layout with 1 row that contains our first two panels `1` and `2`. To that end, we place both numbers into an array `[1,2]` to indicate that they should appear on the *same* row (our specifcation supports a [wide range of layout options](documentation.html#comic-layout)).
+Layouts are specified as *nested* arrays using squared brakets `[]`. For our example, we create a layout with 1 row that contains our first two panels `p_price` and `p_units`. To that end, we place both numbers into an array `["p_price","p_units"]` to indicate that they should appear on the *same* row (our specifcation supports a [wide range of layout options](documentation.html#comic-layout)).
 
 Now, we give the layout a `name` and add it to a `layouts` array (give the layout any name you like, here we call it `myLayout`). We move our pabel specification from above (`[1,2]`) into the array of the `"panels"` attribute. The outer array allows us to add more rows later but here, we start with only one row.
 
@@ -233,11 +233,11 @@ The second operation loads new panels (`"operation": "loadLayout"`) below after 
 with the id `a` (`"element": "a"`). The new panel is shown in a new row  (`"newpanels": [[3]]`). The first pair of `[]` in `[[3]]` is the array containing all new panels, while the inner pair of brackets says that the inside mentioned panels are shown on a new row. If you indicate only `[3]`, the new panel will be shown on the same row as panels 1 and 2. Try it out!
 
 As above, we create the same operation 3 times, once for each of the elements A, B, and C in the bar charts. This time, we need to load a different panel for each element: 
-* panel `3` for elemnt `a`,
-* panel `4` for elemnt `b`,
-* panel `5` for elemnt `c`.
+* panel `"p_sales-a"` for elemnt `a`,
+* panel `"p_sales-b"` for elemnt `b`,
+* panel `"p_sales-c"` for elemnt `c`.
 
-The statement `"group": "group1"`, which we attach to each `loadLayout` operation indicates that only one of the operations in `group1` can be shown. In other words, if panel `3` is shown and the user clicks element `b`, panel `3` will be replaced with panel `4`. If you remove `"group": "group1"`, panel `4` would be inserted just after panel `2` but before panel `3`. 
+The statement `"group": "group1"`, which we attach to each `loadLayout` operation indicates that only one of the operations in `group1` can be shown. In other words, if panel `p_sales-a` is shown and the user clicks element `b`, panel `p_sales-a` will be replaced with panel `p_sales-b`. If you remove `"group": "group1"`, panel `p_sales-b` would be inserted just after panel `2` but before panel `p_sales-a`. 
 
 Copy the following code into the `operation` array. Make sure each operation is separated by a comma `,` before the opening brackt `{` of that operation. 
 
@@ -268,9 +268,9 @@ Copy the following code into the `operation` array. Make sure each operation is 
   }
 ```
 
-Last, we want a click onto the button *compare* to replace the current detailed set of panels (`3`,`4` or `5`) with the a series of smaller panels showing all three time series at the same time. The following code creates another operation `loadLayout` that is triggered when the user clicks (`"trigger": "click"`) the 'Compare All' button (`"element": "compare"`, remember, we gave the 'Compare All' button the id `compare`. Without that ID, the code will not work).
+Last, we want a click onto the button *compare* to replace the current detailed set of panels (`p_sales-a`,`p_sales-b` or `p_sales-c`) with the a series of smaller panels showing all three time series at the same time. The following code creates another operation `loadLayout` that is triggered when the user clicks (`"trigger": "click"`) the 'Compare All' button (`"element": "compare"`, remember, we gave the 'Compare All' button the id `compare`. Without that ID, the code will not work).
 
-Note that in this example, we replace the current panel in layout group `group1` by three panels on a new row: `[[6,7,8]]`.  
+Note that in this example, we replace the current panel in layout group `group1` by three panels on a new row: `[["p_sales-a-small","p_sales-b-small","p_sales-c-small"]]`.  
 ```json
 {
    "trigger": "click",
