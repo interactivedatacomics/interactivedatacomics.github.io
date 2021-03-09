@@ -59,6 +59,11 @@ We can now export each panel into its own file, either `.png` or `.svg`. In Figm
 * Make sure the *"Include 'id' Attribute"* option is checked. 
 * Click the `Export ...` button. 
 
+In illustrator: 
+* save As a svg file, carry on as normal until you get the final dialogue window. Once this pops up, 
+* click on more options in the bottom left, 
+* uncheck Responsive
+
 We repeat this for **each** panel. In our case, we end up with eight SVG files, which we will name like so (the following order is the order in which these panels appear in the figure above):
 * `price.svg`
 * `units.svg`
