@@ -1,5 +1,7 @@
 # Interactive Data Comics
 
+<img src="figures/teaser-small.png" widrth="650px"/>
+<br/>
 <html>
 <body>
 
