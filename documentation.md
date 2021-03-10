@@ -78,7 +78,7 @@ A layout is modeled as a nested array, e.g., `[["p1","p2",["p3",["p4","p5"]]], [
 
 # Data
 
-Our spec has some constructs to refer to data, as it is intended for the construction of data comics.
+Our spec has some constructs to refer to data, as it is intended for the construction of [Data Comics](https://www.datacomics.net/).
 
 ## Classes
 Classes group visual elements within your elements into groups. Classes can be used to, e.g., highlight elements or otherwise refer to groups of elements. 
