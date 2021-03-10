@@ -37,12 +37,14 @@ While the tutorial is open to anyone with an interest in data-driven storytellin
 ## What to expect?
 The tutorial is split into several parts to accommodate for your personal schedule: 
 
-Live Introduction and Overview (Monday, March 15th 2021, 5pm UK time. 30min)
+### Live Introduction and Overview (Monday, March 15th 2021, 5pm UK time. 30min)
 
 Open to all. Feel free to join our intro session to see if interactive data comics are for you.
 Please register here: https://docs.google.com/forms/d/e/1FAIpQLSdR7YOI5Eoi-G5qsiXu1kDsLNS138lS8ubn21LAG4WKp5nGBw/viewform
 
 This live session gives an overview over our research in data comics and interactive data comics. It demonstrates examples of which interactions we currently support as well as the scripting language. The short session will be recorded and can then be found on our website. We conclude with a Q&A session (not recorded). 
+
+Join us here: [https://eu.bbcollab.com/guest/b5b93ab7150740379049bb3ac778ca24](https://eu.bbcollab.com/guest/b5b93ab7150740379049bb3ac778ca24)
 
 
 ### Web tutorials
