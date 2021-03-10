@@ -156,7 +156,7 @@ The following example highlights all elements (across all panels) with the ID `f
      "trigger": "mouseover", 
      "element": "france",
      "operation": "highlight", 
-     "after": {"style": {"fill": "red", "transform": "scale(1.5)"}, attr:[]},
+     "after": {"style": {"fill": "red", "transform": "scale(1.5)"}, "attr":[]},
 }
 ```
 
@@ -191,12 +191,14 @@ This operation can be used similar to a menu on a website. For example, the desi
 The following example loads a new set of panels when clicking onto panel `"p5"`. 
 
 ```json
-"trigger": "click",
+{
+   "trigger": "click",
    "operation": "loadLayout",
    "element": "p5",
    "layout": [["p1","p2"], ["p3","p4"]],
    "after": "p7",
    "group": "group1"
+}
 ```
 
 
@@ -294,22 +296,22 @@ The below example creates two sliders inside the panel spec for panel `0`. Each 
 
 ```json
 "panels": [
-{
-   "id": "p1",
-   "url": "/CO2Footprint/inputPanel.svg",
-   "sliders": [
-    {
-     "id": "slider_movementSpeed",
-     "variable": "movementSpeed",
-     "min": 100,
-     "max": 200
-    },
-    {
-     "id": "slider_movementVelocity",
-     "variable": "movementVelocity"
-    }
-   ]
-} 
+  {
+    "id": "p1",
+    "url": "/CO2Footprint/inputPanel.svg",
+    "sliders": [
+      {
+        "id": "slider_movementSpeed",
+        "variable": "movementSpeed",
+        "min": 100,
+        "max": 200
+      },
+      {
+        "id": "slider_movementVelocity",
+        "variable": "movementVelocity"
+      }
+    ]
+  } 
 ]
 ```
 
@@ -317,20 +319,20 @@ The below example creates two sliders inside the panel spec for panel `0`. Each 
 
 ```json
 "panels": [
-{
-   "id": "p1",
-   "url": "/CO2Footprint/inputPanel.svg",
-   "input": [
-    {
-     "id": "slider_movementSpeed",
-     "variable": "movementSpeed"
-    },
-    {
-     "id": "slider_movementVelocity",
-     "variable": "movementVelocity"
-    }
-   ]
-} 
+  {
+    "id": "p1",
+    "url": "/CO2Footprint/inputPanel.svg",
+    "input": [
+      {
+         "id": "slider_movementSpeed",
+         "variable": "movementSpeed"
+      },
+      {
+         "id": "slider_movementVelocity",
+         "variable": "movementVelocity"
+      }
+     ]
+  } 
 ]
 ```
 
@@ -347,7 +349,7 @@ This UI element creates one ore more [ISOTYPE](https://en.wikipedia.org/wiki/Iso
     "widthIcon": 4.5
    },
    "icon": "images/CO2Footprint/treeIcon.svg"
-  }
+}
 ```
 
 
