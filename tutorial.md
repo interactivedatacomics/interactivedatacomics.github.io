@@ -1,6 +1,6 @@
 # Tutorial
 
-We seek anyone interested in creating interactive web [data-comics](http://interactivedatacomics.github.io) to join our tutorial: learn how to create interactive comics with our scripting editor and give us feedback to improve it. The 30min live tutorial will be held on March 15, 5pm UK time (a video recording will be made available) to get you started, and then you will be working on your comics by yourself, at your own pace. We will be available for questions and help and to gather feedback until March 26, 2021.
+We seek anyone interested in creating interactive web [data-comics](http://interactivedatacomics.github.io) to join our tutorial: learn how to create interactive comics with our **scripting editor** and give us feedback to improve it. The 30min live tutorial will be held on March 15, 5pm UK time (a video recording will be made available) to get you started, and then you will be working on your comics by yourself, at your own pace. We will be available for questions and help and to gather feedback until March 26, 2021.
 
 No programming knowledge is required but experience with JSON/JavaScript as well as tools such as Adobe Illustrator, Figma. Photoshop,or Paint is an asset but not required. Or, draw your visuals by hand on paper! 
 
@@ -64,9 +64,9 @@ The link to our Q&A sessions is here: [https://eu.bbcollab.com/guest/b5b93ab7150
 ## What will you learn?
 During the period of the tutorial, we will teach you how to create interactive web comics with visualizations. The tutorial features asynchronous learning with daily drop-in Q&A sessions. 
 
-* What are interactive comics: this happens in the live session on Monday, March 16, 5pm. The session will be recorded. 
-* How to create the individual panels: panels are created using vector graphic programs or other tools and need to be exported into SVG or PNG. You can find a full  tutorial to create a simple comic here: [Getstarted.html](https://interactivedatacomics.github.io/getstarted.html).
-* How to create interaction using a simple scripting language. Once you have created all your panels, you can use our simple scripting language [Getstarted.html](https://interactivedatacomics.github.io/getstarted.html) to add interactivity such as: 
+* **What are interactive comics**: this happens in the live session on Monday, March 16, 5pm. The session will be recorded. 
+* **How to create the individual panels**: panels are created using vector graphic programs or other tools and need to be exported into SVG or PNG. You can find a full  tutorial to create a simple comic here: [Getstarted.html](https://interactivedatacomics.github.io/getstarted.html).
+* **How to create interaction using a simple scripting language**. Once you have created all your panels, you can use our simple scripting language [Getstarted.html](https://interactivedatacomics.github.io/getstarted.html) to add interactivity such as: 
   * Highlight elements on mouse over
   * Append panels on clicking elements and panels
   * Load new layouts
