@@ -1,5 +1,7 @@
 # Examples
 
+(If you find an example on this page broken, please [email us](zehong.wang@ed.ac.uk) so we can fix it. Our system is still a prototype and constantly improving).
+
 <img src="comics/alliances/alliances.png" width="450px"/>
 
 * [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/comics/alliances/alliances-1.json)
