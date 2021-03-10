@@ -2,7 +2,7 @@
 
 We seek anyone interested in creating interactive web [data-comics](http://interactivedatacomics.github.io) to join our tutorial: learn how to create interactive comics with our scripting editor and give us feedback to improve it. The 30min live tutorial will be held on March 15, 5pm UK time (a video recording will be made available) to get you started, and then you will be working on your comics by yourself, at your own pace. We will be available for questions and help and to gather feedback until March 26, 2021.
 
-No programming knowledge is required but experience with JSON/JavaScript is great. Also, experience with tools such as Adobe Illustrator or Figma is an asset, but not required if you work with tools like Photoshop, Paint, or if you draw visuals by hand on paper!
+No programming knowledge is required but experience with JSON/JavaScript as well as tools such as Adobe Illustrator, Figma. Photoshop,or Paint is an asset but not required. Or, draw your visuals by hand on paper! 
 
 All you need to participate is **eagerness to tell a story** in a visual, compelling, novel, and interactive fashion! **Ideally, come with a dataset and story idea** in mind. And **willingness to share your feedback** on the language, editor and creation process (e.g. what is difficult? what is easy?). We would also like to feature your data comics creations—with your permission—for our research.  This research is not for profit, and it obtained approval  from the ethics board of the School of Informatics, University of Edinburgh. Participation does not require consent but we will not collect and data from you without your consent (see below).
 
@@ -12,7 +12,7 @@ In the tutorial, we will help you learn:
 * How to create and export individual comic panels for your own story
 * How to add interactions to the comics using our novel light-weight scripting language.  
 
-The tutorial has four components, helping you to create your interactive comics at your own pace:
+The tutorial has four components, helping you to create your interactive comics at your own pace and with our help:
 
 * A **live introduction and overview**: _Monday, March 15, 2021_. 5pm UK time. Duration: ~30min. Gives an overview over our research, interactive data comics, and the editor. This session will be recorded if you cannot make that time. Link to join: [https://eu.bbcollab.com/guest/b5b93ab7150740379049bb3ac778ca24](https://eu.bbcollab.com/guest/b5b93ab7150740379049bb3ac778ca24).
 * **Web tutorials** are available [on our website](http://interactivedatacomics.github.io), self-administered with examples and full documentation. New tutorials and examples will be added.
