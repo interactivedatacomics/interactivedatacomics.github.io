@@ -1,5 +1,11 @@
 # Tutorial
 
+We seek anyone interested in creating interactive web [data-comics](http://interactivedatacomics.github.io) to join our tutorial: learn how to create interactive comics with our scripting editor and give us feedback to improve it. The 30min live tutorial will be held on March 15, 5pm UK time (a video recording will be made available) to get you started, and then you will be working on your comics by yourself, at your own pace. We will be available for questions and help and to gather feedback until March 26, 2021.
+
+No programming knowledge is required but experience with JSON/JavaScript is great. Also, experience with tools such as Adobe Illustrator or Figma is an asset, but not required if you work with tools like Photoshop, Paint, or if you draw visuals by hand on paper!
+
+All you need to participate is **eagerness to tell a story** in a visual, compelling, novel, and interactive fashion! **Ideally, come with a dataset and story idea** in mind. And **willingness to share your feedback** on the language, editor and creation process (e.g. what is difficult? what is easy?). We would also like to feature your data comics creations—with your permission—for our research.  This research is not for profit, and it obtained approval  from the ethics board of the School of Informatics, University of Edinburgh. Participation does not require consent but we will not collect and data from you without your consent (see below).
+
 In the tutorial, we will help you learn: 
 
 * What are (interactive) data comics
