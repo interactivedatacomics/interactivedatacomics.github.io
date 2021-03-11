@@ -205,7 +205,7 @@ The following example loads a new set of panels when clicking onto panel `"p5"`.
 ### Replace 
 
 
-This operation will replace a panel with `newpanels` after doing ``"click"`` or ``"mouseover"`` on the ``"element". In the example below, ``"p12"`` indicates the panel with the ``"id"`` of 'p12'.
+This operation will replace a panel with `newpanels` after doing ``"click"`` or ``"mouseover"`` on the ``"element"``. In the example below, ``"p12"`` indicates the panel with the ``"id"`` of ``"p12"``.
 ```json
 {
    "trigger": "click",
