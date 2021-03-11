@@ -1,7 +1,7 @@
 <svg width="642" height="416" viewBox="0 0 642 416" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="humans">
 <rect id="Screen Shot 2021-03-11 at 17.43 1" width="642" height="416" fill="url(#pattern0)"/>
-<rect id="oceans" x="414" y="78" width="216" height="36" fill="#C4C4C4" fill-opacity="0.01"/>
+<rect id="oceans" x="414" y="78" width="216" height="36" fill="#C4C4C4" fill-opacity="0.1"/>
 <rect id="carbon" x="414" y="118" width="216" height="37" fill="#C4C4C4" fill-opacity="0.01"/>
 <rect id="methane" x="410" y="155" width="216" height="36" fill="#C4C4C4" fill-opacity="0.01"/>
 <rect id="ozone" x="407" y="180" width="216" height="36" fill="#C4C4C4" fill-opacity="0.01"/>
