@@ -21,7 +21,6 @@ Interactions include:
 * Load layout
 * Replace
 * Lens
-* Multilayer
 * Pan & Zoom
 * Pictograms
 * and UI elements such as sliders and text input.
