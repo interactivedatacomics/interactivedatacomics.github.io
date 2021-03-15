@@ -1,6 +1,6 @@
 # Documentation 
 
-This page details the differnet constructs and operations in our specification. For a [tutorial, chere elsewhere](getstarted.html)
+This page details the different constructs and operations in our specification. The [Getting Started tutorial](getstarted.html) provides a gentler introduction for new users.
 
 This documentation covers: 
 
@@ -78,12 +78,12 @@ A layout is modeled as a nested array, e.g., `[["p1","p2",["p3",["p4","p5"]]], [
 
 # Data
 
-Our spec has some contructs to refer to data, helas, we're talking about data comics.
+Our spec has some constructs to refer to data, as it is intended for the construction of [Data Comics](https://www.datacomics.net/).
 
 ## Classes
 Classes group visual elements within your elements into groups. Classes can be used to, e.g., highlight elements or otherwise refer to groups of elements. 
 
-Classes are only possible in `svg` panels and requires the elements you are refering to to have unique IDs, `id="myBar"` in the `svg` file. IDs can be the same across panels, e.g., if you have several panels with a bar chart, the first bar can always be called, e.g., `bar1`.
+Classes are only possible in `svg` panels and requires the elements you are referring to to have unique IDs, `id="myBar"` in the `svg` file. IDs can be the same across panels, e.g., if you have several panels with a bar chart, the first bar can always be called, e.g., `bar1`.
 
 The following example groups three elements `france`, `germany`, `uk` under the class `countries`. Note that these classes work like classes in CSS, but any class attributes in your `svg` are ignored. 
 
@@ -143,7 +143,7 @@ Operations are the core of interactive data comics. Operations specify what shou
 
 ## Highlight
 
-The highlight operation can highlight content (e.g., panels or elements) upon a `trigger`; `click` or `mouseover` of a specified `element`. The highligth operations then highligths all elements with the same ID as the `element`. 
+The highlight operation can highlight content (e.g., panels or elements) upon a `trigger`; `click` or `mouseover` of a specified `element`. The highlight operations then highlights all elements with the same ID as the `element`. 
 
 Highlighting can be used as a visual reference when the authors wants the audience to look back/forward at a certain panel or show that an element is the same across panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after being clicked. 
 
@@ -164,11 +164,11 @@ The following example highlights all elements (across all panels) with the ID `f
 This operation appends (inserts) one or more panels or a layout (`newpanels`) after given panel (`after`). The append operation is triggered through a `trigger` on an `element` (panel or element ID).
 
 `newpanels` can contain 
-* a singel panel: e.g, `["p3"]`, 
+* a single panel: e.g, `["p3"]`, 
 * a layout specified in-place, e.g., `["p3",["p4","p5"]]`, or
-* a reference to layout specied in the `layouts` array: e.g., `myLayout`. 
+* a reference to layout specified in the `layouts` array: e.g., `myLayout`. 
 
-This operation can be used for different narrative purposes, e.g., adding a branch to the storyline from a certain point; providing more details by drilling down from this panel; revealing the answer for a question rised in the panel; hinding a punchline and etc. Note this operation will not romove or replace any panles. If you want remove any panle and load new panels, use "Load layout".
+This operation can be used for different narrative purposes, e.g., adding a branch to the storyline from a certain point; providing more details by drilling down from this panel; revealing the answer for a question raised in the panel; hiding a punchline and etc. Note this operation will not romove or replace any panels. If you want remove any panle and load new panels, use "Load layout".
 
 The following example appends a panel `"p11"` after panel `"p7"` by a click on panel `"p6"`.
 
@@ -264,7 +264,7 @@ Creates a simple pan and zoom behavior for a dedicated panel. Can also propagate
 
 # Conditions
 
-Setting a condition for operations, when the opration is triggered, different oprations will run under the condition setted.
+Setting a condition for operations, when the operation is triggered, different operations will run under the condition set.
 
 ```json
 { 
@@ -290,7 +290,7 @@ UI elements are specified *inside* a panel spec.
 
 ### Slider
 
-A slider can be created for an element with a specifc `id` and bound to a `variable`. The length of the slider will be as same as the placehover element. `min` and `max` are optional attribute indicating minimum and maximum value of the slider and its associated variable. Default values of min and max are `0` and `100 ` respectively.
+A slider can be created for an element with a specific `id` and bound to a `variable`. The length of the slider will be as same as the placehover element. `min` and `max` are optional attribute indicating minimum and maximum value of the slider and its associated variable. Default values of min and max are `0` and `100 ` respectively.
 
 The below example creates two sliders inside the panel spec for panel `0`. Each slider is bound to a variable.
 
