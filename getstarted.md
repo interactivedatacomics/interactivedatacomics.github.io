@@ -7,12 +7,12 @@ Using a simple example, this page gives a step-by-step overview how you can crea
 
 Check the [final interactive comic in our editor](https://hugoromat.github.io/interactiveComics/library/dist/getStarted.html). You can download the [JSON specification for this example here](getstarted/tutorial.json). After this tutorial, read the [documentation](documentation.html) to learn about the other operations.
 
-The scrpting langaug is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels. **We strongly recomment to check your JSON script using a common JSON validator, such as [JSONlint](https://jsonlint.com) to avoid syntax errors**.
+The scrpting language is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels. **We strongly recommend you to check your JSON script using a common JSON validator, such as [JSONlint](https://jsonlint.com) to avoid syntax errors**.
 
 The steps to create an interactive data comic are as follows, explained in detail in this tutorial: 
 * [1 Creating Panels](#creating-panels): drawing panels and layout, naming elements in panels and export individual panels. **This step will take most of your time** and does not involve our specification.
 * [Export panels and host them online](#13-exporting-panels)
-* [2 Specify layout](#specify-layout): specify how panels will be laid out in the interactve version.
+* [2 Specify layout](#specify-layout): specify how panels will be laid out in the interactive version.
 * [3 Specify operations](#specify-operations): specify what interactive features you would like the comic to have.
 
 
@@ -24,7 +24,7 @@ Panels are the core element of any (interactive)(data) comic and you will spend 
 
 Panels are created using any drawing tool you like and are completely created by you and your creativity. Panels can contain text, images, drawings, and visualizations.  
 
-Generally, we distinguish between the follwing two *panel formats*:
+Generally, we distinguish between the following two *panel formats*:
 
 * **Vector graphics:** which can export to the scalable vector graphic (`.svg`) format. Commonly used tools include Adobe Illustrator, [Figma](https://www.figma.com) (which is free to use), Sketch, etc. **We strongly recommend that you create your panels as a vector graphic**.
 * **Pixel graphics:** export into common `.png` files. The most prominent example tool is Adobe Photoshop, etc. You can also draw panels by hand, scan them, and save them as `.png` files. 
@@ -80,7 +80,7 @@ Next, we need to store all panels on a public webspace for our software to find 
 
 ![](getstarted/panels/files.png)
 
-To get the public URL for each pabel, click on each file and click the `Raw` button in the menu bar just above the panel image: 
+To get the public URL for each panel, click on each file and click the `Raw` button in the menu bar just above the panel image: 
 
 ![](getstarted/tut-raw.png)
 
@@ -100,7 +100,7 @@ The specification is written in [Java Script Object Notation (JSON)](https://en.
 
 If you have never heard of JSON before, check this brief [introduction](json-intro.html).
 
-All of the following code of this tutorial should be surrounded by a pair of curly brakets "`{}`".
+All of the following code of this tutorial should be surrounded by a pair of curly brackets "`{}`".
 
 ## 2.1 Specify Panels 
 
@@ -147,7 +147,7 @@ Our engine will retrieve the pictures from these URLs.
 
 ## 2.2 Specify Panels 
 
-Second, we need to specify how panels are laid out. The layout design should have happend in the [design phase](#11-drawing-panels).
+Second, we need to specify how panels are laid out. The layout design should have happened in the [design phase](#11-drawing-panels).
 The panel width for each panel is specified in side each panel SVG or PNG file so that you do not have to care about this in the specification. All we need to do do is to specify the order and when to start a new row. 
 
 Layouts are specified as *nested* arrays using squared brakets `[]`. For our example, we create a layout with 1 row that contains our first two panels `p_price` and `p_units`. To that end, we place both numbers into an array `["p_price","p_units"]` to indicate that they should appear on the *same* row (our specifcation supports a [wide range of layout options](documentation.html#comic-layout)).
@@ -185,7 +185,7 @@ In the following, we specify two types of operations.
 
 ## Highlight elements on mouse-over
 
-The first operation highlights (`"operation": "highlight"`) all occurances of element `A` when the user hovers (`"trigger": "mouseover"`) any element with the id `a` (`"element": "a"`). The highlighted elements will be drawn with a red content and red border (`"after": {"style": {"fill": "red", "border": "red"}}"`). We create (e.g., copy-paste) the same operation three times, once for each of the alements `a`, `b`, and `c`.
+The first operation highlights (`"operation": "highlight"`) all occurances of element `A` when the user hovers (`"trigger": "mouseover"`) any element with the id `a` (`"element": "a"`). The highlighted elements will be drawn with a red content and red border (`"after": {"style": {"fill": "red", "border": "red"}}"`). We create (e.g., copy-paste) the same operation three times, once for each of the elements `a`, `b`, and `c`.
  
 ```json
 "operations": [
@@ -268,7 +268,7 @@ Copy the following code into the `operation` array. Make sure each operation is 
   }
 ```
 
-Last, we want a click onto the button *compare* to replace the current detailed set of panels (`p_sales-a`,`p_sales-b` or `p_sales-c`) with the a series of smaller panels showing all three time series at the same time. The following code creates another operation `loadLayout` that is triggered when the user clicks (`"trigger": "click"`) the 'Compare All' button (`"element": "compare"`, remember, we gave the 'Compare All' button the id `compare`. Without that ID, the code will not work).
+Last, we want a click onto the button *compare* to replace the current detailed set of panels (`p_sales-a`,`p_sales-b` or `p_sales-c`) with a series of smaller panels showing all three time series at the same time. The following code creates another operation `loadLayout` that is triggered when the user clicks (`"trigger": "click"`) the 'Compare All' button (`"element": "compare"`, remember, we gave the 'Compare All' button the id `compare`. Without that ID, the code will not work).
 
 Note that in this example, we replace the current panel in layout group `group1` by three panels on a new row: `[["p_sales-a-small","p_sales-b-small","p_sales-c-small"]]`.  
 ```json
