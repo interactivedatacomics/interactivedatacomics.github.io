@@ -60,6 +60,15 @@ Each layout needs a unique `name`. (*tip:* if you have several panels that are p
 ]
 }
 ```
+
+
+          <iframe id="InteractiveComics"
+            title="InteractiveComics"
+            width="300"
+            height="200"
+            src='https://hugoromat.github.io/interactiveComics/library/dist/index.html?JSON=XQAAAAJbBQAAAAAAAABCqYjnU9ifL_Rot8OiRrk6xhmLiQgEyounlKIvn-fRcgmrBnRHJHX7c4pvm6VjS9D8A9EW1NYT2BHkXlcTudwpTHHA2uN8UdMlj8KXBvnfJQJGvNf4RhNzhCdS2UbCDZn7A-fFRMbgHFXVNbi_Cj7lO8JphQD8VQmN3a4HlnVkoF_rPN4IoxBithUSOrRpXf6jCQywgQLmuiX6pnOFw17MFd4aqi9N6xesV1WHclfmwZiK5H8Taq6B9VB2C82K2fvKaOYrPHtje3mIH_rCQYv5PR4p8pThF-FQQVLtPy_FDVdhSOAEG_O8VzEia4b4Gq2u-HElLDy4X48GuqLNa087O_llcqXJaDNqW21brHtsNx1NrlGGaF6A6r8XjblbUePJb54p-VAzGd1E6JPGMmBsWWRvOkSk41-9iRKgTOYPJsSdyGkowRxNwXcbPOTuDy7_tgRb1A&coding=false'>
+          </iframe>
+        
 This exmple will load six panels, three in each row. 
 
 ## Types of layouts
