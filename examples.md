@@ -30,5 +30,5 @@
 ## A tube journey in East London
 <a href="https://hugoromat.github.io/interactiveComics/library/dist/London.html"><img src="comics/EaternLondon/EasternLondon.png" width="450px"/></a>
 
-* [JSON Script](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/London)
-* [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/London.html)
+* [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/comics/EaternLondon/EasternLondon)
+* [Live example in editor](https://hugoromat.github.io/interactiveComics/master/library/dist/London.html)
