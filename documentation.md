@@ -145,7 +145,9 @@ Operations are the core of interactive data comics. Operations specify what shou
 
 ## Highlight
 
-The highlight operation can highlight content (e.g., panels or elements) upon a `trigger`; `click` or `mouseover` of a specified `element`. The highlight operations then highlights all elements with the same ID as the `element`. 
+The highlight operation can highlight content (e.g., panels or elements) upon a `trigger`; `click` or `mouseover` of a specified `element`. The highlight operations then highlights either: 
+* all elements with the same ID as the `element` if `what` has not been informed
+* or all element with the ID informed in the `what` field
 
 Highlighting can be used as a visual reference when the authors wants the audience to look back/forward at a certain panel or show that an element is the same across panel. For providing clear affordances, it can also be used as a visual feedback or feedforward for interactive elements, e.g., indicating clickable elements or change an element's visual status after being clicked. 
 
@@ -158,6 +160,7 @@ The following example highlights all elements (across all panels) with the ID `f
      "trigger": "mouseover", 
      "element": "france",
      "operation": "highlight", 
+     "what": 
      "after": {"style": {"fill": "red", "transform": "scale(1.5)"}, "attr":[]},
 }
 ```
