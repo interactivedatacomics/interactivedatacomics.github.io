@@ -1,9 +1,10 @@
 # Interactive Comics
 ## Change the organization in panel
 ## Change Contents in panle 
-Choose-Your-Own-Adventure / Whatifs
+Choose-Your-Own-Adventure & Whatifs
+
 [Yikes! 6ft please!](https://gramener.com/nyc311/)
-[Apple or orange] https://muckenhoupt.itch.io/interactive-comics-prototype
+[Apple or orange](https://muckenhoupt.itch.io/interactive-comics-prototype)
 ## Tooltip
 [Is that true?](https://public.tableau.com/profile/mikevizneros#!/vizhome/IsThatRight/IsThatTrue)
 ## Game Comicss.  
