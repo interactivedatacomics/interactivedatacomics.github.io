@@ -160,7 +160,7 @@ The following example highlights all elements (across all panels) with the ID `f
      "trigger": "mouseover", 
      "element": "france",
      "operation": "highlight", 
-     "what": 
+     "what": "france-details",
      "after": {"style": {"fill": "red", "transform": "scale(1.5)"}, "attr":[]},
 }
 ```
