@@ -30,10 +30,14 @@ Choose-Your-Own-Adventure & Whatifs
 
 ## Tooltip
 [Is that true?](https://public.tableau.com/profile/mikevizneros#!/vizhome/IsThatRight/IsThatTrue)
+
 ## Game Comicss.  
+
 [FRAMED](http://framed-game.com/)
+
 ## Motion Comics
 Animated comic
+
 [DREAM STATE](https://abwaesser.net/comic/dream-state/)
 
 [STOFF](https://abwaesser.net/comic/stoff/)
