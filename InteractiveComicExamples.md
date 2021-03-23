@@ -3,7 +3,11 @@
 Branching Comics & Change the presence of panel
 [Meanwhile](https://www.zarfhome.com/meanwhile/)
 
+[What the Blob](https://rosalindjchang.github.io/whattheblob/)
+
 [visiting-the-aquarium](https://abwaesser.net/comic/visiting-the-aquarium/) (DRAG THE PHOTOS TO UNCOVER THE STACK)
+
+[xkcd Click and Drag](https://xkcd.com/1110/)
 
 [PoCom-UK-001](http://e-merl.com/pocom.htm) Many examples from E-merl.com don't show due to absence of Flash, [here](http://www.dsource.in/sites/default/files/course/latest-trends-sequential-storytelling/interactive-comics/hypercomics/images/Fig.09%20-%20PoCom-UK-001_hypercomic.gif) is a GIF overview of this example. 
 
@@ -12,12 +16,16 @@ Branching Comics & Change the presence of panel
 
 [CLAMS II](https://abwaesser.net/comic/clams-ii/#drop)
 
+[Remember](https://ncase.me/remember/)
+
 ## Change Contents in panle 
 Choose-Your-Own-Adventure & Whatifs
 
 [Yikes! 6ft please!](https://gramener.com/nyc311/)
 
 [Apple or orange](https://muckenhoupt.itch.io/interactive-comics-prototype)
+
+[Remember](https://ncase.me/remember/)
 
 [ZÜÜG](https://abwaesser.net/comic/zueueg/)
 
@@ -26,6 +34,8 @@ Choose-Your-Own-Adventure & Whatifs
 [Ölteppich](https://abwaesser.net/comic/oelteppich/)
 
 [HEIDI](https://abwaesser.net/comic/heidi/) (TAP/CLICK PANELS TO FLIP THE PANEL)
+
+[Non-branching Interactive Comics](https://link.springer.com/chapter/10.1007%2F978-3-319-03161-3_16) _Academic reference_, the system allows users to interact with certain objects, and then observe the consequences of their actions in the unfolding story. 
 
 ## Hero's Journey
 
@@ -36,9 +46,11 @@ Choose-Your-Own-Adventure & Whatifs
 ## Tooltip
 [Is that true?](https://public.tableau.com/profile/mikevizneros#!/vizhome/IsThatRight/IsThatTrue)
 
-## Game Comicss.  
+## Game Comics.  
 
 [FRAMED](http://framed-game.com/)
+
+[Florence](https://annapurnainteractive.com/games/florence)
 
 ## Motion Comics
 Animated comic
