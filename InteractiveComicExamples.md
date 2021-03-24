@@ -17,7 +17,7 @@ This category includes cominics with interactions for **Branching narratives** &
 
 [CLAMS II](https://abwaesser.net/comic/clams-ii/#drop) by _Michael Kühni_. It has only one interaction --- clicking the shaking clam will reveal a pounchline in few new panels.
 
-[Remember](https://ncase.me/remember/) by _Nicky Case_ is a comic for explanning how memory works. Its have various types _Queation and Answer_ pattern to engage audience to follow its explanning pace.
+[Remember](https://ncase.me/remember/) by _Nicky Case_ is a comic for explanning how memory works. Some panels are hiden until the audience click the trigger.
 
 ## Change Contents in panle 
 Choose-Your-Own-Adventure & Whatifs
@@ -26,7 +26,7 @@ Choose-Your-Own-Adventure & Whatifs
 
 [Apple or orange](https://muckenhoupt.itch.io/interactive-comics-prototype)
 
-[Remember](https://ncase.me/remember/)
+[Remember](https://ncase.me/remember/) by _Nicky Case_ is a comic for explanning how memory works. Its have various types Queation and Answer pattern to engage audience to follow its explanning pace.
 
 [ZÜÜG](https://abwaesser.net/comic/zueueg/)
 
@@ -45,7 +45,7 @@ Choose-Your-Own-Adventure & Whatifs
 [The Empty Kingdom](http://www.kongregate.com/games/Stillmerlin/the-empty-kingdom) See [here](http://www.dsource.in/sites/default/files/course/latest-trends-sequential-storytelling/interactive-comics/hypercomics/images/Fig.10%20-%20the%20empty%20kingdon-%20hypercomic.gif) a GIF overview of this example. 
 
 ## Tooltip
-[Is that true?](https://public.tableau.com/profile/mikevizneros#!/vizhome/IsThatRight/IsThatTrue)
+[Is that true?](https://public.tableau.com/profile/mikevizneros#!/vizhome/IsThatRight/IsThatTrue) by _Mike Cisneros_ is a data comics with simple tooltip to reaveal the data of each visual elements.
 
 ## Game Comics.  
 
