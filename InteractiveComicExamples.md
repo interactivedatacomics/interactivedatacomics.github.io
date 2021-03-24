@@ -35,7 +35,7 @@ This category includes interactive comic types like **Choose-Your-Own-Adventure*
 
 [Ölteppich](https://abwaesser.net/comic/oelteppich/) by _Michael Kühni_, unfolding the narative by clicking.
 
-[HEIDI](https://abwaesser.net/comic/heidi/) (TAP/CLICK PANELS TO FLIP THE PANEL)
+[HEIDI](https://abwaesser.net/comic/heidi/) by _Michael Kühni_, click the panels to flip the other side of the panel.
 
 [Non-branching Interactive Comics](https://link.springer.com/chapter/10.1007%2F978-3-319-03161-3_16) _Academic reference_, the system allows users to interact with certain objects, and then observe the consequences of their actions in the unfolding story. 
 
@@ -62,19 +62,19 @@ Also called Animated comic,s is a form of animation combining elements of print 
 
 [DREAM STATE](https://abwaesser.net/comic/dream-state/) by _Michael Kühni_.
 
-[STOFF](https://abwaesser.net/comic/stoff/)
+[STOFF](https://abwaesser.net/comic/stoff/) by _Michael Kühni_.
 
-[Coup de pompe](https://turbointeractive.fr/coup-de-pompe/)
+[Coup de pompe](https://turbointeractive.fr/coup-de-pompe/) by _Geoffo_.
 
-[Le Ballon](https://turbointeractive.fr/le-ballon/)
+[Le Ballon](https://turbointeractive.fr/le-ballon/) by _Raisin Martial_.
 
-[Neon Wasteland](https://www.neonwastelandgame.com/)
+[Neon Wasteland](https://www.neonwastelandgame.com/) by _Rob Shields_.
 
-[RRR 2](https://play.google.com/store/apps/details?id=com.PLASTIEK.RRR2&fbclid=IwAR17BAPbmAslO22ibetS04lIrKv0O1barbiuRYbY0bsPr8XmnNUdcp5Wx4s)
+[RRR 2](https://play.google.com/store/apps/details?id=com.PLASTIEK.RRR2&fbclid=IwAR17BAPbmAslO22ibetS04lIrKv0O1barbiuRYbY0bsPr8XmnNUdcp5Wx4s) by _André Bergs_ and _Thawatchai Chunhachai_.
 
-[Murat](https://vimeo.com/96635260) (Can not find oringial the link) 
+[Murat](https://vimeo.com/96635260) by _Ondrej Novak_ and _Vojtech Seda_. (Can not find oringial link) 
 
 ## Augmented Reality Comics
-[Monde Binaire](https://transmii.com/project/monde-binaire/)
+[Monde Binaire](https://transmii.com/project/monde-binaire/) by _Baptiste Milesi_. The dedicated app makes use of augmented reality, allowing users to enter short gameplays in order to uncover the whole story.
 
-[Memory Catcher](https://screendiver.com/directory/memory-catcher/)
+[Memory Catcher](https://screendiver.com/directory/memory-catcher/) by _Transmïi Studio_. The application alternates between a comic-reading mode and a camera mode, where audience are invited to find clues on the augmented posters to make the story progress.
