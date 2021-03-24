@@ -10,7 +10,7 @@ This category includes cominics with interactions for **Branching narratives** &
 
 [xkcd Click and Drag](https://xkcd.com/1110/) includes a panel showing big canvas for audience to explore. Although there's no fixed reading order, the landline works as a visual guide.
 
-[PoCom-UK-001](http://e-merl.com/pocom.html) by _Daniel Merlin Goodbrey_. Many examples on E-merl.com don't show due to absence of Flash, [here](http://www.dsource.in/sites/default/files/course/latest-trends-sequential-storytelling/interactive-comics/hypercomics/images/Fig.09%20-%20PoCom-UK-001_hypercomic.gif) is a GIF overview of this example. The comic panels are presented by a flowchart-like structure and the story unfolds by following different tracks of the linked panels. 
+[PoCom-UK-001](http://e-merl.com/pocom.htm) by _Daniel Merlin Goodbrey_. Many examples on E-merl.com don't show due to absence of Flash, [here](http://www.dsource.in/sites/default/files/course/latest-trends-sequential-storytelling/interactive-comics/hypercomics/images/Fig.09%20-%20PoCom-UK-001_hypercomic.gif) is a GIF overview of this example. In reference to the concept of hypertext fiction, where narrative is non-linear and non-hierarchical, hypercomics are a variation of comics that has truly embraced its digital medium, allowing multiple changeable paths within a fractured rhizomatic environment.
 
 
 ## Add new panels
