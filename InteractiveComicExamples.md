@@ -22,7 +22,7 @@ This category includes cominics with interactions for **Branching narratives** &
 ## Change Contents in panle 
 Choose-Your-Own-Adventure & Whatifs
 
-[Yikes! 6ft please!](https://gramener.com/nyc311/)
+[Yikes! 6ft please!](https://gramener.com/nyc311/) by _Gramener_ presents options to show data of compains of social distence in different regions.
 
 [Apple or orange](https://muckenhoupt.itch.io/interactive-comics-prototype)
 
