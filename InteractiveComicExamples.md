@@ -14,51 +14,53 @@ This category includes cominics with interactions for **Branching narratives** &
 
 
 ## Add new panels
+This category collects interactions that reveals hiden panels in a linear narrative.
 
 [CLAMS II](https://abwaesser.net/comic/clams-ii/#drop) by _Michael Kühni_. It has only one interaction --- clicking the shaking clam will reveal a pounchline in few new panels.
 
 [Remember](https://ncase.me/remember/) by _Nicky Case_ is a comic for explanning how memory works. Some panels are hiden until the audience click the trigger.
 
 ## Change Contents in panle 
-Choose-Your-Own-Adventure & Whatifs
+This category includes interactive comic types like **Choose-Your-Own-Adventure** and **Whatifs**, which change the contents in a fixed narrative line.
 
 [Yikes! 6ft please!](https://gramener.com/nyc311/) by _Gramener_ presents options to show data of compains of social distence in different regions.
 
-[Apple or orange](https://muckenhoupt.itch.io/interactive-comics-prototype)
+[Apple or orange](https://muckenhoupt.itch.io/interactive-comics-prototype) by _Muckenhoupt_ is a simple what-if comic, the comic presents different result by selecting an apple or an orange.
 
 [Remember](https://ncase.me/remember/) by _Nicky Case_ is a comic for explanning how memory works. Its have various types Queation and Answer pattern to engage audience to follow its explanning pace.
 
-[ZÜÜG](https://abwaesser.net/comic/zueueg/)
+[ZÜÜG](https://abwaesser.net/comic/zueueg/) by _Michael Kühni_ is an abstract comic, in which audience can overturn panels to reveal various art works.
 
-[COMING OF AGE](https://abwaesser.net/comic/coming-of-age/)
+[COMING OF AGE](https://abwaesser.net/comic/coming-of-age/) by _Michael Kühni_, illustrating pee in four stages of a man by overturning the panels.
 
-[Ölteppich](https://abwaesser.net/comic/oelteppich/)
+[Ölteppich](https://abwaesser.net/comic/oelteppich/) by _Michael Kühni_, unfolding the narative by clicking.
 
 [HEIDI](https://abwaesser.net/comic/heidi/) (TAP/CLICK PANELS TO FLIP THE PANEL)
 
 [Non-branching Interactive Comics](https://link.springer.com/chapter/10.1007%2F978-3-319-03161-3_16) _Academic reference_, the system allows users to interact with certain objects, and then observe the consequences of their actions in the unfolding story. 
 
 ## Hero's Journey
+This category includes examples that stories unfolded by following a main charactor going through different panels.
 
-[DEPLOY (DER ANSCHLAG)](https://abwaesser.net/comic/deploy/)
+[DEPLOY (DER ANSCHLAG)](https://abwaesser.net/comic/deploy/) by _Michael Kühni_, illustrating a droping box with moving background, the pace is controlled by the speed of an audience scrolling down the screen.
 
-[The Empty Kingdom](http://www.kongregate.com/games/Stillmerlin/the-empty-kingdom) See [here](http://www.dsource.in/sites/default/files/course/latest-trends-sequential-storytelling/interactive-comics/hypercomics/images/Fig.10%20-%20the%20empty%20kingdon-%20hypercomic.gif) a GIF overview of this example. 
+[The Empty Kingdom](http://www.kongregate.com/games/Stillmerlin/the-empty-kingdom) by _Daniel Merlin Goodbrey_. See [here](http://www.dsource.in/sites/default/files/course/latest-trends-sequential-storytelling/interactive-comics/hypercomics/images/Fig.10%20-%20the%20empty%20kingdon-%20hypercomic.gif) a GIF overview of this example. Similar to “walking simulators”, the audience would follow the character in different scenes.
 
 ## Tooltip
 [Is that true?](https://public.tableau.com/profile/mikevizneros#!/vizhome/IsThatRight/IsThatTrue) by _Mike Cisneros_ is a data comics with simple tooltip to reaveal the data of each visual elements.
 
-## Game Comics.  
+## Game Comics
 
-[FRAMED](http://framed-game.com/)
+[FRAMED](http://framed-game.com/) by _LOVESHACK ENTERTAINMENT_. It is a noir-puzzle game where player could re-arrange panels of animated comic book to change the outcome of the story.
 
-[Florence](https://annapurnainteractive.com/games/florence)
+[Florence](https://annapurnainteractive.com/games/florence) by _Annapurna Pictures_. A graphic novel embeded with gimification elements.
 
 ## Motion Comics
-Animated comic
+Also called Animated comic,s is a form of animation combining elements of print comic books and animation. Individual panels are expanded into a full shot while sound effects, voice acting, and animation are added to the original artwork.
 
-[DRENGEXPLOSION](https://www.behance.net/gallery/82163113/DRENGEXPLOSION?tracking_source=search_projects_recommended%7Cinteractive%20comic)
+[DRENGEXPLOSION](https://www.behance.net/gallery/82163113/DRENGEXPLOSION?tracking_source=search_projects_recommended%7Cinteractive%20comic) by _Michele Bruttomesso_. 
 
-[DREAM STATE](https://abwaesser.net/comic/dream-state/)
+[DREAM STATE](https://abwaesser.net/comic/dream-state/) by _Michael Kühni_.
 
 [STOFF](https://abwaesser.net/comic/stoff/)
 
