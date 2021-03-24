@@ -4,7 +4,7 @@ This category includes cominics with interactions for **Branching narratives** &
 
 [Meanwhile](https://www.zarfhome.com/meanwhile/) by _Jason Shiga_ is an interactive printed comic book. Different choices make by audience determine how the story unfolds. Meanwhile splits off into thousands of different adventures.
 
-[What the Blob](https://rosalindjchang.github.io/whattheblob/) by _Rosalind Chang_ is a non-linear interactive comic art work, it does not have any text but has compelling graphic design. The design is rather expiremental and speculative, thus there is no clear goal associates to each interactivity. 
+[What the Blob](https://rosalindjchang.github.io/whattheblob/) by _Rosalind Chang_ is a non-linear interactive comic art work, it does not have any text but has compelling graphic design, interactions are triggered by clicking and hovering on white rectangles. The layout is dynamicly trandfered with soft animations. The design is rather expiremental and speculative, thus there is no clear goal associates to each interactivity. 
 
 [visiting-the-aquarium](https://abwaesser.net/comic/visiting-the-aquarium/) by _Michael Kühni_ is a story presented on a stack of cards placed in order, by draging the photos to uncover the stack. The design of cards placed in a stack hints the draging interaction.
 
@@ -15,9 +15,9 @@ This category includes cominics with interactions for **Branching narratives** &
 
 ## Add new panels
 
-[CLAMS II](https://abwaesser.net/comic/clams-ii/#drop)
+[CLAMS II](https://abwaesser.net/comic/clams-ii/#drop) by _Michael Kühni_. It has only one interaction --- clicking the shaking clam will reveal a pounchline in few new panels.
 
-[Remember](https://ncase.me/remember/)
+[Remember](https://ncase.me/remember/) by _Nicky Case_ is a comic for explanning how memory works. Its have various types _Queation and Answer_ pattern to engage audience to follow its explanning pace.
 
 ## Change Contents in panle 
 Choose-Your-Own-Adventure & Whatifs
