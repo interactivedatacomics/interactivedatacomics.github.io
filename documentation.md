@@ -90,10 +90,12 @@ Classes are only possible in `svg` panels and requires the elements you are refe
 The following example groups three elements `france`, `germany`, `uk` under the class `countries`. Note that these classes work like classes in CSS, but any class attributes in your `svg` are ignored. 
 
 ```json
-"classes":{
-  "name": "countries",
-  "elements":["france", "germany", "uk"]
-}
+"classes":[
+  {
+     "class": "countries",
+     "elements":["france", "germany", "uk"]
+  }
+]
 ```
 
 ## Variables 
