@@ -1,15 +1,16 @@
 # Interactive Comics
 ## Non-linear Interactive Comics
-Branching Comics & Change the presence of panel
-[Meanwhile](https://www.zarfhome.com/meanwhile/)
+This category includes cominics with interactions for **Branching narratives** & **Changing the presence of panels**, 
 
-[What the Blob](https://rosalindjchang.github.io/whattheblob/)
+[Meanwhile](https://www.zarfhome.com/meanwhile/) by _Jason Shiga_ is an interactive printed comic book. Different choices make by audience determine how the story unfolds. Meanwhile splits off into thousands of different adventures.
 
-[visiting-the-aquarium](https://abwaesser.net/comic/visiting-the-aquarium/) (DRAG THE PHOTOS TO UNCOVER THE STACK)
+[What the Blob](https://rosalindjchang.github.io/whattheblob/) by _Rosalind Chang_ is a non-linear interactive comic art work, it does not have any text but has compelling graphic design. The design is rather expiremental and speculative, thus there is no clear goal associates to each interactivity. 
 
-[xkcd Click and Drag](https://xkcd.com/1110/)
+[visiting-the-aquarium](https://abwaesser.net/comic/visiting-the-aquarium/) by _Michael Kühni_ is a story presented on a stack of cards placed in order, by draging the photos to uncover the stack. The design of cards placed in a stack hints the draging interaction.
 
-[PoCom-UK-001](http://e-merl.com/pocom.htm) Many examples from E-merl.com don't show due to absence of Flash, [here](http://www.dsource.in/sites/default/files/course/latest-trends-sequential-storytelling/interactive-comics/hypercomics/images/Fig.09%20-%20PoCom-UK-001_hypercomic.gif) is a GIF overview of this example. 
+[xkcd Click and Drag](https://xkcd.com/1110/) includes a panel showing big canvas for audience to explore. Although there's no fixed reading order, the landline works as a visual guide.
+
+[PoCom-UK-001](http://e-merl.com/pocom.hDaniel Merlin Goodbrey tm) by _Daniel Merlin Goodbrey_. Many examples on E-merl.com don't show due to absence of Flash, [here](http://www.dsource.in/sites/default/files/course/latest-trends-sequential-storytelling/interactive-comics/hypercomics/images/Fig.09%20-%20PoCom-UK-001_hypercomic.gif) is a GIF overview of this example. The comic panels are presented by a flowchart-like structure and the story unfolds by following different tracks of the linked panels. 
 
 
 ## Add new panels
