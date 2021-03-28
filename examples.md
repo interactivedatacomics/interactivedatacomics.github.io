@@ -34,8 +34,7 @@
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/london.html)
 
 ## Explore Jack's body
-
-Created by Josh Holinaty
+_Created by Josh Holinaty_
 
 <a href="https://hugoromat.github.io/interactiveComics/library/dist/dogJack.html"><img src="/figures/Jack.png" width="450px"/></a>
 
