@@ -33,9 +33,9 @@
 * [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/comics/EaternLondon/EasternLondon)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/london.html)
 
-# Created by Josh Holinaty
-[(CC BY-NC-ND)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+# Explore Jack's body
+Created by Josh Holinaty
 <a href="https://hugoromat.github.io/interactiveComics/library/dist/dogJack.html"><img src="/figures/Jack.png" width="450px"/></a>
-
+[(CC BY-NC-ND)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 * [JSON Script](https://raw.githubusercontent.com/oseph/interactive-data-comics-assets/main/jhcomic.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/dogJack.html)
