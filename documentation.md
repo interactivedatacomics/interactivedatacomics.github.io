@@ -216,6 +216,28 @@ The following example loads a new set of panels when clicking onto panel `"p5"`.
           </iframe>   
 </div>
 
+### Remove
+This operation will remove panels `what` after doing ``"click"`` or ``"mouseover"`` on the ``"element"``. In the example below, when ``"sub3"`` will be clicked ``"sub1"`` and ``"sub2"`` will be removed.
+
+```json
+{
+   "trigger": "click", 
+   "element": "sub3",
+   "operation": "remove",
+   "what": ["sub1", "sub2"], 
+}
+```
+
+
+<div>
+          <iframe id="InteractiveComics"
+            title="InteractiveComics"
+            width="300"
+            height="200"
+            src='https://hugoromat.github.io/interactiveComics/library/dist/index.html?JSON=XQAAAALSAQAAAAAAAABEKchmwyq5QbBWQDrInpDsHdvV1x20B3E-SjTJR9hgq6uxBgC4684nIChPe-hteZOM7IIOcKviOpEd-Jju75AO6_uJ0JV94cTO-rRi-rqUVfPxzynH-7eL76wTDWWxZtLRK3FYbwyP6KJ3X7Pd5CUNveAXW4O_wETyWA9qqT4UkUhEi5Pjvf5wf_gM0yvJse1IyK-zG6zxPngWbOlp8_bNzZ_RRnkyw-xa0fN41VjJsQofHAO7VwEtKShfpvitaj-bNg7PmpNarljxNms8OH9HAEAo4fqUX__uLuIc&coding=false'>
+          </iframe>
+        </div>
+
 ### Replace 
 
 
