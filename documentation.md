@@ -208,10 +208,11 @@ The following example loads a new set of panels when clicking onto panel `"p5"`.
 }
 ```
 <div>
-          <iframe id="InteractiveComics"
+          <
+ id="InteractiveComics"
             title="InteractiveComics"
-            width="500"
-            height="300"
+            width="600"
+            height="600"
             src='https://hugoromat.github.io/interactiveComics/library/dist/index.html?JSON=XQAAAAJmBQAAAAAAAABDKYjnU9ifL_Rot8OiRrk6xhmLiQgEyounlKIvn-fRcgmrBnRHJHX7c4pvm6VjS9D8A9EW1NYT2BHkXlcTudwpTHHA2uN8UdMlj8KXBvnfJQJGvNf4RhNzhCdS2UbCDZn7A-fFRMbgHFXVNbi_Cj7lO8JphQD8VQmN3a4HlnVkoF_rPN4IoxBithUSOrRpXf6jCQywgQLmuiX6pnOFw17MFd4aqi9N6xesV1WHclfmwZiK5H8Taq6B9VB2C82K2fvKaOYrPHtje3mIH_rCQYv5PR4p8pThF-FQQVLtPy_FDVdhSOAEG_O8VzEia4b4Gq2u-HElLDy4X48GuqLNa087O_llcqXJaDNqW21brHtsNx1NrlGGaF6A6r8XjblbUePJb54p-VAzGd1E6JPGMmBsWWRvOkSk41-9iRKgTOYPJsSdyGkowRxNwXcbPMS5xE9C93DCpgn4BU8kyfvcneA&coding=false'>
           </iframe>   
 </div>
@@ -232,8 +233,8 @@ This operation will remove panels `what` after doing ``"click"`` or ``"mouseover
 <div>
           <iframe id="InteractiveComics"
             title="InteractiveComics"
-            width="300"
-            height="200"
+            width="600"
+            height="600"
             src='https://hugoromat.github.io/interactiveComics/library/dist/index.html?JSON=XQAAAALSAQAAAAAAAABEKchmwyq5QbBWQDrInpDsHdvV1x20B3E-SjTJR9hgq6uxBgC4684nIChPe-hteZOM7IIOcKviOpEd-Jju75AO6_uJ0JV94cTO-rRi-rqUVfPxzynH-7eL76wTDWWxZtLRK3FYbwyP6KJ3X7Pd5CUNveAXW4O_wETyWA9qqT4UkUhEi5Pjvf5wf_gM0yvJse1IyK-zG6zxPngWbOlp8_bNzZ_RRnkyw-xa0fN41VjJsQofHAO7VwEtKShfpvitaj-bNg7PmpNarljxNms8OH9HAEAo4fqUX__uLuIc&coding=false'>
           </iframe>
         </div>
@@ -311,8 +312,8 @@ Jump to another view in the canvas
 <div>
           <iframe id="InteractiveComics"
             title="InteractiveComics"
-            width="800"
-            height="200"
+            width="600"
+            height="600"
             src='https://hugoromat.github.io/interactiveComics/library/dist/index.html?JSON=XQAAAALlAAAAAAAAAABDqYjnU9ifL9xKRDsbehVNMYoOrxdTQ7hMkTJVwFaRhRsuMqTTihbZkiR42GI4v_jakB-SEphE8vp3nOl5DWR7Fxd7bqrYoFXcWbqVl-M1zQQjhaK17w8ujHDNqXS3u4UPpkni9RNYpTSfjO7A0E0uONMiHrYdXDVNlGtdwAMjEMPJsY3mQB7CyCPNgwigDn478b7eQ5cK1ymOiGJwFAvVyIictlb7gQO_EUiXf__14dMA&coding=false'>
           </iframe>
 </div>
