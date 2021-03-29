@@ -210,7 +210,7 @@ The following example loads a new set of panels when clicking onto panel `"p5"`.
 
 
 <div>
-          <id="InteractiveComics"
+          <iframe id="InteractiveComics"
             title="InteractiveComics"
             width="600"
             height="400"
