@@ -289,7 +289,7 @@ Jump to another view in the canvas
 <div>
           <iframe id="InteractiveComics"
             title="InteractiveComics"
-            width="300"
+            width="800"
             height="200"
             src='https://hugoromat.github.io/interactiveComics/library/dist/index.html?JSON=XQAAAALlAAAAAAAAAABDqYjnU9ifL9xKRDsbehVNMYoOrxdTQ7hMkTJVwFaRhRsuMqTTihbZkiR42GI4v_jakB-SEphE8vp3nOl5DWR7Fxd7bqrYoFXcWbqVl-M1zQQjhaK17w8ujHDNqXS3u4UPpkni9RNYpTSfjO7A0E0uONMiHrYdXDVNlGtdwAMjEMPJsY3mQB7CyCPNgwigDn478b7eQ5cK1ymOiGJwFAvVyIictlb7gQO_EUiXf__14dMA&coding=false'>
           </iframe>
