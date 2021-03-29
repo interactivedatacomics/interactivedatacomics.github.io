@@ -276,6 +276,17 @@ Creates a simple pan and zoom behavior for a dedicated panel. Can also propagate
 }
 ```
 
+### Jump
+Jump to another view in the canvas
+```json
+{
+   "trigger": "click",
+   "operation": "jump",
+   "element": "down",
+   "target": "p2"
+ }
+```
+
 # Conditions
 
 Setting a condition for operations, when the operation is triggered, different operations will run under the condition set.
