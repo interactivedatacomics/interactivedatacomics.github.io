@@ -1,13 +1,13 @@
 # Get Started
 
-Using a simple example, this page gives a step-by-step overview how you can create an interactive data comic using propriatary drawing tools and our [scripting language](documentation.html). In this example, we will create a simple comic that 
+Using a simple example, this page gives a step-by-step overview of how you can create an interactive data comic using proprietary drawing tools and our [scripting language](documentation.html). In this example, we will create a simple comic that 
 * starts with 2 panels, 
 * highlights elements, and 
 * adds more panels on click. 
 
 Check the [final interactive comic in our editor](https://hugoromat.github.io/interactiveComics/library/dist/getStarted.html). You can download the [JSON specification for this example here](getstarted/tutorial.json). After this tutorial, read the [documentation](documentation.html) to learn about the other operations.
 
-The scrpting language is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels. **We strongly recommend you to check your JSON script using a common JSON validator, such as [JSONlint](https://jsonlint.com) to avoid syntax errors**.
+The scripting language is written in [Java Script Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and is used to specify layouts and interactions on top of a set of drawn comic panels. **We strongly recommend you to check your JSON script using a common JSON validator, such as [JSONlint](https://jsonlint.com) to avoid syntax errors**.
 
 The steps to create an interactive data comic are as follows, explained in detail in this tutorial: 
 * [1 Creating Panels](#creating-panels): drawing panels and layout, naming elements in panels and export individual panels. **This step will take most of your time** and does not involve our specification.
@@ -30,9 +30,9 @@ Generally, we distinguish between the following two *panel formats*:
 * **Pixel graphics:** export into common `.png` files. The most prominent example tool is Adobe Photoshop, etc. You can also draw panels by hand, scan them, and save them as `.png` files. 
 
 
-**Note:** Creating panels as '.svg' allows for more interactivity than `.png` files because we can describe elements inside the panels and reuse them for interactivity. Alternatively, you can can, e.g., hand-draw your panels, then import them into Adobe to add more specific elements (see below).
+**Note:** Creating panels as '.svg' allows for more interactivity than `.png` files because we can describe elements inside the panels and reuse them for interactivity. Alternatively, you can, e.g., hand-draw your panels, then import them into Adobe to add more specific elements (see below).
 
-For our example comic we have drawn the following 8 panels in Figma as vector graphics. We must draw each panels that we want to show at any point in our comic. In the final comic, we start by showing only the first 2 panels and show one more panel on demand. 
+For our example comic we have drawn the following 8 panels in Figma as vector graphics. We must draw each panel that we want to show at any point in our comic. In the final comic, we start by showing only the first 2 panels and show one more panel on demand. 
 
 When we draw the panels, we should draw them with a specific layout in mind. For example, we can draw the panels in their final layout in Figma. In the below image, we show all 8 panels that a user can eventually see in this example since we created them in the same file. 
 
@@ -42,9 +42,9 @@ When we draw the panels, we should draw them with a specific layout in mind. For
 
 To make elements (parts of visualizations, text, buttons, etc.) *inside* our panels interactive, we give those elements IDs. IDs will appear as `id` in the SVG file. To create IDs in Figma, simply change the name of an object in the item list on the left. Alternatively, you can open the exported SVG file using any text editor and add the ID attribute as in the example above. 
 
-In our example, we label the three bars in each chart/panel as well as as the lines in the line charts with the IDs `a`, `b`, and `c` respectvely since they all correspond to the same data elements labeled A, B, and C. We should label the same element in our comic **always** with the same ID as this allows to, e.g., highlight all occurances of this element later. 
+In our example, we label the three bars in each chart/panel as well as as the lines in the line charts with the IDs `a`, `b`, and `c` respectively since they all correspond to the same data elements labeled A, B, and C. We should label the same element in our comic **always** with the same ID as this allows to, e.g., highlight all occurrences of this element later. 
 
-We also want our 'compare all' button show some more panels when clicked. To that end, we give all three instances of this button the same ID `compare `. 
+We also want our 'compare all' button to show some more panels when clicked. To that end, we give all three instances of this button the same ID `compare `. 
 
 ## 1.3 Exporting Panels
 
@@ -53,14 +53,14 @@ We can now export each panel into its own file, either `.png` or `.svg`. In Figm
 * for each panel individually:
 * select all elements in that panel, including the panel frame or background,
 * group these elements ('right-click > Group Selection' or `command+G` on Mac),
-* Select the small "`+`" sign besides `Export` in the menu on the right
+* Select the small "`+`" sign beside `Export` in the menu on the right
 * Change `PNG` to `SVG`
 * Click the "`...`" button to the right of the "SVG" field 
 * Make sure the *"Include 'id' Attribute"* option is checked. 
 * Click the `Export ...` button. 
 
 In illustrator: 
-* save As a svg file, carry on as normal until you get the final dialogue window. Once this pops up, 
+* save As an svg file, carry on as normal until you get the final dialogue window. Once this pops up, 
 * click on more options in the bottom left, 
 * uncheck Responsive
 
@@ -76,7 +76,7 @@ We repeat this for **each** panel. In our case, we end up with eight SVG files, 
 
 ## 1.4 Make Panels Available Online
 
-Next, we need to store all panels on a public webspace for our software to find them. If you do not have your own server, greate a public and free [GitHub](https://github.com) repository. Then, upload all your panels, which should look like so: 
+Next, we need to store all panels on a public web space for our software to find them. If you do not have your own server, create a public and free [GitHub](https://github.com) repository. Then, upload all your panels, which should look like so: 
 
 ![](getstarted/panels/files.png)
 
@@ -84,7 +84,7 @@ To get the public URL for each panel, click on each file and click the `Raw` but
 
 ![](getstarted/tut-raw.png)
 
-In the new page that opens, copy the URL from your browser window. That is your panel's URL. In our case, we obtained the following URLs. You can use these URLs in for the rest of the tutorial, you do not have to upload these panels again. 
+On the new page that opens, copy the URL from your browser window. That is your panel's URL. In our case, we obtained the following URLs. You can use these URLs for the rest of the tutorial, you do not have to upload these panels again. 
 
 * [https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/price.svg](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/price.svg)
 * [https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/panels/units.svg)
@@ -148,11 +148,11 @@ Our engine will retrieve the pictures from these URLs.
 ## 2.2 Specify Panels 
 
 Second, we need to specify how panels are laid out. The layout design should have happened in the [design phase](#11-drawing-panels).
-The panel width for each panel is specified in side each panel SVG or PNG file so that you do not have to care about this in the specification. All we need to do do is to specify the order and when to start a new row. 
+The panel width for each panel is specified inside each panel SVG or PNG file so that you do not have to care about this in the specification. All we need to do is to specify the order and when to start a new row. 
 
-Layouts are specified as *nested* arrays using squared brakets `[]`. For our example, we create a layout with 1 row that contains our first two panels `p_price` and `p_units`. To that end, we place both numbers into an array `["p_price","p_units"]` to indicate that they should appear on the *same* row (our specifcation supports a [wide range of layout options](documentation.html#comic-layout)).
+Layouts are specified as *nested* arrays using squared brackets `[]`. For our example, we create a layout with 1 row that contains our first two panels `p_price` and `p_units`. To that end, we place both numbers into an array `["p_price","p_units"]` to indicate that they should appear on the *same* row (our specification supports a [wide range of layout options](documentation.html#comic-layout)).
 
-Now, we give the layout a `name` and add it to a `layouts` array (give the layout any name you like, here we call it `myLayout`). We move our pabel specification from above (`[1,2]`) into the array of the `"panels"` attribute. The outer array allows us to add more rows later but here, we start with only one row.
+Now, we give the layout a `name` and add it to a `layouts` array (give the layout any name you like, here we call it `myLayout`). We move our panel specification from above (`[1,2]`) into the array of the `"panels"` attribute. The outer array allows us to add more rows later but here, we start with only one row.
 
 ```json
 "layouts": [
@@ -163,9 +163,9 @@ Now, we give the layout a `name` and add it to a `layouts` array (give the layou
 ]
 ```
 
-The `layout` array allows you to add multiple layouts and [switch between the layouts  interactively](documentation.html#load-layout). 
+The `layout` array allows you to add multiple layouts and [switch between the layouts interactively](documentation.html#load-layout). 
 
-Lastly, we need indicate the layout we want to start with: 
+Lastly, we need to indicate the layout we want to start with: 
 
 ```json
 "currentLayout": "init"
@@ -239,7 +239,7 @@ As above, we create the same operation 3 times, once for each of the elements A,
 
 The statement `"group": "group1"`, which we attach to each `loadLayout` operation indicates that only one of the operations in `group1` can be shown. In other words, if panel `p_sales-a` is shown and the user clicks element `b`, panel `p_sales-a` will be replaced with panel `p_sales-b`. If you remove `"group": "group1"`, panel `p_sales-b` would be inserted just after panel `2` but before panel `p_sales-a`. 
 
-Copy the following code into the `operation` array. Make sure each operation is separated by a comma `,` before the opening brackt `{` of that operation. 
+Copy the following code into the `operation` array. Make sure each operation is separated by a comma `,` before the opening bracket `{` of that operation. 
 
 ```json
  {
