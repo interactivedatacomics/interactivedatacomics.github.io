@@ -15,7 +15,7 @@
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/C02.html)
 
 ## Buy Low, Sell High!
-<a href="https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stockComic.json"><img src="figures/stocknailfigure.png" width="450px"/></a>
+<a href="https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stockComic.json"><img src="https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stocknailfigure.png" width="450px"/></a>
 
 * [JSON Script](https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stockComic.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/Stock.html)
