@@ -14,6 +14,12 @@
 * [JSON Script](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/images/CO2Footprint/CO2.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/C02.html)
 
+## Buy Low, Sell High!
+<a href="https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stockComic.json"><img src="figures/stocknailfigure.png" width="450px"/></a>
+
+* [JSON Script](https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stockComic.json)
+* [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/Stock.html)
+
 ## Plastic in the ocean
 _Created by Magdalena Boucher_
 
