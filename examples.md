@@ -17,6 +17,8 @@
 ## Buy Low, Sell High!
 <a href="https://hugoromat.github.io/interactiveComics/library/dist/Stock.html"><img src="https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stocknailfigure.png" width="450px"/></a>
 
+[(CC BY-NC-ND)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 * [JSON Script](https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stockComic.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/Stock.html)
 
