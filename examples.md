@@ -54,6 +54,7 @@ _Created by Eduardo Iturralde_
 * [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/getstarted/tutorial.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/getStarted.html)
 
+<!--
 ## A tube journey in East London
 <a href="https://hugoromat.github.io/interactiveComics/library/dist/london.html"><img src="comics/EaternLondon/EasternLondon.png" width="450px"/></a>
 
@@ -69,3 +70,4 @@ _Created by Josh Holinaty_
 
 * [JSON Script](https://raw.githubusercontent.com/oseph/interactive-data-comics-assets/main/jhcomic.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/dogJack.html)
+-->
