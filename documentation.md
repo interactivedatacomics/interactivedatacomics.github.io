@@ -14,6 +14,7 @@ This documentation covers:
 * [Operations](#operations)
   * [Highlight](#highlight)
   * [Append](#append)
+  * [Remove](#remove)
   * [Load layout](#load-layout)
   * [Replace](#replace)
 <!--  * [Lens](#lens) -->
@@ -145,7 +146,7 @@ The following example specifies variables with a default value. Two variables ar
 
 Operations are the core of interactive data comics. Operations specify what should happen how.
 
-## Highlight
+### Highlight
 
 The highlight operation can highlight content (e.g., panels or elements) upon a `trigger`; `click` or `mouseover` of a specified `element`. The highlight operations then highlights either: 
 * all elements with the same ID as the `element` if `what` has not been informed
@@ -167,7 +168,7 @@ The following example highlights all elements (across all panels) with the ID `f
 }
 ```
 
-## Append
+### Append
 This operation appends (inserts) one or more panels or a layout (`newpanels`) after given panel (`after`). The append operation is triggered through a `trigger` on an `element` (panel or element ID).
 
 `newpanels` can contain 
