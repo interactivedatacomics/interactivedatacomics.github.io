@@ -11,7 +11,7 @@ This documentation covers:
 * [Data](#data)
   * [Classes](#classes)
   * [Variables](#variables)
-* [Operations](#operations)
+* [Structure Operations](#operations)
   * [Highlight](#highlight)
   * [Append](#append)
   * [Remove](#remove)
@@ -20,6 +20,7 @@ This documentation covers:
 <!--  * [Lens](#lens) -->
 <!--  * [Multilayer](#multilayer) -->
   * [Pan & Zoom](#pan--zoom)
+  * [Jump](#jump)
 * [Conditions](#conditions)
 * [UI Elements](#ui-elements)
   * [Slider](#slider)
