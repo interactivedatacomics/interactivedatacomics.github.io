@@ -18,6 +18,8 @@
 ## Personal CO2 Emissions
 <a href="https://hugoromat.github.io/interactiveComics/library/dist/C02.html"><img src="figures/CO2nailfigure.png" width="450px"/></a>
 
+[(CC BY-NC-ND)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
 * [JSON Script](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/images/CO2Footprint/CO2.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/C02.html)
 
