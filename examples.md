@@ -7,13 +7,6 @@
 * [JSON Script](https://raw.githubusercontent.com/interactivedatacomics/interactivedatacomics.github.io/main/comics/alliances/alliances-1.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/index.html?JSON=XQAAAALcEwAAAAAAAABCqYjnU9ifL9xKRDsbehVNMYoOrxdTQ7hMkTJVwD4G2FGu7p-3aWIKGua-zvsSiWWOBx14e2w2sBXco4GfdEuQ0leCSmLOHPk_-5j55bOfMwFJRTWIEQw6QgnlrdxUGovdd2ub_ERP3gjzDQij6FwozwQXbB3U7_wJHgnxe-gFOltzVTLM8VuYR54kytwXty_FUnCS531mEpHEjUQmaaizwx47gFiZHx0KX4R4SnY6Srr_w2gcSdRtqaKlw1evhZMK1_g9jfEvN7mMrv7OClmNIk-ZvHwq7bmlNnq4uQJew61uFUJ1G91oKxqLOJyfr-qHIb8kCm6t5DfN605txQgWSVCpYOFZ6xiZHnrM1HkBTPND7UVNtYXAfe0JRlaCzl-J1ovneUEvEFvu15XvM4Q4oClqqJQwXIxtDPx2uyhxMNyalqFnjbxhU-cVOKDuMwZ1icMUxNafpdM10Lk65jrnnfKh5S4xa2EKlzfTDAEhAHd05LVfSDfbLVaO_MEU51acW-BWFbBfxSakmSfAXCZY9uinC0keRPkHFnpUJVF6Evf2P0hL8QzUsZxfxfO0buMNNZGG5NohfxBrfhM9GhGRoyd6-z_T7pT-_SGG5fHLnitbpviYLaydiVgfUvso3Qq_BbBkRZPy1roEXtYYJmG8BVX6wE4N_Lb1GfN1IJocYQ3xDmh7g3FfWgGUBKIOZuOv3U3O2BJMeVtEiSoW8qyn-JdFfepaF1ZjRQr8m915AWBtXD2cZK4n3hk6oWCZHxK5ROsMwWN8ovmk0boBCDk88DmHCj6CHS9X92Yc-GlUThZpCrPu976VEpxvqBosaawGRiEBRwOWf2oSjHvrrCEHeT2aE-XthEmZ7JKk6dtGNNoUEFPus5QtUWPad0rMhqR1Spjr6yjnL-81fgPkCzf5PQY1vyDTOWiBNUU0aWYrRZF8iG5keoFbXnvB-GvnotwoZ__z8bJf&coding=true)
 
-
-## Personal CO2 Emissions
-<a href="https://hugoromat.github.io/interactiveComics/library/dist/C02.html"><img src="figures/CO2nailfigure.png" width="450px"/></a>
-
-* [JSON Script](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/images/CO2Footprint/CO2.json)
-* [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/C02.html)
-
 ## Buy Low, Sell High!
 <a href="https://hugoromat.github.io/interactiveComics/library/dist/Stock.html"><img src="https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stocknailfigure.png" width="450px"/></a>
 
@@ -21,6 +14,14 @@
 
 * [JSON Script](https://raw.githubusercontent.com/wangzezhong/comics/main/StockComic/stockComic.json)
 * [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/Stock.html)
+
+## Personal CO2 Emissions
+<a href="https://hugoromat.github.io/interactiveComics/library/dist/C02.html"><img src="figures/CO2nailfigure.png" width="450px"/></a>
+
+* [JSON Script](https://raw.githubusercontent.com/HugoRomat/interactiveComics/master/library/dist/images/CO2Footprint/CO2.json)
+* [Live example in editor](https://hugoromat.github.io/interactiveComics/library/dist/C02.html)
+
+
 
 ## Plastic in the ocean
 _Created by Magdalena Boucher_
